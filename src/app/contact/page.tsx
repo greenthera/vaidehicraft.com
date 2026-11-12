@@ -33,12 +33,12 @@ export default function ContactPage() {
         </div>
         <figure className="min-w-0 overflow-hidden rounded-none bg-[#ede7df]">
           <div className="relative aspect-[1360/907]"><Image src={storefront} unoptimized alt="Vaidehi Craft storefront with cane chairs, a woven pendant light and furniture displays behind glass doors" fill sizes="(max-width: 999px) calc(100vw - 48px), (max-width: 1600px) 42vw, 600px" className="object-cover" /></div>
-          <figcaption className="px-5 py-4 text-sm leading-6 text-[#244536]">Visit Vaidehi Craft and explore our handcrafted cane furniture.</figcaption>
+          <figcaption className="px-5 py-4 type-description text-[#244536]">Visit Vaidehi Craft and explore our handcrafted cane furniture.</figcaption>
         </figure>
       </section>
 
       <section aria-labelledby="stores-title" className="mt-10 rounded-none bg-[#ede7df] p-6 min-[1000px]:mt-14 min-[1000px]:p-8">
-        <div className="mb-6 max-w-xl"><h2 id="stores-title" className="mb-2 text-2xl text-[#244536]">Visit Vaidehi Craft</h2><p className="text-sm leading-6 text-[#526356]">Visit our stores in Surat and Pune to explore handcrafted cane furniture. Call our team for visiting details.</p></div>
+        <div className="mb-6 max-w-xl"><h2 id="stores-title" className="mb-2 text-2xl text-[#244536]">Visit Vaidehi Craft</h2><p className="type-description text-[#526356]">Visit our stores in Surat and Pune to explore handcrafted cane furniture. Call our team for visiting details.</p></div>
         <div className="grid gap-4 min-[640px]:grid-cols-2">
           {stores.map(({ id, city, address, phone, phoneLabel }) => <article key={id} id={id} className="scroll-mt-28 flex min-w-0 flex-col rounded-none border border-[#d3c5af] bg-white p-5"><h3 className="mb-3 text-xl text-[#244536]">{city}</h3><address className="mb-2 text-sm not-italic leading-6 text-[#526356] min-[640px]:min-h-[6rem] min-[1000px]:min-h-[4.5rem]">{city === "Surat" ? <>2nd Fl, STALWART INSIGNIA Bldg,<br />Piplod, Surat, Gujarat 395007</> : address}</address><a href={`tel:${phone}`} className="mb-2 inline-flex min-h-11 items-center text-sm text-[#244536] underline underline-offset-4">{phoneLabel}</a><p><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Vaidehi Craft, ${address}`)}`} target="_blank" rel="noopener noreferrer" aria-label={`View ${city} store on Google Maps (opens in a new tab)`} className="inline-flex min-h-11 items-center text-sm text-[#783b18] underline underline-offset-4 hover:text-[#244536]">View on Google Maps</a></p><SocialLinks store={id} className="mb-5 mt-3" earthy /><ConsentMap city={city} address={address} /></article>)}
         </div>

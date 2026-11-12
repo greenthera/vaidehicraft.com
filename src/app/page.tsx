@@ -30,7 +30,7 @@ export default function Home() {
 
       <section aria-labelledby="spaces-title" className="relative min-h-[600px] text-white min-[1000px]:min-h-[45.52557vw]">
         <Image src={spaces} alt="A curated living space with cane furniture, woven wall art and warm lighting" fill sizes="100vw" className="object-cover object-[0%_5%]" />
-        <p className="relative mx-[var(--home-gutter)] pt-8 type-spaces-copy [text-shadow:0_1px_4px_#0009] md:pt-[3vw] min-[1100px]:ml-auto min-[1100px]:w-[min(290px,32%)]">We don&apos;t just create furniture; we craft environments. From home to offices and commercial spaces, our expertise lies in enhancing entire spaces with thoughtfully curated designs that seamlessly blend functionality and artistry, bringing your vision to life.</p>
+        <p className="relative mx-[var(--home-gutter)] pt-8 type-spaces-copy [text-shadow:0_1px_4px_#0009] md:pt-[3vw] min-[1100px]:ml-auto min-[1100px]:w-[min(340px,32%)]">We don&apos;t just create furniture; we craft environments. From home to offices and commercial spaces, our expertise lies in enhancing entire spaces with thoughtfully curated designs that seamlessly blend functionality and artistry, bringing your vision to life.</p>
         <h2 id="spaces-title" className="absolute bottom-[9%] left-[var(--home-gutter)] right-[var(--home-gutter)] type-spaces-title [text-shadow:0_1px_4px_#0009]">Beyond Furniture:<br />Transforming Spaces</h2>
       </section>
       <div className="flex min-h-24 items-center justify-center bg-white px-[var(--home-gutter)] py-5">
@@ -39,12 +39,12 @@ export default function Home() {
 
       <section aria-labelledby="store-title" className="grid bg-white min-[900px]:grid-cols-2 min-[1100px]:min-h-[55.66723vw]">
         <div className="relative flex min-w-0 flex-col gap-3 max-[1099px]:gap-[var(--home-paragraph-gap)] px-[var(--home-gutter)] py-6 type-store-copy text-[#b4581a] min-[1100px]:gap-[1vw] min-[1100px]:px-0 min-[1100px]:pb-0 min-[1100px]:pt-[15.16713vw]">
-          <div className="space-y-3 max-[1099px]:space-y-[var(--home-paragraph-gap)] min-[1100px]:ml-auto min-[1100px]:mr-[var(--home-gutter)] min-[1100px]:w-[40.83249%] min-[1100px]:space-y-0 min-[1100px]:text-justify">
+          <div className="space-y-3 max-[1099px]:space-y-[var(--home-paragraph-gap)] min-[1100px]:ml-auto min-[1100px]:mr-[var(--home-gutter)] min-[1100px]:w-[60%] min-[1100px]:space-y-0 min-[1100px]:text-justify">
           <h2 id="store-title" className="text-left min-[1100px]:text-right font-bold [font-family:var(--font-reference-statement)] min-[1100px]:mb-[1.25vw]">Canearth15 Pop-Up Store</h2>
           <p>Step into timeless elegance and craftsmanship with Canearth15 by Vaidehi Craft. This exclusive pop-up store unveils a curated collection of exquisite cane furniture that celebrates traditional craftsmanship blended with modern aesthetics.</p>
           <p>Designed with a boho-chic vibe, the store offers an immersive experience, showcasing furniture in a setting that highlights its beauty and functionality. From intricate cane weaves to innovative designs, every piece is a testament to Vaidehi Craft&apos;s dedication to quality, sustainability and elegance.</p>
           </div>
-          <p className="type-store-last min-[1100px]:ml-auto min-[1100px]:mr-[var(--home-gutter)] min-[1100px]:w-[53.9278%] min-[1100px]:text-justify">Explore a space where tradition meets innovation, and discover how the warmth and versatility of cane furniture can transform a space into a haven of comfort and style. At Canearth15, we invite you to experience the story, artistry and heart behind every creation.</p>
+          <p className="type-store-last min-[1100px]:ml-auto min-[1100px]:mr-[var(--home-gutter)] min-[1100px]:w-[60%] min-[1100px]:text-justify">Explore a space where tradition meets innovation, and discover how the warmth and versatility of cane furniture can transform a space into a haven of comfort and style. At Canearth15, we invite you to experience the story, artistry and heart behind every creation.</p>
         </div>
         <div className="min-h-[clamp(280px,58vw,440px)] min-[900px]:min-h-0"><StoreVideo deferOnMobile /></div>
       </section>
@@ -52,7 +52,7 @@ export default function Home() {
 
       <section aria-labelledby="cane-title" className="relative flex min-h-[700px] flex-col justify-between gap-12 px-[var(--home-gutter)] py-10 text-white min-[1100px]:min-h-[52.58654vw] min-[1100px]:flex-row min-[1100px]:items-end">
         <Image src={cane} alt="Close-up of hand-wrapped cane joinery and the natural woven material" fill sizes="100vw" className="object-cover object-[0%_26%]" />
-        <div className="relative w-full space-y-5 max-[1099px]:space-y-[var(--home-paragraph-gap)] type-cane-copy [text-shadow:0_1px_4px_#0009] min-[1100px]:order-2 min-[1100px]:ml-auto min-[1100px]:max-w-sm min-[1100px]:w-[23%] min-[1100px]:self-start">
+        <div className="relative w-full space-y-5 max-[1099px]:space-y-[var(--home-paragraph-gap)] type-cane-copy [text-shadow:0_1px_4px_#0009] min-[1100px]:order-2 min-[1100px]:ml-auto min-[1100px]:max-w-sm min-[1100px]:w-[30%] min-[1100px]:self-start">
           <p>Cane is the poetry of luxury, a material that bends gracefully into forms bamboo could only dream of. At Vaidehi Craft, we take this exceptional natural wonder and sculpt it into art—functional, elegant, and timeless.</p>
           <p>This isn’t just furniture; it’s an ode to artistry, an experience of exclusivity. Step beyond the ordinary and into the extraordinary.</p>
           <p>Because Cane is Not Bamboo—it’s the essence of bespoke living.</p>

@@ -23,7 +23,7 @@ export default function ThankYouPage() {
                 {[
                   { title: "We review your enquiry", text: "Our team will look through the details you shared." },
                   { title: "We get in touch", text: "We’ll discuss your preferred design, finish, and requirements with you." },
-                ].map((step, index) => <li key={step.title} className="flex gap-3"><span aria-hidden="true" className="flex size-7 shrink-0 items-center justify-center rounded-none bg-[#ede7df] text-xs text-[#783b18]">0{index + 1}</span><div><h3 className="text-sm font-bold">{step.title}</h3><p className="mt-1 text-sm leading-6 text-[#526356]">{step.text}</p></div></li>)}
+                ].map((step, index) => <li key={step.title} className="flex gap-3"><span aria-hidden="true" className="flex size-7 shrink-0 items-center justify-center rounded-none bg-[#ede7df] text-xs text-[#783b18]">0{index + 1}</span><div><h3 className="text-sm font-bold">{step.title}</h3><p className="mt-1 type-description text-[#526356]">{step.text}</p></div></li>)}
               </ol>
             </div>
             <div className="flex flex-wrap gap-3">
