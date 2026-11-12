@@ -1,6 +1,6 @@
-:HL["/vaidehicraft.com/_next/static/css/0a5f8116bddb4ad3.css","style"]
+:HL["/vaidehicraft.com/_next/static/css/3675cbf574a1e0d7.css","style"]
 :HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"petra-compact-cane-swing","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"request-quote","h":131136,"c":"$Q2"}]]
-0:{"b":"9YZ0I2hyWh2gKr2GjjbRV","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"63oqnmAmp_ojYFcZ9N3aY","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
