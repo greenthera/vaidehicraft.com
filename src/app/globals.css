@@ -354,3 +354,15 @@ button.normal-case {
   font-size: var(--description-size);
   line-height: var(--description-leading);
 }
+
+/* Sharing uses background feedback instead of focus outlines. */
+.product-share :focus,
+.product-share :focus-visible {
+  outline: none;
+}
+.product-share button.button-primary:focus-visible {
+  background-color: var(--brand-green-dark);
+}
+.product-share input:focus-visible {
+  background-color: var(--brand-cream);
+}

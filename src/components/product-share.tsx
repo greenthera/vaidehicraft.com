@@ -56,9 +56,9 @@ export function ProductShare({ name, image, description }: { name: string; image
     }
   }
 
-  const optionClass = "flex min-w-0 flex-col items-center gap-2.5 text-[11px] leading-4 text-[#244536] sm:text-xs";
+  const optionClass = "flex min-w-0 flex-col items-center gap-2.5 focus-visible:bg-[#ede7df] text-[11px] leading-4 text-[#244536] sm:text-xs";
   const iconClass = "flex size-12 items-center justify-center border border-[#d3c5af] bg-[#f7f4ee] transition-colors hover:bg-[#ede7df]";
-  return <div className="absolute right-3 top-3 z-10">
+  return <div className="product-share absolute right-3 top-3 z-10">
     <button ref={trigger} type="button" onClick={open} aria-label={`Share ${name}`} aria-haspopup="dialog" className="flex size-11 cursor-pointer items-center justify-center border border-[#244536]/20 bg-white text-[#244536] shadow-sm transition-colors hover:bg-[#ede7df]">
       <IoShareSocialOutline aria-hidden="true" size={21} />
     </button>
