@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "@/components/site-image";
+import { ProductShare } from "@/components/product-share";
 import { useEffect, useRef, useState } from "react";
 
-export function ProductGallery({ images, name }: { images: string[]; name: string }) {
+export function ProductGallery({ images, name, description }: { images: string[]; name: string; description: string }) {
   const track = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
   const activeIndex = useRef(0);
@@ -27,8 +28,9 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
   }
   return <section aria-label={`${name} photo gallery`} aria-roledescription="carousel" className="min-w-0 bg-[#f6f4ef]">
     <div className="relative">
+    <ProductShare key={name} name={name} image={images[0]} description={description} />
     <div ref={track} tabIndex={0} aria-label="Product images. Swipe or use the previous and next buttons." onKeyDown={(event) => { if (event.key === "ArrowRight" || event.key === "ArrowLeft") { event.preventDefault(); goTo(active + (event.key === "ArrowRight" ? 1 : -1)); } }} onScroll={handleScroll} className="flex snap-x snap-mandatory overflow-x-auto overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-      {images.map((image, index) => <div key={image} role="group" aria-label={`Image ${index + 1} of ${images.length}`} className="relative aspect-[3/4] w-full shrink-0 snap-start"><Image src={image} alt={`${name}, product photograph ${index + 1}`} fill priority={index === 0} sizes="(max-width: 750px) 100vw, 51vw" className="object-cover" /></div>)}
+      {images.map((image, index) => <div key={image} role="group" aria-label={`Image ${index + 1} of ${images.length}`} className="relative aspect-[3/4] w-full shrink-0 snap-start min-[751px]:max-[1099px]:aspect-[4/3]"><Image src={image} alt={`${name}, product photograph ${index + 1}`} fill priority={index === 0} sizes="(max-width: 1099px) 100vw, 51vw" className="object-cover min-[751px]:max-[1099px]:object-contain" /></div>)}
     </div>
     {images.length > 1 && <div className="pointer-events-none absolute inset-x-0 top-1/2 flex -translate-y-1/2 justify-between px-3 sm:px-5">
       <button type="button" aria-label={`Previous image of ${name}`} disabled={active === 0} onClick={() => goTo(active - 1)} className="button-primary pointer-events-auto flex size-11 cursor-pointer items-center justify-center shadow-md disabled:cursor-default disabled:opacity-40">

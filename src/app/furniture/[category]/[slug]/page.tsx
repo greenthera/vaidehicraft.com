@@ -24,9 +24,9 @@ export default async function ProductPage({ params }: Props) {
   const schema = { "@context": "https://schema.org", "@type": "Product", name: product.name, description: product.description, brand: { "@type": "Brand", name: "Vaidehi Craft" }, ...(metadataOrigin ? { url: `${metadataOrigin}${product.path}`, image: product.images.map((image) => `${metadataOrigin}${image}`) } : {}) };
   const displayName = product.name.replace(/ Cane (Chair|Sofa|Swing|Table)$/, "");
   return <InnerPage>
-    <div className="grid items-start min-[751px]:grid-cols-[1.01094fr_0.98906fr]">
-      <ProductGallery key={product.slug} images={product.images} name={product.name} />
-      <section className="min-w-0 px-6 pb-14 pt-8 min-[751px]:px-[7%] min-[751px]:pt-[4vw]">
+    <div className="grid items-start min-[1100px]:grid-cols-[1.01094fr_0.98906fr]">
+      <ProductGallery key={product.slug} images={product.images} name={product.name} description={product.description} />
+      <section className="min-w-0 px-6 pb-14 pt-8 min-[751px]:px-8 min-[1100px]:px-[7%] min-[1100px]:pt-[4vw]">
         <Breadcrumbs items={[{ name: collection.name, href: `/furniture/${category}` }, { name: productDisplayName(product.name) }]} />
         <PageHeading eyebrow={`The ${collection.name} collection`} title={<>{displayName}<span className="sr-only"> — {collection.name}</span></>} />
         <div className={`space-y-7 max-[639px]:space-y-3 type-product-copy ${product.slug === "oldan-cane-swing" ? "type-oldan-copy" : ""}`}>{product.details.map((section, index) => <section key={`${section.heading}-${index}`}><h2 className="mb-2 font-normal">{section.heading} :</h2><ul className="list-disc space-y-2 max-[639px]:space-y-1 pl-5">{section.text.map((text, i) => <li key={i}>{text}</li>)}</ul></section>)}</div>
