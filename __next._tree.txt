@@ -1,5 +1,5 @@
-:HL["/vaidehicraft.com/_next/static/css/ec35a29a7955e8b6.css","style"]
+:HL["/vaidehicraft.com/_next/static/css/8527dc34a7aa262f.css","style"]
 :HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
 :HL["/vaidehicraft.com/_next/static/media/cane-hanging-chair-curtain-interior.18d94aa8.avif","image",{"fetchPriority":"high","imageSizes":"100vw","media":"(min-width: 751px)"}]
 1:[["children",{"s":"__PAGE__","h":128}]]
-0:{"b":"i2liWF2L-Aa6dU8XY7EMq","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
+0:{"b":"zzYI7ZwYzraN1KD1xmh2u","t":{"t":{"s":"","h":20,"c":"$Q1"}}}

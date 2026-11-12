@@ -1,6 +1,6 @@
-:HL["/vaidehicraft.com/_next/static/css/ec35a29a7955e8b6.css","style"]
+:HL["/vaidehicraft.com/_next/static/css/8527dc34a7aa262f.css","style"]
 :HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"leica-cane-swing","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"request-quote","h":131136,"c":"$Q2"}]]
-0:{"b":"i2liWF2L-Aa6dU8XY7EMq","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"zzYI7ZwYzraN1KD1xmh2u","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
