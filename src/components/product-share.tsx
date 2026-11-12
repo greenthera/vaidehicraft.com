@@ -9,6 +9,7 @@ import { IoChatbubbleEllipsesOutline, IoCloseOutline, IoEllipsisHorizontal, IoLi
 export function ProductShare({ name, image, description }: { name: string; image: string; description: string }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
+  const heading = useRef<HTMLHeadingElement>(null);
   const headingId = useId();
   const pending = useRef(false);
   const [busy, setBusy] = useState(false);
@@ -23,6 +24,7 @@ export function ProductShare({ name, image, description }: { name: string; image
     setSmsSeparator(/iPad|iPhone|iPod/.test(navigator.userAgent) ? "&" : "?");
     setNativeAvailable(typeof navigator.share === "function");
     dialog.current?.showModal();
+    heading.current?.focus({ preventScroll: true });
   }
 
   async function copyLink() {
@@ -63,7 +65,7 @@ export function ProductShare({ name, image, description }: { name: string; image
     <dialog ref={dialog} aria-labelledby={headingId} onClose={() => trigger.current?.focus()} onClick={(event) => { if (event.target === event.currentTarget) dialog.current?.close(); }} className="fixed inset-x-0 bottom-0 top-auto m-0 max-h-[90dvh] w-full max-w-none overflow-y-auto border-0 bg-transparent p-0 text-[#14212a] backdrop:bg-black/60 min-[751px]:inset-0 min-[751px]:m-auto min-[751px]:w-[440px] min-[751px]:max-w-[calc(100vw-48px)]">
       <div className="bg-white pb-[max(16px,env(safe-area-inset-bottom))] pt-4">
         <div className="flex items-center justify-between gap-3 px-4">
-          <h2 id={headingId} className="text-lg font-bold leading-snug">Share product</h2>
+          <h2 ref={heading} id={headingId} tabIndex={-1} className="text-lg font-bold leading-snug focus:outline-none">Share product</h2>
           <button type="button" onClick={() => dialog.current?.close()} aria-label="Close sharing options" className="button-primary flex size-11 shrink-0 cursor-pointer items-center justify-center"><IoCloseOutline aria-hidden="true" size={24} /></button>
         </div>
         <figure className="mx-4 mb-5 mt-4 flex items-center gap-4 overflow-hidden border border-[#e5dfd5] bg-[#f7f4ee] p-3">
