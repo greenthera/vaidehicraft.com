@@ -15,7 +15,7 @@ export function SiteFooter() {
       </nav>
       <div className="flex flex-col items-center justify-between gap-0 border-t border-[#d3c5af] px-6 py-4 text-center text-xs leading-6 text-[#526356] sm:flex-row sm:text-left min-[1100px]:px-[7.32482vw]">
         <p>© 1998 – {new Date().getUTCFullYear()} Vaidehi Craft. All rights reserved.</p>
-        <p>Developed by <a href="https://www.shivantra.com/?utm_source=vaidehi_craft&utm_medium=referral&utm_campaign=footer_credit" target="_blank" rel="noopener noreferrer" aria-label="Shivantra (opens in a new tab)" className="inline-flex items-center font-bold sm:min-h-11 text-[#244536] underline underline-offset-4 hover:text-[#183b2e]">Shivantra</a></p>
+        <p>Developed by <a href="https://www.shivantra.com/?utm_source=vaidehi_craft&utm_medium=referral&utm_campaign=footer_credit" target="_blank" rel="noopener noreferrer" aria-label="Shivantra (opens in a new tab)" className="inline-flex items-center font-bold sm:min-h-11 text-[#244536] hover:text-[#183b2e]">Shivantra</a></p>
       </div>
     </footer>
   );
