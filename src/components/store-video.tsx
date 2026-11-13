@@ -7,29 +7,59 @@ export function StoreVideo({ src = "/media/canearth15-store-tour.mp4", poster = 
   const video = useRef<HTMLVideoElement>(null);
   useEffect(() => {
     const element = video.current;
-    if (!element || !deferOnMobile) return;
-    const mobile = window.matchMedia("(max-width: 750px)");
-    const load = () => {
-      if (element.dataset.loaded) return;
-      element.dataset.loaded = "true";
-      element.src = assetPath(src);
-      element.load();
-      void element.play().catch(() => { /* Autoplay may be restricted by the browser. */ });
+    if (!element) return;
+    let disposed = false;
+    let loaded = !deferOnMobile;
+    // Set DOM properties as well as attributes before requesting playback.
+    element.muted = true;
+    element.defaultMuted = true;
+    element.playsInline = true;
+    const play = () => {
+      if (disposed || !loaded || document.visibilityState === "hidden" || !element.paused) return;
+      void element.play().catch(() => { /* Retry when ready, visible, or after user interaction. */ });
     };
-    if (!mobile.matches || !("IntersectionObserver" in window)) { load(); return; }
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) { load(); observer.disconnect(); }
-    }, { rootMargin: "300px 0px" });
-    observer.observe(element);
-    const onResize = () => { if (!mobile.matches) { load(); observer.disconnect(); } };
+    const load = () => {
+      if (!loaded) {
+        loaded = true;
+        element.src = assetPath(src);
+        element.load();
+      }
+      play();
+    };
+    element.addEventListener("loadeddata", play);
+    element.addEventListener("canplay", play);
+    window.addEventListener("pageshow", play);
+    document.addEventListener("visibilitychange", play);
+    document.addEventListener("pointerdown", play, { passive: true });
+    document.addEventListener("keydown", play);
+
+    const mobile = window.matchMedia("(max-width: 750px)");
+    let observer: IntersectionObserver | undefined;
+    if (deferOnMobile && mobile.matches && "IntersectionObserver" in window) {
+      observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) { load(); observer?.disconnect(); }
+      }, { rootMargin: "300px 0px" });
+      observer.observe(element);
+    } else {
+      load();
+    }
+    const onResize = () => { if (!mobile.matches) { load(); observer?.disconnect(); } };
     mobile.addEventListener("change", onResize);
-    return () => { observer.disconnect(); mobile.removeEventListener("change", onResize); };
+    return () => {
+      disposed = true;
+      observer?.disconnect();
+      mobile.removeEventListener("change", onResize);
+      element.removeEventListener("loadeddata", play);
+      element.removeEventListener("canplay", play);
+      window.removeEventListener("pageshow", play);
+      document.removeEventListener("visibilitychange", play);
+      document.removeEventListener("pointerdown", play);
+      document.removeEventListener("keydown", play);
+    };
   }, [deferOnMobile, src]);
   return (
     <div className="relative h-full min-w-0 [min-height:inherit] bg-[#dcc7b3]">
-      <video ref={video} autoPlay muted loop playsInline controls={false} disablePictureInPicture disableRemotePlayback preload={deferOnMobile ? "none" : "metadata"} poster={assetPath(poster)} aria-label={label} className="pointer-events-none absolute inset-0 h-full w-full object-cover">
-        <source src={assetPath(src)} type="video/mp4" media={deferOnMobile ? "(min-width: 751px)" : undefined} />
-      </video>
+      <video key={src} ref={video} src={deferOnMobile ? undefined : assetPath(src)} autoPlay muted loop playsInline controls={false} disablePictureInPicture disableRemotePlayback preload={deferOnMobile ? "none" : "auto"} poster={assetPath(poster)} aria-label={label} className="pointer-events-none absolute inset-0 h-full w-full object-cover" />
     </div>
   );
 }
