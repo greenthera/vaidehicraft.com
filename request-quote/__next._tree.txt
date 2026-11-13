@@ -1,5 +1,5 @@
-:HL["/vaidehicraft.com/_next/static/css/46055f74a216c056.css","style"]
+:HL["/vaidehicraft.com/_next/static/css/e8baabbfb2c63034.css","style"]
 :HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"request-quote","h":64,"c":"$Q2"}]]
-0:{"b":"mqofBTBh5hmIj4gJJBdWP","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
+0:{"b":"NBbx-IR5cR06e5BMIcVQ1","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
