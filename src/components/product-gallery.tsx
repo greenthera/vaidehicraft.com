@@ -28,7 +28,7 @@ export function ProductGallery({ images, name, description }: { images: string[]
   }
   return <section aria-label={`${name} photo gallery`} aria-roledescription="carousel" className="min-w-0 bg-[#f6f4ef]">
     <div className="relative">
-    <ProductShare key={name} name={name} image={images[0]} description={description} />
+    <ProductShare key={name} name={name} description={description} />
     <div ref={track} tabIndex={0} aria-label="Product images. Swipe or use the previous and next buttons." onKeyDown={(event) => { if (event.key === "ArrowRight" || event.key === "ArrowLeft") { event.preventDefault(); goTo(active + (event.key === "ArrowRight" ? 1 : -1)); } }} onScroll={handleScroll} className="flex snap-x snap-mandatory overflow-x-auto overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       {images.map((image, index) => <div key={image} role="group" aria-label={`Image ${index + 1} of ${images.length}`} className="relative aspect-[3/4] w-full shrink-0 snap-start min-[751px]:max-[1099px]:aspect-[4/3]"><Image src={image} alt={`${name}, product photograph ${index + 1}`} fill priority={index === 0} sizes="(max-width: 1099px) 100vw, 51vw" className="object-cover min-[751px]:max-[1099px]:object-contain" /></div>)}
     </div>
