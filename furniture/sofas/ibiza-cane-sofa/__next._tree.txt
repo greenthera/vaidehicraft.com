@@ -1,7 +1,7 @@
-:HL["/vaidehicraft.com/_next/static/css/e8baabbfb2c63034.css","style"]
+:HL["/vaidehicraft.com/_next/static/css/dcee8da8bb763385.css","style"]
 :HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":{"n":"slug","t":"d","k":"ibiza-cane-sofa","s":[]},"h":65632,"c":"$Q4"}]]
 2:[["children",{"s":{"n":"category","t":"d","k":"sofas","s":[]},"h":196704,"c":"$Q3"}]]
 1:[["children",{"s":"furniture","h":131136,"c":"$Q2"}]]
-0:{"b":"Ldy5rOxcY9TjyPWpBywT2","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"sG3OUtZ7E2In5yO5YUfyy","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
