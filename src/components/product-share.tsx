@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { IoShareSocialOutline } from "react-icons/io5";
+import { productShareMessage } from "@/lib/product-share-message";
 
 /** Opens the device's own share sheet directly from the user's click. */
 export function ProductShare({ name, description }: { name: string; description: string }) {
@@ -20,7 +21,7 @@ export function ProductShare({ name, description }: { name: string; description:
     try {
       if (typeof navigator.share === "function") {
         try {
-          await navigator.share({ title: `${name} | Vaidehi Craft`, text: description, url });
+          await navigator.share({ title: `${name} | Vaidehi Craft`, text: productShareMessage(description, url) });
           return;
         } catch (error) {
           if (error instanceof Error && error.name === "AbortError") return;
