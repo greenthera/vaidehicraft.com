@@ -1,7 +1,7 @@
-:HL["/vaidehicraft.com/_next/static/css/533fd554dde054b9.css","style"]
+:HL["/vaidehicraft.com/_next/static/css/46055f74a216c056.css","style"]
 :HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":{"n":"slug","t":"d","k":"claire-cane-chair","s":[]},"h":65632,"c":"$Q4"}]]
 2:[["children",{"s":{"n":"category","t":"d","k":"chairs","s":[]},"h":196704,"c":"$Q3"}]]
 1:[["children",{"s":"furniture","h":131136,"c":"$Q2"}]]
-0:{"b":"v276tvSIcp5ijpg-VpYOu","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"mqofBTBh5hmIj4gJJBdWP","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
