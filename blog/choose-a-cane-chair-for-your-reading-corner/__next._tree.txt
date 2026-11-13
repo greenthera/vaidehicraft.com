@@ -1,6 +1,6 @@
-:HL["/vaidehicraft.com/_next/static/css/561430e769aa9888.css","style"]
+:HL["/vaidehicraft.com/_next/static/css/37bb82d51b07db2c.css","style"]
 :HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"choose-a-cane-chair-for-your-reading-corner","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"blog","h":131136,"c":"$Q2"}]]
-0:{"b":"Tkzt2EiDrwhWIW8dUX11a","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"RMxkh_TuXUFMuT6HHY5UQ","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
