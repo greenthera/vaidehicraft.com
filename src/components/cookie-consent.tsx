@@ -9,5 +9,5 @@ export function CookieConsentBanner() {
 }
 
 export function CookieSettings() {
-  return <button type="button" onClick={() => { void showCookiePreferences(); }} className="inline-flex min-h-11 cursor-pointer items-center text-xs normal-case underline underline-offset-4 sm:text-sm hover:text-[#244536]">Cookie settings</button>;
+  return <button type="button" onClick={() => { void showCookiePreferences(); }} className="inline-flex min-h-11 cursor-pointer items-center text-xs normal-case sm:text-sm hover:text-[#244536]">Cookie settings</button>;
 }

@@ -11,7 +11,7 @@ import storefront from "../../../public/images/vaidehi-craft-storefront.webp";
 
 export const metadata = pageMetadata("Get in Touch", "Contact Vaidehi Craft for handcrafted cane furniture, design enquiries and tailored quotations. Connect with our team and ask about our Surat and Pune stores.", "/contact");
 
-const primaryButton = "inline-flex min-h-12 items-center justify-center rounded-none button-primary px-6 py-3 text-sm";
+const contactButton = "inline-flex min-h-12 w-full min-w-0 items-center justify-center rounded-none px-4 py-3 text-center text-sm";
 
 export default function ContactPage() {
   const schema = metadataOrigin ? { "@context": "https://schema.org", "@type": "ContactPage", "@id": `${metadataOrigin}/contact#webpage`, url: `${metadataOrigin}/contact`, name: "Contact Vaidehi Craft", isPartOf: { "@id": `${metadataOrigin}/#website` }, mainEntity: { "@id": `${metadataOrigin}/#organization` } } : undefined;
@@ -25,9 +25,9 @@ export default function ContactPage() {
             <div className="py-4"><dt className="mb-1 text-xs uppercase tracking-widest text-[#526356]">Email us</dt><dd><a href="mailto:connect@vaidehicraft.com" className="inline-flex min-h-11 max-w-full items-center break-all py-1 text-base text-[#244536] underline-offset-4 hover:underline">connect@vaidehicraft.com</a></dd></div>
             <div className="py-4"><dt className="mb-1 text-xs uppercase tracking-widest text-[#526356]">Call us</dt><dd><a href={`tel:${suratStore.phone}`} className="inline-flex min-h-11 items-center py-1 text-base text-[#244536] underline-offset-4 hover:underline">{suratStore.phoneLabel}</a></dd></div>
           </dl>
-          <div className="flex flex-wrap gap-3">
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp (opens in a new tab)" className={primaryButton}>Chat on WhatsApp</a>
-            <Link href="/request-quote" className="inline-flex min-h-12 items-center justify-center rounded-none button-outline px-6 py-3 text-sm">Request a quote</Link>
+          <div className="grid w-full max-w-xl grid-cols-1 items-stretch gap-3 min-[640px]:grid-cols-2">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp (opens in a new tab)" className={`${contactButton} button-primary`}>Chat on WhatsApp</a>
+            <Link href="/request-quote" className={`${contactButton} button-outline`}>Request a quote</Link>
           </div>
           <SocialLinks className="mt-6" />
         </div>
