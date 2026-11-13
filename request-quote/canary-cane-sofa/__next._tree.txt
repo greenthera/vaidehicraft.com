@@ -1,6 +1,6 @@
-:HL["/vaidehicraft.com/_next/static/css/37bb82d51b07db2c.css","style"]
+:HL["/vaidehicraft.com/_next/static/css/7c9f63b987c2ba31.css","style"]
 :HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"canary-cane-sofa","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"request-quote","h":131136,"c":"$Q2"}]]
-0:{"b":"RMxkh_TuXUFMuT6HHY5UQ","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"8fEtW43_vCh3E6uDGx3rQ","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
