@@ -1,5 +1,5 @@
-:HL["/vaidehicraft.com/_next/static/css/3675cbf574a1e0d7.css","style"]
+:HL["/vaidehicraft.com/_next/static/css/561430e769aa9888.css","style"]
 :HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"cookie-policy","h":64,"c":"$Q2"}]]
-0:{"b":"63oqnmAmp_ojYFcZ9N3aY","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
+0:{"b":"Tkzt2EiDrwhWIW8dUX11a","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
