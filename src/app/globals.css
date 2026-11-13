@@ -379,3 +379,18 @@ button.normal-case {
     animation: none;
   }
 }
+
+/* Image-viewer controls use background feedback rather than focus outlines. */
+.product-image-viewer:focus,
+.product-image-viewer:focus-visible,
+.product-image-viewer :focus,
+.product-image-viewer :focus-visible {
+  outline: none;
+}
+.product-image-viewer .button-outline:focus-visible {
+  background-color: var(--brand-green);
+  color: #fff;
+}
+.product-image-viewer .button-primary:focus-visible {
+  background-color: var(--brand-green-dark);
+}
