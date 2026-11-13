@@ -363,3 +363,19 @@ button.normal-case {
 .product-share input:focus-visible {
   background-color: var(--brand-cream);
 }
+
+/* Fade the top-layer viewer without resizing the image or page layout. */
+@keyframes product-viewer-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.product-image-viewer[open],
+.product-image-viewer[open]::backdrop {
+  animation: product-viewer-enter 180ms ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .product-image-viewer[open],
+  .product-image-viewer[open]::backdrop {
+    animation: none;
+  }
+}
