@@ -6,6 +6,7 @@ export function whatsappLink(phone: string, message = "Hi, I would like to know 
   return `https://wa.me/${phone.replace(/\D/g, "")}?text=${encodeURIComponent(message)}`;
 }
 export const whatsappUrl = whatsappLink(businessPhone);
+export const enquiryWhatsAppStorageKey = "vaidehi-craft:enquiry-whatsapp";
 
 export function whatsappEnquiryLink(name: string, products: readonly { name: string; category: string }[]) {
   const categories: Record<string, string> = { chairs: "Chairs", sofas: "Sofas", tables: "Tables", swings: "Swings" };

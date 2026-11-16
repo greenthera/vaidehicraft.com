@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { productDisplayName } from "@/lib/product-display-name";
-import { whatsappEnquiryLink } from "@/lib/whatsapp";
+import { enquiryWhatsAppStorageKey, whatsappEnquiryLink } from "@/lib/whatsapp";
+import { assetPath } from "@/lib/site-path";
 import { useState } from "react";
 import products from "@/data/product-index.json";
 import { buildEnquiry, formResponseUrl, enquiryConsentText } from "@/lib/enquiry";
@@ -27,37 +28,56 @@ export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug
     const data = new FormData(event.currentTarget);
     setSending(true);
     setError("");
+    let whatsappTab: Window | null = null;
+    let submitted = false;
     try {
       const payload = { name: data.get("name"), email: data.get("email"), phone: data.get("phone"), message: data.get("message"), website: data.get("website"), contactConsent: data.get("confirm") === "on", products: selected, categories: selectedCategories, path: window.location.pathname };
       const whatsappUrl = whatsappEnquiryLink(String(payload.name || ""), products.filter((item) => selected.includes(item.slug)));
+      const enquiry = buildEnquiry(payload, window.location.origin);
+      if ("error" in enquiry) {
+        setError(enquiry.error);
+        return;
+      }
+      // Reserve the tab during the click, before awaiting the submission request.
+      // Opening a new tab only after fetch is commonly blocked by browsers.
+      if (!payload.website) {
+        try {
+          whatsappTab = window.open("about:blank", "_blank");
+          if (whatsappTab) {
+            whatsappTab.opener = null;
+            whatsappTab.document.title = "Sending your enquiry | Vaidehi Craft";
+            whatsappTab.document.body.textContent = "Sending your enquiry. WhatsApp will open here when it finishes.";
+          }
+        } catch { /* The confirmation page also provides a WhatsApp link. */ }
+      }
       if (process.env.NEXT_PUBLIC_ENQUIRY_DIRECT === "true") {
         // GitHub Pages has no server, so the browser posts to Google. Google hides its reply from
         // cross-site pages: this catches validation and network failures, not a closed form.
-        const enquiry = buildEnquiry(payload, window.location.origin);
-        if ("error" in enquiry) {
-          setError(enquiry.error);
-          setSending(false);
+        if (!payload.website) await fetch(formResponseUrl, { method: "POST", mode: "no-cors", credentials: "omit", body: enquiry.fields, signal: AbortSignal.timeout(15_000) });
+      } else {
+        const response = await fetch("/api/enquiries", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        if (!response.ok) {
+          const result = await response.json().catch(() => null);
+          setError(result?.error ?? "We could not save your enquiry.");
           return;
         }
-        if (!payload.website) await fetch(formResponseUrl, { method: "POST", mode: "no-cors", credentials: "omit", body: enquiry.fields, signal: AbortSignal.timeout(15_000) });
-        window.location.assign(whatsappUrl);
-        return;
       }
-      const response = await fetch("/api/enquiries", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      if (response.ok) {
-        window.location.assign(whatsappUrl);
-        return;
-      }
-      const result = await response.json().catch(() => null);
-      setError(result?.error ?? "We could not save your enquiry.");
+      submitted = true;
+      try { window.sessionStorage.setItem(enquiryWhatsAppStorageKey, whatsappUrl); } catch { /* Storage can be disabled; the confirmation still works. */ }
+      try { if (whatsappTab && !whatsappTab.closed) whatsappTab.location.replace(whatsappUrl); } catch { /* Keep the manual confirmation-page link available. */ }
+      window.location.assign(assetPath(process.env.NEXT_PUBLIC_STATIC_EXPORT === "true" ? "/thank-you/" : "/thank-you"));
     } catch {
       setError("We could not send your enquiry. Please check your connection.");
+    } finally {
+      if (!submitted) {
+        try { whatsappTab?.close(); } catch { /* A user may already have closed the tab. */ }
+        setSending(false);
+      }
     }
-    setSending(false);
   }
   const field = `mt-2 min-h-12 w-full border bg-white px-3 py-3 type-form-value outline-offset-4 ${inquiry ? "rounded-none border-[#b8b9ab] text-[#244536] placeholder:text-[#68726a] focus:border-[#244536]" : "rounded-none border-black/65 text-black"}`;
   return <form method="post" onSubmit={submit} className={`space-y-5 type-form-copy ${inquiry ? "text-[#244536]" : "text-black"}`}>

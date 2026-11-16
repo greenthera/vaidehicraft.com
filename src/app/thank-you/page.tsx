@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "@/components/site-image";
 import { InnerPage } from "@/components/inner-page";
 import { pageMetadata } from "@/lib/seo";
+import { EnquiryWhatsAppLink } from "@/components/enquiry-whatsapp-link";
 import interior from "../../../public/images/curated-cane-living-space.avif";
 
 export const metadata = pageMetadata("Thank You", "Your enquiry has reached Vaidehi Craft.", "/thank-you", undefined, false);
@@ -27,6 +28,7 @@ export default function ThankYouPage() {
               </ol>
             </div>
             <div className="flex flex-wrap gap-3">
+              <EnquiryWhatsAppLink />
               <Link href="/furniture/chairs" className="inline-flex min-h-12 items-center justify-center rounded-none button-primary px-6 py-3 text-sm">Explore our furniture <span aria-hidden="true" className="ml-3">→</span></Link>
               <Link href="/" className="inline-flex min-h-12 items-center justify-center rounded-none button-outline px-6 py-3 text-sm">Back to home</Link>
             </div>
