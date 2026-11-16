@@ -11,6 +11,7 @@ import { productCategories as categories } from "@/lib/product-categories";
 export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug?: string; appearance?: "classic" | "inquiry" }) {
   const inquiry = appearance === "inquiry";
   const [sending, setSending] = useState(false);
+  const [consentAccepted, setConsentAccepted] = useState(false);
   const [error, setError] = useState("");
   const initial = products.find((product) => product.slug === productSlug);
   const [selected, setSelected] = useState<string[]>(productSlug ? [productSlug] : []);
@@ -18,7 +19,7 @@ export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug
   const product = products.find((item) => item.slug === selected[0]);
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (sending) return;
+    if (sending || !consentAccepted) return;
     if (!selected.length || selectedCategories.some((category) => !products.some((item) => selected.includes(item.slug) && item.category === category))) {
       setError("Please select at least one product in each chosen category.");
       return;
@@ -88,10 +89,10 @@ export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug
     </fieldset>}
     {inquiry && <label className="block">Tell us about your space <span className="text-[#526356]">(optional)</span><textarea name="message" maxLength={1000} rows={4} placeholder="Preferred size, finish, quantity, or anything you would like us to know." className={`${field} resize-y leading-6`} /></label>}
     <div>
-      <label className="flex min-h-11 cursor-pointer items-start gap-3 py-2"><input required type="checkbox" name="confirm" aria-describedby="quote-privacy-notice" className="mt-1 size-4 shrink-0 accent-[#244536]" /><span>{enquiryConsentText} <span aria-hidden="true">*</span></span></label>
+      <label className="flex min-h-11 cursor-pointer items-start gap-3 py-2"><input required type="checkbox" name="confirm" checked={consentAccepted} onChange={(event) => setConsentAccepted(event.target.checked)} aria-describedby="quote-privacy-notice" className="mt-1 size-4 shrink-0 accent-[#244536]" /><span>{enquiryConsentText} <span aria-hidden="true">*</span></span></label>
       <p id="quote-privacy-notice" className="mt-1 text-xs leading-5 text-neutral-600">Read our <Link href="/privacy-policy" className="underline underline-offset-4">Privacy Policy</Link>.</p>
     </div>
     {error && <p role="alert" className="text-sm leading-6 text-[#9a2c14]">{error} Please try again, or <a href="tel:+919824177913" className="underline">call us directly</a>.</p>}
-    <button type="submit" disabled={sending} className={`min-h-12 w-full cursor-pointer border px-7 py-3 type-form-value text-white transition-colors disabled:cursor-wait disabled:opacity-70 button-primary`}>{sending ? "Sending…" : inquiry ? "Submit enquiry" : "Submit request"}</button>
+    <button type="submit" disabled={sending || !consentAccepted} className={`min-h-12 w-full cursor-pointer border px-7 py-3 type-form-value text-white transition-colors disabled:cursor-not-allowed disabled:opacity-50 button-primary`}>{sending ? "Sending…" : inquiry ? "Submit enquiry" : "Submit request"}</button>
   </form>;
 }
