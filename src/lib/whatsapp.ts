@@ -8,11 +8,17 @@ export function whatsappLink(phone: string, message = "Hi, I would like to know 
 export const whatsappUrl = whatsappLink(businessPhone);
 
 export function whatsappEnquiryLink(name: string, products: readonly { name: string; category: string }[]) {
-  const categories: Record<string, string> = { chairs: "Chair", sofas: "Sofa", tables: "Table", swings: "Swing" };
-  const items = products.map((product) => `${categories[product.category] || product.category} - ${productDisplayName(product.name)}`);
+  const categories: Record<string, string> = { chairs: "Chairs", sofas: "Sofas", tables: "Tables", swings: "Swings" };
+  const groups = new Map<string, string[]>();
+  for (const product of products) {
+    const items = groups.get(product.category) || [];
+    items.push(productDisplayName(product.name));
+    groups.set(product.category, items);
+  }
+  const sections = [...groups].map(([category, items]) => `*${categories[category] || category}*\n${items.map((item, index) => `${index + 1}. ${item}`).join("\n")}`);
   const greeting = `Hi, I am ${name.trim()}.`;
-  const message = items.length === 1
-    ? `${greeting} I would like to know more about ${items[0]}.`
-    : `${greeting} I would like to know more about the following furniture:\n${items.map((item) => `- ${item}`).join("\n")}`;
+  const message = products.length === 1
+    ? `${greeting} I would like to know more about ${productDisplayName(products[0].name)}.`
+    : `${greeting}\n\nI would like to know more about:\n\n${sections.join("\n\n")}`;
   return whatsappLink(businessPhone, message);
 }
