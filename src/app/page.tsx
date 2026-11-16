@@ -1,3 +1,4 @@
+import { MobilePicture } from "@/components/mobile-picture";
 import { assetPath } from "@/lib/site-path";
 import Image from "@/components/site-image";
 import { getImageProps } from "next/image";
@@ -18,7 +19,7 @@ export default function Home() {
 
 
     <main id="main-content" className="[--home-paragraph-gap:0.5rem] [--home-gutter:24px] min-[1100px]:[--home-gutter:7.32482vw]">
-      <link rel="preload" as="image" media="(max-width: 750px)" imageSrcSet={mobileSrcSet} imageSizes="100vw" fetchPriority="high" />
+      <link rel="preload" as="image" media="(max-width: 750px)" href={assetPath(mobileHero[0].path)} imageSrcSet={mobileSrcSet} imageSizes="100vw" fetchPriority="high" />
       <link rel="preload" as="image" media="(min-width: 751px)" href={desktopHero.src} imageSrcSet={desktopHero.srcSet} imageSizes="100vw" fetchPriority="high" />
       <section aria-labelledby="home-title" className="relative min-h-[min(780px,100svh)] bg-[#c1a081] max-[750px]:min-h-[85svh]">
         <picture><source media="(max-width: 750px)" srcSet={mobileSrcSet} sizes="100vw" type="image/avif" /><Image src={hero} alt="Cane hanging chair in a sunlit space draped with flowing white curtains" fill loading="eager" fetchPriority="high" sizes="100vw" className="object-cover object-[0%_82%] max-[750px]:object-center" /></picture>
@@ -29,7 +30,7 @@ export default function Home() {
       <div aria-hidden="true" className="h-[clamp(24px,5.09506vw,96px)] bg-[#ede7df]" />
 
       <section aria-labelledby="spaces-title" className="relative min-h-[600px] text-white min-[1000px]:min-h-[45.52557vw]">
-        <Image src={spaces} alt="A curated living space with cane furniture, woven wall art and warm lighting" fill sizes="100vw" className="object-cover object-[0%_5%]" />
+        <MobilePicture image="curated-cane-living-space"><Image src={spaces} alt="A curated living space with cane furniture, woven wall art and warm lighting" fill sizes="100vw" className="object-cover object-[0%_5%]" /></MobilePicture>
         <p className="relative mx-[var(--home-gutter)] pt-8 type-spaces-copy [text-shadow:0_1px_4px_#0009] md:pt-[3vw] min-[1100px]:ml-auto min-[1100px]:w-[min(340px,32%)]">We don&apos;t just create furniture; we craft environments. From home to offices and commercial spaces, our expertise lies in enhancing entire spaces with thoughtfully curated designs that seamlessly blend functionality and artistry, bringing your vision to life.</p>
         <h2 id="spaces-title" className="absolute bottom-[9%] left-[var(--home-gutter)] right-[var(--home-gutter)] type-spaces-title [text-shadow:0_1px_4px_#0009]">Beyond Furniture:<br />Transforming Spaces</h2>
       </section>
@@ -51,7 +52,7 @@ export default function Home() {
       <div aria-hidden="true" className="hidden h-[clamp(24px,3.08979vw,60px)] bg-white min-[1100px]:block" />
 
       <section aria-labelledby="cane-title" className="relative flex min-h-[700px] flex-col justify-between gap-12 px-[var(--home-gutter)] py-10 text-white min-[1100px]:min-h-[52.58654vw] min-[1100px]:flex-row min-[1100px]:items-end">
-        <Image src={cane} alt="Close-up of hand-wrapped cane joinery and the natural woven material" fill sizes="100vw" className="object-cover object-[0%_26%]" />
+        <div className="absolute inset-0"><MobilePicture image="handwoven-cane-joinery-detail"><Image src={cane} alt="Close-up of hand-wrapped cane joinery and the natural woven material" fill sizes="100vw" className="object-cover object-[0%_26%]" /></MobilePicture></div>
         <div className="relative w-full space-y-5 max-[1099px]:space-y-[var(--home-paragraph-gap)] type-cane-copy [text-shadow:0_1px_4px_#0009] min-[1100px]:order-2 min-[1100px]:ml-auto min-[1100px]:max-w-sm min-[1100px]:w-[30%] min-[1100px]:self-start">
           <p>Cane is the poetry of luxury, a material that bends gracefully into forms bamboo could only dream of. At Vaidehi Craft, we take this exceptional natural wonder and sculpt it into art—functional, elegant, and timeless.</p>
           <p>This isn’t just furniture; it’s an ode to artistry, an experience of exclusivity. Step beyond the ordinary and into the extraordinary.</p>
@@ -67,7 +68,7 @@ export default function Home() {
           <p>Under his leadership, the brand has grown from a local enterprise to a global symbol of excellence, known for its innovative and elegant designs. Siddharrtha&apos;s commitment to preserving heritage, uplifting artisan communities, and promoting social responsibility has made him a respected figure in art and craftsmanship.</p>
           <p>His journey exemplifies resilience, determination, and a visionary approach, transforming Vaidehi Craft into a benchmark for quality, innovation, and sustainability.</p>
         </div>
-        <Image src={founder} alt="Founder of Vaidehi Craft, Siddharrtha Shahh" sizes="(max-width: 900px) 90vw, 38vw" className="mx-auto h-auto w-full max-w-[540px]" />
+        <MobilePicture image="siddharrtha-shahh-vaidehi-craft-founder"><Image src={founder} alt="Founder of Vaidehi Craft, Siddharrtha Shahh" sizes="(max-width: 900px) 90vw, 38vw" className="mx-auto h-auto w-full max-w-[540px]" /></MobilePicture>
       </section>
     </main>
     <SiteFooter />

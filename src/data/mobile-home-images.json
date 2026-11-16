@@ -1,0 +1,64 @@
+{
+  "cane-rocking-chair-living-room": [
+    {
+      "width": 480,
+      "path": "/images/cane-rocking-chair-living-room-mobile-480-ae29f81111.avif",
+      "bytes": 20323
+    },
+    {
+      "width": 655,
+      "path": "/images/cane-rocking-chair-living-room-mobile-655-6bbf29d02c.avif",
+      "bytes": 33144
+    }
+  ],
+  "blue-cushion-cane-sofa-set": [
+    {
+      "width": 480,
+      "path": "/images/blue-cushion-cane-sofa-set-mobile-480-06b98d4c01.avif",
+      "bytes": 8006
+    },
+    {
+      "width": 768,
+      "path": "/images/blue-cushion-cane-sofa-set-mobile-768-d5c250a4d3.avif",
+      "bytes": 16157
+    }
+  ],
+  "freestanding-cane-swing": [
+    {
+      "width": 480,
+      "path": "/images/freestanding-cane-swing-mobile-480-7c03b6f202.avif",
+      "bytes": 16639
+    },
+    {
+      "width": 658,
+      "path": "/images/freestanding-cane-swing-mobile-658-2cf3266e20.avif",
+      "bytes": 27606
+    }
+  ],
+  "curated-cane-living-space": [
+    {
+      "width": 2850,
+      "path": "/images/curated-cane-living-space-mobile-2850-e5dfaa3f75.avif",
+      "bytes": 127530
+    }
+  ],
+  "handwoven-cane-joinery-detail": [
+    {
+      "width": 2850,
+      "path": "/images/handwoven-cane-joinery-detail-mobile-2850-fb2141234b.avif",
+      "bytes": 74578
+    }
+  ],
+  "siddharrtha-shahh-vaidehi-craft-founder": [
+    {
+      "width": 480,
+      "path": "/images/siddharrtha-shahh-vaidehi-craft-founder-mobile-480-d27c58f1fe.avif",
+      "bytes": 8515
+    },
+    {
+      "width": 754,
+      "path": "/images/siddharrtha-shahh-vaidehi-craft-founder-mobile-754-779affacde.avif",
+      "bytes": 15617
+    }
+  ]
+}
