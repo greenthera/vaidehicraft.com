@@ -15,7 +15,14 @@ const description = "Discover handcrafted cane chairs, sofas, swings and tables 
 
 export const metadata: Metadata = {
   ...pageMetadata("Designer & Luxury Cane Furniture", description, "/"),
-  icons: { icon: assetPath("/images/vaidehi-craft-app-icon.png"), apple: assetPath("/images/vaidehi-craft-app-icon.png") },
+  icons: {
+    icon: [
+      { url: assetPath("/images/vaidehi-craft-favicon.png"), type: "image/png", sizes: "32x32" },
+      { url: assetPath("/images/vaidehi-craft-app-icon.png"), type: "image/png", sizes: "192x192" },
+    ],
+    shortcut: assetPath("/images/vaidehi-craft-favicon.png"),
+    apple: { url: assetPath("/images/vaidehi-craft-apple-touch-icon.png"), type: "image/png", sizes: "180x180" },
+  },
   metadataBase: new URL(metadataOrigin),
   robots: { index: Boolean(siteUrl), follow: Boolean(siteUrl) },
 };
