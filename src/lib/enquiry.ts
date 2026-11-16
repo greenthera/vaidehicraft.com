@@ -23,20 +23,21 @@ function text(value: unknown, maxLength: number) {
 }
 
 export function buildEnquiry(body: Record<string, unknown>, origin: string): { fields: URLSearchParams } | { error: string } {
+  const sourcePath = typeof body.path === "string" ? body.path : "";
+  const path = (basePath && sourcePath.startsWith(`${basePath}/`) ? sourcePath.slice(basePath.length) : sourcePath).replace(/\/$/, "").replace(/^\/request-quote(?=\/|$)/, "/make-an-inquiry");
+  const generalQuote = path === "/make-an-inquiry";
   // Keep accepting single-product requests from previously loaded pages.
-  const slugs: unknown = body.products ?? (typeof body.product === "string" ? [body.product] : undefined);
-  if (!Array.isArray(slugs) || !slugs.length || slugs.length > products.length || slugs.some((slug) => typeof slug !== "string")) return { error: "Please select a design." };
+  const slugs: unknown = body.products ?? (typeof body.product === "string" ? [body.product] : generalQuote ? [] : undefined);
+  if (!Array.isArray(slugs) || (!generalQuote && !slugs.length) || slugs.length > products.length || slugs.some((slug) => typeof slug !== "string")) return { error: "Please select a design." };
   const selected = [...new Set(slugs as string[])].map((slug) => products.find((item) => item.slug === slug));
   if (selected.some((item) => !item)) return { error: "Please select valid designs." };
   const chosen = selected.filter((item): item is typeof products[number] => Boolean(item));
-  const chosenCategories = productCategories.filter((category) => chosen.some((item) => item.category === category.value));
-  if (body.categories !== undefined && (!Array.isArray(body.categories) || body.categories.length !== chosenCategories.length || !chosenCategories.every((category) => (body.categories as unknown[]).includes(category.value)))) return { error: "Please select at least one product in each chosen category." };
-
-  const sourcePath = typeof body.path === "string" ? body.path : "";
-  const path = (basePath && sourcePath.startsWith(`${basePath}/`) ? sourcePath.slice(basePath.length) : sourcePath).replace(/\/$/, "").replace(/^\/request-quote(?=\/|$)/, "/make-an-inquiry");
+  const requestedCategories = body.categories ?? [...new Set(chosen.map((item) => item.category))];
+  if (!Array.isArray(requestedCategories) || requestedCategories.length > productCategories.length || new Set(requestedCategories).size !== requestedCategories.length || requestedCategories.some((value) => !productCategories.some((category) => category.value === value))) return { error: "Please select valid categories." };
+  if (chosen.some((item) => !requestedCategories.includes(item.category))) return { error: "Please select the matching category for each product." };
+  const chosenCategories = productCategories.filter((category) => requestedCategories.includes(category.value));
   if (path !== "/make-an-inquiry" && (chosen.length !== 1 || path !== chosen[0].quotePath)) return { error: "This request could not be accepted." };
-
-  const generalQuote = path === "/make-an-inquiry";
+  if (!generalQuote && chosenCategories.length !== 1) return { error: "Please select the matching product category." };
   if (body.contactConsent !== true) return { error: "Please confirm your consent to marketing contact and calls." };
 
   const name = text(body.name, 120);
