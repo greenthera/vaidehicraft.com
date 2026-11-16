@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { productDisplayName } from "@/lib/product-display-name";
-import { whatsappUrl } from "@/lib/whatsapp";
+import { whatsappEnquiryLink } from "@/lib/whatsapp";
 import { useState } from "react";
 import products from "@/data/product-index.json";
 import { buildEnquiry, formResponseUrl, enquiryConsentText } from "@/lib/enquiry";
@@ -29,6 +29,7 @@ export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug
     setError("");
     try {
       const payload = { name: data.get("name"), email: data.get("email"), phone: data.get("phone"), message: data.get("message"), website: data.get("website"), contactConsent: data.get("confirm") === "on", products: selected, categories: selectedCategories, path: window.location.pathname };
+      const whatsappUrl = whatsappEnquiryLink(String(payload.name || ""), products.filter((item) => selected.includes(item.slug)));
       if (process.env.NEXT_PUBLIC_ENQUIRY_DIRECT === "true") {
         // GitHub Pages has no server, so the browser posts to Google. Google hides its reply from
         // cross-site pages: this catches validation and network failures, not a closed form.
