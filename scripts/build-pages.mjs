@@ -4,6 +4,8 @@ import { spawnSync } from 'node:child_process';
 
 // Build in an isolated copy: keep the API route and the Vercel build untouched.
 const root = process.cwd();
+const images = spawnSync(process.execPath, [path.join(root, "scripts/build-responsive-products.mjs")], { cwd: root, stdio: "inherit" });
+if (images.status !== 0) throw new Error("Responsive image generation failed. Nothing was published.");
 const stage = path.join(root, '.pages-build');
 const output = path.join(root, 'out');
 const basePath = process.env.PAGES_BASE_PATH ?? '/vaidehicraft.com';

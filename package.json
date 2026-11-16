@@ -12,7 +12,9 @@
     "build:pages": "node scripts/build-pages.mjs",
     "predeploy": "npm run build:pages && npm run verify:pages",
     "deploy": "gh-pages -d out -r https://github.com/greenthera/vaidehicraft.com.git -b gh-pages --dotfiles",
-    "verify:pages": "node scripts/verify-pages.mjs"
+    "verify:pages": "node scripts/verify-pages.mjs",
+    "predev": "node scripts/build-responsive-products.mjs",
+    "prebuild": "node scripts/build-responsive-products.mjs"
   },
   "dependencies": {
     "next": "16.4.4",

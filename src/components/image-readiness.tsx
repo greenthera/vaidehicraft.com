@@ -20,8 +20,7 @@ export function ImageReadiness() {
     const queue: HTMLImageElement[] = [];
     const pending = new Set<HTMLImageElement>();
     const targets = new Map<Element, HTMLImageElement[]>();
-    const limit = window.matchMedia("(max-width: 750px)").matches ? 1 : 2;
-    const hero = document.querySelector<HTMLImageElement>('main img[fetchpriority="high"], main img[loading="eager"]');
+    const limit = 2;
 
     function drain() {
       if (disposed) return;
@@ -72,7 +71,7 @@ export function ImageReadiness() {
           observer?.unobserve(entry.target);
         }
         drain();
-      }, { rootMargin: "1600px 0px" });
+      }, { rootMargin: "2400px 0px" });
       for (const target of targets.keys()) observer.observe(target);
     }
 
@@ -86,18 +85,14 @@ export function ImageReadiness() {
       if (started || window.scrollY < 1) return;
       started = true;
       window.removeEventListener("scroll", start);
-      if (hero && !hero.complete) {
-        hero.addEventListener("load", afterPaint, { once: true });
-        hero.addEventListener("error", afterPaint, { once: true });
-      } else afterPaint();
+      // A user scrolling past a slow hero should not wait for it to finish.
+      afterPaint();
     }
     window.addEventListener("scroll", start, { passive: true });
     start();
     return () => {
       disposed = true;
       window.removeEventListener("scroll", start);
-      hero?.removeEventListener("load", afterPaint);
-      hero?.removeEventListener("error", afterPaint);
       if (frame !== undefined) window.cancelAnimationFrame(frame);
       if (secondFrame !== undefined) window.cancelAnimationFrame(secondFrame);
       observer?.disconnect();

@@ -12,6 +12,14 @@ for (const route of routes) {
   assert(fs.existsSync(file), `Missing static page: ${route}`);
   const html = fs.readFileSync(file, 'utf8');
   assert.match(html, /<h1[\s>]/, `Missing visible page content: ${route}`);
+  for (const match of html.matchAll(/(?:srcset|imagesrcset)="([^"]+)"/gi)) {
+    for (const candidate of match[1].split(',')) {
+      const asset = candidate.trim().split(/\s+/)[0];
+      if (!asset.startsWith('/') || asset.startsWith('//')) continue;
+      assert(asset.startsWith(`${base}/`), `Unprefixed responsive asset ${asset} in ${route}`);
+      assert(fs.existsSync(path.join('out', decodeURIComponent(asset.slice(base.length)))), `Missing responsive asset ${asset}`);
+    }
+  }
   for (const match of html.matchAll(/(?:src|poster)="(\/(?!\/)[^"?]+)(?:\?[^"\s]*)?"/g)) {
     const asset = match[1];
     assert(asset.startsWith(`${base}/`), `Unprefixed asset ${asset} in ${route}`);

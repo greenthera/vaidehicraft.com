@@ -43,3 +43,6 @@ next-env.d.ts
 
 # isolated GitHub Pages build
 /.pages-build/
+
+# Rebuilt automatically from the original product photos
+/public/images/products/responsive/
