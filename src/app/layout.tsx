@@ -5,6 +5,7 @@ import "vanilla-cookieconsent/dist/cookieconsent.css";
 import "./globals.css";
 import { CookieConsentBanner } from "@/components/cookie-consent";
 import { SiteHeader } from "@/components/site-header";
+import { ImageReadiness } from "@/components/image-readiness";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { FloatingWhatsApp } from "@/components/floating-whatsapp";
 import { siteOrigin, metadataOrigin, pageMetadata, serializeJsonLd } from "@/lib/seo";
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a href="#main-content" className="sr-only z-[60] bg-white p-4 focus:not-sr-only focus:fixed">Skip to content</a>
         <SiteHeader />
         {children}
+        <ImageReadiness />
         <FloatingWhatsApp />
         <CookieConsentBanner />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />
