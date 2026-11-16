@@ -68,7 +68,7 @@ export default function Home() {
           <p>Under his leadership, the brand has grown from a local enterprise to a global symbol of excellence, known for its innovative and elegant designs. Siddharrtha&apos;s commitment to preserving heritage, uplifting artisan communities, and promoting social responsibility has made him a respected figure in art and craftsmanship.</p>
           <p>His journey exemplifies resilience, determination, and a visionary approach, transforming Vaidehi Craft into a benchmark for quality, innovation, and sustainability.</p>
         </div>
-        <MobilePicture image="siddharrtha-shahh-vaidehi-craft-founder"><Image src={founder} alt="Founder of Vaidehi Craft, Siddharrtha Shahh" sizes="(max-width: 900px) 90vw, 38vw" className="mx-auto h-auto w-full max-w-[540px]" /></MobilePicture>
+        <div className="min-w-0"><MobilePicture image="siddharrtha-shahh-vaidehi-craft-founder"><Image src={founder} alt="Founder of Vaidehi Craft, Siddharrtha Shahh" sizes="(max-width: 900px) 90vw, 38vw" className="mx-auto h-auto w-full max-w-[540px]" /></MobilePicture></div>
       </section>
     </main>
     <SiteFooter />
