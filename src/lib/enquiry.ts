@@ -33,10 +33,10 @@ export function buildEnquiry(body: Record<string, unknown>, origin: string): { f
   if (body.categories !== undefined && (!Array.isArray(body.categories) || body.categories.length !== chosenCategories.length || !chosenCategories.every((category) => (body.categories as unknown[]).includes(category.value)))) return { error: "Please select at least one product in each chosen category." };
 
   const sourcePath = typeof body.path === "string" ? body.path : "";
-  const path = (basePath && sourcePath.startsWith(`${basePath}/`) ? sourcePath.slice(basePath.length) : sourcePath).replace(/\/$/, "");
-  if (path !== "/request-quote" && (chosen.length !== 1 || path !== chosen[0].quotePath)) return { error: "This request could not be accepted." };
+  const path = (basePath && sourcePath.startsWith(`${basePath}/`) ? sourcePath.slice(basePath.length) : sourcePath).replace(/\/$/, "").replace(/^\/request-quote(?=\/|$)/, "/make-an-inquiry");
+  if (path !== "/make-an-inquiry" && (chosen.length !== 1 || path !== chosen[0].quotePath)) return { error: "This request could not be accepted." };
 
-  const generalQuote = path === "/request-quote";
+  const generalQuote = path === "/make-an-inquiry";
   if (body.contactConsent !== true) return { error: "Please confirm your consent to marketing contact and calls." };
 
   const name = text(body.name, 120);

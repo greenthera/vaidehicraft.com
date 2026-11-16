@@ -6,7 +6,7 @@ import { QuoteForm } from "@/components/quote-form";
 import { pageMetadata } from "@/lib/seo";
 import sofa from "../../../public/images/blue-cushion-cane-sofa-set.avif";
 
-export const metadata = pageMetadata("Request a Quote", "Choose handcrafted cane furniture by Vaidehi Craft and request a tailored quote. Share your preferred design, finish and requirements with our team.", "/request-quote", undefined, false);
+export const metadata = pageMetadata("Make an inquiry", "Explore handcrafted cane furniture by Vaidehi Craft and make an inquiry. Share your preferred design, finish and requirements with our team.", "/make-an-inquiry", undefined, false);
 
 const steps = [
   { title: "Choose your design", text: "Select one or more collections and the furniture you have in mind." },
@@ -17,10 +17,10 @@ const steps = [
 export default function QuotePage() {
   return <InnerPage>
     <div className="mx-auto max-w-[1600px] px-6 pb-10 pt-6 min-[1100px]:px-[7.32482vw] min-[1100px]:pb-16">
-      <Breadcrumbs items={[{ name: "Request a quote" }]} />
-      <PageHeading eyebrow="Made for your space" title="Request a quote" description="Choose your designs and share what you have in mind. We'll discuss the details with you to help find the right piece for your space." />
+      <Breadcrumbs items={[{ name: "Make an inquiry" }]} />
+      <PageHeading eyebrow="Made for your space" title="Make an inquiry" description="Choose your designs and share what you have in mind. We'll discuss the details with you to help find the right piece for your space." />
       <div className="grid items-start gap-8 min-[1000px]:grid-cols-[0.9fr_1.1fr] min-[1000px]:gap-12">
-        <section aria-label="Quote enquiry form" className="min-w-0 rounded-none border border-[#d3c5af] bg-[#f7f4ee] p-5 min-[640px]:p-8 min-[1000px]:col-start-2 min-[1000px]:row-start-1">
+        <section aria-label="Inquiry form" className="min-w-0 rounded-none border border-[#d3c5af] bg-[#f7f4ee] p-5 min-[640px]:p-8 min-[1000px]:col-start-2 min-[1000px]:row-start-1">
           <QuoteForm appearance="inquiry" />
         </section>
         <aside aria-labelledby="quote-guide-title" className="min-w-0 min-[1000px]:col-start-1 min-[1000px]:row-start-1">

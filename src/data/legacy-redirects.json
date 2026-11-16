@@ -6,7 +6,7 @@
   },
   {
     "source": "/chair-1/arches/request-quote",
-    "destination": "/request-quote/arches-cane-chair",
+    "destination": "/make-an-inquiry/arches-cane-chair",
     "permanent": true
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "source": "/chair-1/aspire/request-quote",
-    "destination": "/request-quote/aspire-cane-chair",
+    "destination": "/make-an-inquiry/aspire-cane-chair",
     "permanent": true
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "source": "/chair-1/barcelona/request-quote",
-    "destination": "/request-quote/barcelona-cane-chair",
+    "destination": "/make-an-inquiry/barcelona-cane-chair",
     "permanent": true
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "source": "/chair-1/byron/request-quote",
-    "destination": "/request-quote/byron-cane-chair",
+    "destination": "/make-an-inquiry/byron-cane-chair",
     "permanent": true
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "source": "/chair-1/canary/request-quote",
-    "destination": "/request-quote/canary-cane-chair",
+    "destination": "/make-an-inquiry/canary-cane-chair",
     "permanent": true
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "source": "/chair-1/caprio/request-quote",
-    "destination": "/request-quote/caprio-cane-chair",
+    "destination": "/make-an-inquiry/caprio-cane-chair",
     "permanent": true
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "source": "/chair-1/emperor-roking/request-quote",
-    "destination": "/request-quote/emperor-rocking-cane-chair",
+    "destination": "/make-an-inquiry/emperor-rocking-cane-chair",
     "permanent": true
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "source": "/chair-1/malaga/request-quote",
-    "destination": "/request-quote/malaga-cane-chair",
+    "destination": "/make-an-inquiry/malaga-cane-chair",
     "permanent": true
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "source": "/chair-1/sunflower/request-quote",
-    "destination": "/request-quote/sunflower-cane-chair",
+    "destination": "/make-an-inquiry/sunflower-cane-chair",
     "permanent": true
   },
   {
@@ -96,7 +96,7 @@
   },
   {
     "source": "/chair-2/malaga/request-quote",
-    "destination": "/request-quote/malaga-cane-chair",
+    "destination": "/make-an-inquiry/malaga-cane-chair",
     "permanent": true
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "source": "/chair-3/hawaii/request-quote",
-    "destination": "/request-quote/hawaii-cane-chair",
+    "destination": "/make-an-inquiry/hawaii-cane-chair",
     "permanent": true
   },
   {
@@ -121,7 +121,7 @@
   },
   {
     "source": "/sofa-1/alpha/request-quote",
-    "destination": "/request-quote/alpha-cane-sofa",
+    "destination": "/make-an-inquiry/alpha-cane-sofa",
     "permanent": true
   },
   {
@@ -131,7 +131,7 @@
   },
   {
     "source": "/sofa-1/arches/request-quote",
-    "destination": "/request-quote/arches-cane-sofa",
+    "destination": "/make-an-inquiry/arches-cane-sofa",
     "permanent": true
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "source": "/sofa-1/caprio/request-quote",
-    "destination": "/request-quote/caprio-cane-sofa",
+    "destination": "/make-an-inquiry/caprio-cane-sofa",
     "permanent": true
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "source": "/sofa-1/clair/request-quote",
-    "destination": "/request-quote/claire-cane-sofa",
+    "destination": "/make-an-inquiry/claire-cane-sofa",
     "permanent": true
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "source": "/sofa-1/kingstorn/request-quote",
-    "destination": "/request-quote/kingston-cane-sofa",
+    "destination": "/make-an-inquiry/kingston-cane-sofa",
     "permanent": true
   },
   {
@@ -171,7 +171,7 @@
   },
   {
     "source": "/sofa-2/andros/request-quote",
-    "destination": "/request-quote/andros-cane-sofa",
+    "destination": "/make-an-inquiry/andros-cane-sofa",
     "permanent": true
   },
   {
@@ -181,7 +181,7 @@
   },
   {
     "source": "/sofa-2/aspire/request-quote",
-    "destination": "/request-quote/aspire-cane-sofa",
+    "destination": "/make-an-inquiry/aspire-cane-sofa",
     "permanent": true
   },
   {
@@ -191,7 +191,7 @@
   },
   {
     "source": "/sofa-2/canary/request-quote",
-    "destination": "/request-quote/canary-cane-sofa",
+    "destination": "/make-an-inquiry/canary-cane-sofa",
     "permanent": true
   },
   {
@@ -201,7 +201,7 @@
   },
   {
     "source": "/sofa-2/filitheyo/request-quote",
-    "destination": "/request-quote/filitheyo-cane-sofa",
+    "destination": "/make-an-inquiry/filitheyo-cane-sofa",
     "permanent": true
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "source": "/sofa-2/hawaii/request-quote",
-    "destination": "/request-quote/hawaii-cane-sofa",
+    "destination": "/make-an-inquiry/hawaii-cane-sofa",
     "permanent": true
   },
   {
@@ -221,7 +221,7 @@
   },
   {
     "source": "/sofa-2/ibizza/request-quote",
-    "destination": "/request-quote/ibiza-cane-sofa",
+    "destination": "/make-an-inquiry/ibiza-cane-sofa",
     "permanent": true
   },
   {
@@ -231,7 +231,7 @@
   },
   {
     "source": "/sofa-2/leica/request-quote",
-    "destination": "/request-quote/leica-cane-sofa",
+    "destination": "/make-an-inquiry/leica-cane-sofa",
     "permanent": true
   },
   {
@@ -241,7 +241,7 @@
   },
   {
     "source": "/sofa-2/malaga/request-quote",
-    "destination": "/request-quote/malaga-cane-sofa",
+    "destination": "/make-an-inquiry/malaga-cane-sofa",
     "permanent": true
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "source": "/sofa-2/milose/request-quote",
-    "destination": "/request-quote/mileos-cane-sofa",
+    "destination": "/make-an-inquiry/mileos-cane-sofa",
     "permanent": true
   },
   {
@@ -261,7 +261,7 @@
   },
   {
     "source": "/sofa-2/pythos/request-quote",
-    "destination": "/request-quote/pythos-cane-sofa",
+    "destination": "/make-an-inquiry/pythos-cane-sofa",
     "permanent": true
   },
   {
@@ -271,7 +271,7 @@
   },
   {
     "source": "/sofa-2/tahiti-low-seating/request-quote",
-    "destination": "/request-quote/tahiti-low-seating-cane-sofa",
+    "destination": "/make-an-inquiry/tahiti-low-seating-cane-sofa",
     "permanent": true
   },
   {
@@ -281,7 +281,7 @@
   },
   {
     "source": "/sofa-3/filitheyo/request-quote",
-    "destination": "/request-quote/filitheyo-cane-sofa",
+    "destination": "/make-an-inquiry/filitheyo-cane-sofa",
     "permanent": true
   },
   {
@@ -296,7 +296,7 @@
   },
   {
     "source": "/swing-1/andros/request-quote",
-    "destination": "/request-quote/andros-cane-swing",
+    "destination": "/make-an-inquiry/andros-cane-swing",
     "permanent": true
   },
   {
@@ -306,7 +306,7 @@
   },
   {
     "source": "/swing-1/arches/request-quote",
-    "destination": "/request-quote/arches-cane-swing",
+    "destination": "/make-an-inquiry/arches-cane-swing",
     "permanent": true
   },
   {
@@ -316,7 +316,7 @@
   },
   {
     "source": "/swing-1/bora-bora/request-quote",
-    "destination": "/request-quote/bora-bora-double-seater-cane-swing",
+    "destination": "/make-an-inquiry/bora-bora-double-seater-cane-swing",
     "permanent": true
   },
   {
@@ -326,7 +326,7 @@
   },
   {
     "source": "/swing-1/claire/request-quote",
-    "destination": "/request-quote/claire-cane-swing",
+    "destination": "/make-an-inquiry/claire-cane-swing",
     "permanent": true
   },
   {
@@ -336,7 +336,7 @@
   },
   {
     "source": "/swing-1/filitheyo/request-quote",
-    "destination": "/request-quote/filitheyo-hanging-cane-swing",
+    "destination": "/make-an-inquiry/filitheyo-hanging-cane-swing",
     "permanent": true
   },
   {
@@ -346,7 +346,7 @@
   },
   {
     "source": "/swing-1/fiscus/request-quote",
-    "destination": "/request-quote/fiscus-cane-swing",
+    "destination": "/make-an-inquiry/fiscus-cane-swing",
     "permanent": true
   },
   {
@@ -356,7 +356,7 @@
   },
   {
     "source": "/swing-1/hawaii/request-quote",
-    "destination": "/request-quote/hawaii-cane-swing",
+    "destination": "/make-an-inquiry/hawaii-cane-swing",
     "permanent": true
   },
   {
@@ -366,7 +366,7 @@
   },
   {
     "source": "/swing-1/leica/request-quote",
-    "destination": "/request-quote/leica-cane-swing",
+    "destination": "/make-an-inquiry/leica-cane-swing",
     "permanent": true
   },
   {
@@ -376,7 +376,7 @@
   },
   {
     "source": "/swing-1/marcos/request-quote",
-    "destination": "/request-quote/marcos-cane-swing",
+    "destination": "/make-an-inquiry/marcos-cane-swing",
     "permanent": true
   },
   {
@@ -386,7 +386,7 @@
   },
   {
     "source": "/swing-1/petra/request-quote",
-    "destination": "/request-quote/petra-double-seater-cane-swing",
+    "destination": "/make-an-inquiry/petra-double-seater-cane-swing",
     "permanent": true
   },
   {
@@ -396,7 +396,7 @@
   },
   {
     "source": "/swing-1/streak/request-quote",
-    "destination": "/request-quote/streak-double-seater-cane-swing",
+    "destination": "/make-an-inquiry/streak-double-seater-cane-swing",
     "permanent": true
   },
   {
@@ -406,7 +406,7 @@
   },
   {
     "source": "/swing-1/tahiti/request-quote",
-    "destination": "/request-quote/tahiti-cane-swing",
+    "destination": "/make-an-inquiry/tahiti-cane-swing",
     "permanent": true
   },
   {
@@ -416,7 +416,7 @@
   },
   {
     "source": "/swing-2/bora-bora/request-quote",
-    "destination": "/request-quote/bora-bora-single-seater-cane-swing",
+    "destination": "/make-an-inquiry/bora-bora-single-seater-cane-swing",
     "permanent": true
   },
   {
@@ -426,7 +426,7 @@
   },
   {
     "source": "/swing-2/caprio/request-quote",
-    "destination": "/request-quote/caprio-cane-swing",
+    "destination": "/make-an-inquiry/caprio-cane-swing",
     "permanent": true
   },
   {
@@ -436,7 +436,7 @@
   },
   {
     "source": "/swing-2/malta/request-quote",
-    "destination": "/request-quote/malta-cane-swing",
+    "destination": "/make-an-inquiry/malta-cane-swing",
     "permanent": true
   },
   {
@@ -446,7 +446,7 @@
   },
   {
     "source": "/swing-2/malta-grand/request-quote",
-    "destination": "/request-quote/malta-grand-cane-swing",
+    "destination": "/make-an-inquiry/malta-grand-cane-swing",
     "permanent": true
   },
   {
@@ -456,7 +456,7 @@
   },
   {
     "source": "/swing-2/malta-outdoor/request-quote",
-    "destination": "/request-quote/malta-outdoor-cane-swing",
+    "destination": "/make-an-inquiry/malta-outdoor-cane-swing",
     "permanent": true
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "source": "/swing-2/nebula/request-quote",
-    "destination": "/request-quote/nebula-cane-swing",
+    "destination": "/make-an-inquiry/nebula-cane-swing",
     "permanent": true
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "source": "/swing-2/oland/request-quote",
-    "destination": "/request-quote/oland-cane-swing",
+    "destination": "/make-an-inquiry/oland-cane-swing",
     "permanent": true
   },
   {
@@ -486,7 +486,7 @@
   },
   {
     "source": "/swing-2/petra/request-quote",
-    "destination": "/request-quote/petra-compact-cane-swing",
+    "destination": "/make-an-inquiry/petra-compact-cane-swing",
     "permanent": true
   },
   {
@@ -496,7 +496,7 @@
   },
   {
     "source": "/swing-2/streak/request-quote",
-    "destination": "/request-quote/streak-compact-cane-swing",
+    "destination": "/make-an-inquiry/streak-compact-cane-swing",
     "permanent": true
   },
   {
@@ -506,7 +506,7 @@
   },
   {
     "source": "/swing-3/adron-g/request-quote",
-    "destination": "/request-quote/adron-g-cane-swing",
+    "destination": "/make-an-inquiry/adron-g-cane-swing",
     "permanent": true
   },
   {
@@ -516,7 +516,7 @@
   },
   {
     "source": "/swing-3/andros-f/request-quote",
-    "destination": "/request-quote/andros-f-cane-swing",
+    "destination": "/make-an-inquiry/andros-f-cane-swing",
     "permanent": true
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "source": "/swing-3/andros-w/request-quote",
-    "destination": "/request-quote/andros-w-cane-swing",
+    "destination": "/make-an-inquiry/andros-w-cane-swing",
     "permanent": true
   },
   {
@@ -536,7 +536,7 @@
   },
   {
     "source": "/swing-3/athens-stand/request-quote",
-    "destination": "/request-quote/athens-stand-cane-swing",
+    "destination": "/make-an-inquiry/athens-stand-cane-swing",
     "permanent": true
   },
   {
@@ -546,7 +546,7 @@
   },
   {
     "source": "/swing-3/axor-with-roof/request-quote",
-    "destination": "/request-quote/axor-with-roof-cane-swing",
+    "destination": "/make-an-inquiry/axor-with-roof-cane-swing",
     "permanent": true
   },
   {
@@ -556,7 +556,7 @@
   },
   {
     "source": "/swing-3/filitheyo/request-quote",
-    "destination": "/request-quote/filitheyo-with-stand-cane-swing",
+    "destination": "/make-an-inquiry/filitheyo-with-stand-cane-swing",
     "permanent": true
   },
   {
@@ -566,7 +566,7 @@
   },
   {
     "source": "/swing-3/filitheyo-whit-roof/request-quote",
-    "destination": "/request-quote/filitheyo-with-roof-cane-swing",
+    "destination": "/make-an-inquiry/filitheyo-with-roof-cane-swing",
     "permanent": true
   },
   {
@@ -576,7 +576,7 @@
   },
   {
     "source": "/swing-3/malaga-with-roof/request-quote",
-    "destination": "/request-quote/malaga-with-roof-cane-swing",
+    "destination": "/make-an-inquiry/malaga-with-roof-cane-swing",
     "permanent": true
   },
   {
@@ -586,7 +586,7 @@
   },
   {
     "source": "/swing-3/tahiti-stand/request-quote",
-    "destination": "/request-quote/tahiti-stand-cane-swing",
+    "destination": "/make-an-inquiry/tahiti-stand-cane-swing",
     "permanent": true
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "source": "/swing-4/oldan/request-quote",
-    "destination": "/request-quote/oldan-cane-swing",
+    "destination": "/make-an-inquiry/oldan-cane-swing",
     "permanent": true
   },
   {
@@ -611,7 +611,7 @@
   },
   {
     "source": "/table-1/alpha/request-quote",
-    "destination": "/request-quote/alpha-cane-table",
+    "destination": "/make-an-inquiry/alpha-cane-table",
     "permanent": true
   },
   {
@@ -621,7 +621,7 @@
   },
   {
     "source": "/table-1/andros/request-quote",
-    "destination": "/request-quote/andros-cane-table",
+    "destination": "/make-an-inquiry/andros-cane-table",
     "permanent": true
   },
   {
@@ -631,7 +631,7 @@
   },
   {
     "source": "/table-1/arches/request-quote",
-    "destination": "/request-quote/arches-cane-table",
+    "destination": "/make-an-inquiry/arches-cane-table",
     "permanent": true
   },
   {
@@ -641,7 +641,7 @@
   },
   {
     "source": "/table-1/claire/request-quote",
-    "destination": "/request-quote/claire-cane-table",
+    "destination": "/make-an-inquiry/claire-cane-table",
     "permanent": true
   },
   {
@@ -651,7 +651,7 @@
   },
   {
     "source": "/table-1/filitheyo/request-quote",
-    "destination": "/request-quote/filitheyo-cane-table",
+    "destination": "/make-an-inquiry/filitheyo-cane-table",
     "permanent": true
   },
   {
@@ -661,7 +661,7 @@
   },
   {
     "source": "/table-1/mileos/request-quote",
-    "destination": "/request-quote/mileos-cane-table",
+    "destination": "/make-an-inquiry/mileos-cane-table",
     "permanent": true
   },
   {
@@ -671,7 +671,7 @@
   },
   {
     "source": "/table-1/sunflower-olive/request-quote",
-    "destination": "/request-quote/sunflower-olive-cane-table",
+    "destination": "/make-an-inquiry/sunflower-olive-cane-table",
     "permanent": true
   },
   {
@@ -681,7 +681,7 @@
   },
   {
     "source": "/table-1/sunflower-yellow/request-quote",
-    "destination": "/request-quote/sunflower-yellow-cane-table",
+    "destination": "/make-an-inquiry/sunflower-yellow-cane-table",
     "permanent": true
   },
   {
@@ -691,7 +691,7 @@
   },
   {
     "source": "/table-1/tahiti/request-quote",
-    "destination": "/request-quote/tahiti-cane-table",
+    "destination": "/make-an-inquiry/tahiti-cane-table",
     "permanent": true
   },
   {
@@ -701,7 +701,7 @@
   },
   {
     "source": "/table-2/aspire/request-quote",
-    "destination": "/request-quote/aspire-cane-table",
+    "destination": "/make-an-inquiry/aspire-cane-table",
     "permanent": true
   },
   {
@@ -711,7 +711,7 @@
   },
   {
     "source": "/table-2/byrons/request-quote",
-    "destination": "/request-quote/byron-cane-table",
+    "destination": "/make-an-inquiry/byron-cane-table",
     "permanent": true
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "source": "/table-2/canary/request-quote",
-    "destination": "/request-quote/canary-cane-table",
+    "destination": "/make-an-inquiry/canary-cane-table",
     "permanent": true
   },
   {
@@ -731,7 +731,7 @@
   },
   {
     "source": "/table-2/caprio/request-quote",
-    "destination": "/request-quote/caprio-cane-table",
+    "destination": "/make-an-inquiry/caprio-cane-table",
     "permanent": true
   },
   {
@@ -741,7 +741,7 @@
   },
   {
     "source": "/table-2/hawaii/request-quote",
-    "destination": "/request-quote/hawaii-cane-table",
+    "destination": "/make-an-inquiry/hawaii-cane-table",
     "permanent": true
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "source": "/table-2/ibizaa/request-quote",
-    "destination": "/request-quote/ibiza-cane-table",
+    "destination": "/make-an-inquiry/ibiza-cane-table",
     "permanent": true
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "source": "/table-2/luxor/request-quote",
-    "destination": "/request-quote/luxor-cane-table",
+    "destination": "/make-an-inquiry/luxor-cane-table",
     "permanent": true
   },
   {
@@ -771,7 +771,7 @@
   },
   {
     "source": "/table-2/malaga/request-quote",
-    "destination": "/request-quote/malaga-cane-table",
+    "destination": "/make-an-inquiry/malaga-cane-table",
     "permanent": true
   },
   {
@@ -781,7 +781,7 @@
   },
   {
     "source": "/table-2/malaga-reactngle/request-quote",
-    "destination": "/request-quote/malaga-rectangle-cane-table",
+    "destination": "/make-an-inquiry/malaga-rectangle-cane-table",
     "permanent": true
   },
   {
@@ -791,7 +791,7 @@
   },
   {
     "source": "/table-2/malaga-round/request-quote",
-    "destination": "/request-quote/malaga-round-cane-table",
+    "destination": "/make-an-inquiry/malaga-round-cane-table",
     "permanent": true
   },
   {
@@ -801,7 +801,7 @@
   },
   {
     "source": "/table-2/minorca/request-quote",
-    "destination": "/request-quote/minorca-cane-table",
+    "destination": "/make-an-inquiry/minorca-cane-table",
     "permanent": true
   },
   {
@@ -811,7 +811,7 @@
   },
   {
     "source": "/table-2/nebula/request-quote",
-    "destination": "/request-quote/nebula-cane-table",
+    "destination": "/make-an-inquiry/nebula-cane-table",
     "permanent": true
   },
   {
@@ -821,7 +821,7 @@
   },
   {
     "source": "/table-2/pythos/request-quote",
-    "destination": "/request-quote/pythos-cane-table",
+    "destination": "/make-an-inquiry/pythos-cane-table",
     "permanent": true
   },
   {
@@ -831,7 +831,7 @@
   },
   {
     "source": "/table-2/santorini/request-quote",
-    "destination": "/request-quote/santorini-cane-table",
+    "destination": "/make-an-inquiry/santorini-cane-table",
     "permanent": true
   },
   {
@@ -841,7 +841,7 @@
   },
   {
     "source": "/table-2/streak/request-quote",
-    "destination": "/request-quote/streak-cane-table",
+    "destination": "/make-an-inquiry/streak-cane-table",
     "permanent": true
   },
   {
@@ -851,7 +851,7 @@
   },
   {
     "source": "/table-2/zero/request-quote",
-    "destination": "/request-quote/zero-cane-table",
+    "destination": "/make-an-inquiry/zero-cane-table",
     "permanent": true
   },
   {
@@ -861,7 +861,7 @@
   },
   {
     "source": "/table-3/claire/request-quote",
-    "destination": "/request-quote/claire-cane-table",
+    "destination": "/make-an-inquiry/claire-cane-table",
     "permanent": true
   },
   {
@@ -881,7 +881,7 @@
   },
   {
     "source": "/request-quote/malaga-reactngle-cane-table",
-    "destination": "/request-quote/malaga-rectangle-cane-table",
+    "destination": "/make-an-inquiry/malaga-rectangle-cane-table",
     "permanent": true
   },
   {
@@ -891,7 +891,7 @@
   },
   {
     "source": "/request-quote/kingstorn-cane-sofa",
-    "destination": "/request-quote/kingston-cane-sofa",
+    "destination": "/make-an-inquiry/kingston-cane-sofa",
     "permanent": true
   },
   {
@@ -901,7 +901,7 @@
   },
   {
     "source": "/request-quote/ibizza-cane-sofa",
-    "destination": "/request-quote/ibiza-cane-sofa",
+    "destination": "/make-an-inquiry/ibiza-cane-sofa",
     "permanent": true
   },
   {
@@ -911,7 +911,7 @@
   },
   {
     "source": "/request-quote/milose-cane-sofa",
-    "destination": "/request-quote/mileos-cane-sofa",
+    "destination": "/make-an-inquiry/mileos-cane-sofa",
     "permanent": true
   },
   {
@@ -921,7 +921,7 @@
   },
   {
     "source": "/request-quote/byrons-cane-table",
-    "destination": "/request-quote/byron-cane-table",
+    "destination": "/make-an-inquiry/byron-cane-table",
     "permanent": true
   },
   {
@@ -931,7 +931,7 @@
   },
   {
     "source": "/request-quote/ibizaa-cane-table",
-    "destination": "/request-quote/ibiza-cane-table",
+    "destination": "/make-an-inquiry/ibiza-cane-table",
     "permanent": true
   },
   {
@@ -941,7 +941,7 @@
   },
   {
     "source": "/request-quote/ibizza-cane-chair",
-    "destination": "/request-quote/ibiza-cane-chair",
+    "destination": "/make-an-inquiry/ibiza-cane-chair",
     "permanent": true
   },
   {
@@ -951,7 +951,542 @@
   },
   {
     "source": "/request-quote/steack-cane-chair",
-    "destination": "/request-quote/streak-cane-chair",
+    "destination": "/make-an-inquiry/streak-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote",
+    "destination": "/make-an-inquiry",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/arches-cane-chair",
+    "destination": "/make-an-inquiry/arches-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/aspire-cane-chair",
+    "destination": "/make-an-inquiry/aspire-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/barcelona-cane-chair",
+    "destination": "/make-an-inquiry/barcelona-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/byron-cane-chair",
+    "destination": "/make-an-inquiry/byron-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/canary-cane-chair",
+    "destination": "/make-an-inquiry/canary-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/caprio-cane-chair",
+    "destination": "/make-an-inquiry/caprio-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/emperor-rocking-cane-chair",
+    "destination": "/make-an-inquiry/emperor-rocking-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/malaga-cane-chair",
+    "destination": "/make-an-inquiry/malaga-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/sunflower-cane-chair",
+    "destination": "/make-an-inquiry/sunflower-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/hawaii-cane-chair",
+    "destination": "/make-an-inquiry/hawaii-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/alpha-cane-sofa",
+    "destination": "/make-an-inquiry/alpha-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/arches-cane-sofa",
+    "destination": "/make-an-inquiry/arches-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/caprio-cane-sofa",
+    "destination": "/make-an-inquiry/caprio-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/claire-cane-sofa",
+    "destination": "/make-an-inquiry/claire-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/kingston-cane-sofa",
+    "destination": "/make-an-inquiry/kingston-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/andros-cane-sofa",
+    "destination": "/make-an-inquiry/andros-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/aspire-cane-sofa",
+    "destination": "/make-an-inquiry/aspire-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/canary-cane-sofa",
+    "destination": "/make-an-inquiry/canary-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/filitheyo-cane-sofa",
+    "destination": "/make-an-inquiry/filitheyo-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/hawaii-cane-sofa",
+    "destination": "/make-an-inquiry/hawaii-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/ibiza-cane-sofa",
+    "destination": "/make-an-inquiry/ibiza-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/leica-cane-sofa",
+    "destination": "/make-an-inquiry/leica-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/malaga-cane-sofa",
+    "destination": "/make-an-inquiry/malaga-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/mileos-cane-sofa",
+    "destination": "/make-an-inquiry/mileos-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/pythos-cane-sofa",
+    "destination": "/make-an-inquiry/pythos-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/tahiti-low-seating-cane-sofa",
+    "destination": "/make-an-inquiry/tahiti-low-seating-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/andros-cane-swing",
+    "destination": "/make-an-inquiry/andros-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/arches-cane-swing",
+    "destination": "/make-an-inquiry/arches-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/bora-bora-double-seater-cane-swing",
+    "destination": "/make-an-inquiry/bora-bora-double-seater-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/claire-cane-swing",
+    "destination": "/make-an-inquiry/claire-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/filitheyo-hanging-cane-swing",
+    "destination": "/make-an-inquiry/filitheyo-hanging-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/fiscus-cane-swing",
+    "destination": "/make-an-inquiry/fiscus-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/hawaii-cane-swing",
+    "destination": "/make-an-inquiry/hawaii-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/leica-cane-swing",
+    "destination": "/make-an-inquiry/leica-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/marcos-cane-swing",
+    "destination": "/make-an-inquiry/marcos-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/petra-double-seater-cane-swing",
+    "destination": "/make-an-inquiry/petra-double-seater-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/streak-double-seater-cane-swing",
+    "destination": "/make-an-inquiry/streak-double-seater-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/tahiti-cane-swing",
+    "destination": "/make-an-inquiry/tahiti-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/bora-bora-single-seater-cane-swing",
+    "destination": "/make-an-inquiry/bora-bora-single-seater-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/caprio-cane-swing",
+    "destination": "/make-an-inquiry/caprio-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/malta-cane-swing",
+    "destination": "/make-an-inquiry/malta-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/malta-grand-cane-swing",
+    "destination": "/make-an-inquiry/malta-grand-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/malta-outdoor-cane-swing",
+    "destination": "/make-an-inquiry/malta-outdoor-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/nebula-cane-swing",
+    "destination": "/make-an-inquiry/nebula-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/oland-cane-swing",
+    "destination": "/make-an-inquiry/oland-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/petra-compact-cane-swing",
+    "destination": "/make-an-inquiry/petra-compact-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/streak-compact-cane-swing",
+    "destination": "/make-an-inquiry/streak-compact-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/adron-g-cane-swing",
+    "destination": "/make-an-inquiry/adron-g-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/andros-f-cane-swing",
+    "destination": "/make-an-inquiry/andros-f-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/andros-w-cane-swing",
+    "destination": "/make-an-inquiry/andros-w-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/athens-stand-cane-swing",
+    "destination": "/make-an-inquiry/athens-stand-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/axor-with-roof-cane-swing",
+    "destination": "/make-an-inquiry/axor-with-roof-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/filitheyo-with-stand-cane-swing",
+    "destination": "/make-an-inquiry/filitheyo-with-stand-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/filitheyo-with-roof-cane-swing",
+    "destination": "/make-an-inquiry/filitheyo-with-roof-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/malaga-with-roof-cane-swing",
+    "destination": "/make-an-inquiry/malaga-with-roof-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/tahiti-stand-cane-swing",
+    "destination": "/make-an-inquiry/tahiti-stand-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/oldan-cane-swing",
+    "destination": "/make-an-inquiry/oldan-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/alpha-cane-table",
+    "destination": "/make-an-inquiry/alpha-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/andros-cane-table",
+    "destination": "/make-an-inquiry/andros-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/arches-cane-table",
+    "destination": "/make-an-inquiry/arches-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/claire-cane-table",
+    "destination": "/make-an-inquiry/claire-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/filitheyo-cane-table",
+    "destination": "/make-an-inquiry/filitheyo-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/mileos-cane-table",
+    "destination": "/make-an-inquiry/mileos-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/sunflower-olive-cane-table",
+    "destination": "/make-an-inquiry/sunflower-olive-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/sunflower-yellow-cane-table",
+    "destination": "/make-an-inquiry/sunflower-yellow-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/tahiti-cane-table",
+    "destination": "/make-an-inquiry/tahiti-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/aspire-cane-table",
+    "destination": "/make-an-inquiry/aspire-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/byron-cane-table",
+    "destination": "/make-an-inquiry/byron-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/canary-cane-table",
+    "destination": "/make-an-inquiry/canary-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/caprio-cane-table",
+    "destination": "/make-an-inquiry/caprio-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/hawaii-cane-table",
+    "destination": "/make-an-inquiry/hawaii-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/ibiza-cane-table",
+    "destination": "/make-an-inquiry/ibiza-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/luxor-cane-table",
+    "destination": "/make-an-inquiry/luxor-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/malaga-cane-table",
+    "destination": "/make-an-inquiry/malaga-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/malaga-rectangle-cane-table",
+    "destination": "/make-an-inquiry/malaga-rectangle-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/malaga-round-cane-table",
+    "destination": "/make-an-inquiry/malaga-round-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/minorca-cane-table",
+    "destination": "/make-an-inquiry/minorca-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/nebula-cane-table",
+    "destination": "/make-an-inquiry/nebula-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/pythos-cane-table",
+    "destination": "/make-an-inquiry/pythos-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/santorini-cane-table",
+    "destination": "/make-an-inquiry/santorini-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/streak-cane-table",
+    "destination": "/make-an-inquiry/streak-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/zero-cane-table",
+    "destination": "/make-an-inquiry/zero-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/pythos-cane-chair",
+    "destination": "/make-an-inquiry/pythos-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/santorini-cane-chair",
+    "destination": "/make-an-inquiry/santorini-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/zero-cane-chair",
+    "destination": "/make-an-inquiry/zero-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/andros-cane-chair",
+    "destination": "/make-an-inquiry/andros-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/ibiza-cane-chair",
+    "destination": "/make-an-inquiry/ibiza-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/claire-cane-chair",
+    "destination": "/make-an-inquiry/claire-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/alpha-rocking-cane-chair",
+    "destination": "/make-an-inquiry/alpha-rocking-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/alpha-cane-chair",
+    "destination": "/make-an-inquiry/alpha-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/streak-cane-chair",
+    "destination": "/make-an-inquiry/streak-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/tahiti-cane-chair",
+    "destination": "/make-an-inquiry/tahiti-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/condo-cane-chair",
+    "destination": "/make-an-inquiry/condo-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/luyor-with-footrest-cane-chair",
+    "destination": "/make-an-inquiry/luyor-with-footrest-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/filitheyo-cane-chair",
+    "destination": "/make-an-inquiry/filitheyo-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/nebula-revolving-cane-chair",
+    "destination": "/make-an-inquiry/nebula-revolving-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/minorca-cane-chair",
+    "destination": "/make-an-inquiry/minorca-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/mileos-cane-chair",
+    "destination": "/make-an-inquiry/mileos-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/barcelona-armless-cane-chair",
+    "destination": "/make-an-inquiry/barcelona-armless-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/malaga-blue-cushion-cane-chair",
+    "destination": "/make-an-inquiry/malaga-blue-cushion-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/mileos-natural-finish-cane-chair",
+    "destination": "/make-an-inquiry/mileos-natural-finish-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/petra-open-frame-cane-swing",
+    "destination": "/make-an-inquiry/petra-open-frame-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/mileos-green-finish-cane-table",
+    "destination": "/make-an-inquiry/mileos-green-finish-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/hawaii-collection-cane-chair",
+    "destination": "/make-an-inquiry/hawaii-collection-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/filitheyo-collection-cane-sofa",
+    "destination": "/make-an-inquiry/filitheyo-collection-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/request-quote/claire-collection-cane-table",
+    "destination": "/make-an-inquiry/claire-collection-cane-table",
     "permanent": true
   }
 ]

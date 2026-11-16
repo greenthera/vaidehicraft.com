@@ -12,6 +12,12 @@ const exportBase = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export const siteOrigin = siteConfiguration.siteOrigin ? `${siteConfiguration.siteOrigin}${exportBase}` : undefined;
 export const metadataOrigin = `${siteConfiguration.metadataOrigin}${exportBase}`;
 
+/** Page URLs must match the slash convention of the deployed host. Never use for assets. */
+export function pageUrl(path: string, origin = metadataOrigin) {
+  const pathname = process.env.NEXT_PUBLIC_STATIC_EXPORT === "true" && path !== "/" ? `${path.replace(/\/+$/, "")}/` : path;
+  return `${origin}${pathname}`;
+}
+
 export function metaDescription(value: string) {
   const text = value.replace(/\s+/g, " ").trim();
   return text.length <= 165 ? text : `${text.slice(0, 162).replace(/\s+\S*$/, "")}…`;
@@ -26,13 +32,13 @@ export function pageMetadata(title: string, description: string, path: string, i
   const shareImage = { url: imageUrl, alt: title || pageTitle, ...(image === socialImage ? { width: 1200, height: 630 } : {}) };
   return {
     title: pageTitle, description: summary,
-    ...(siteOrigin ? { alternates: { canonical: `${siteOrigin}${canonicalPath}` } } : {}),
+    ...(siteOrigin ? { alternates: { canonical: pageUrl(canonicalPath, siteOrigin) } } : {}),
     robots: { index: Boolean(siteOrigin) && index, follow: true },
-    openGraph: { title: reference?.ogTitle ?? pageTitle, description: reference?.ogDescription ?? summary, type: "website", siteName: "Vaidehi Craft", locale: "en_IN", ...(metadataOrigin ? { url: `${metadataOrigin}${path}` } : {}), images: [shareImage] },
+    openGraph: { title: reference?.ogTitle ?? pageTitle, description: reference?.ogDescription ?? summary, type: "website", siteName: "Vaidehi Craft", locale: "en_IN", ...(metadataOrigin ? { url: pageUrl(path) } : {}), images: [shareImage] },
     twitter: { card: "summary_large_image", title: reference?.twitterTitle ?? pageTitle, description: reference?.twitterDescription ?? summary, images: [{ url: imageUrl, alt: title || pageTitle }] },
   };
 }
 export function breadcrumbSchema(items: { name: string; href?: string }[]) {
   if (!metadataOrigin) return undefined;
-  return { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ name: "Home", href: "/" }, ...items].map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.name, ...(item.href ? { item: `${metadataOrigin}${item.href}` } : {}) })) };
+  return { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ name: "Home", href: "/" }, ...items].map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.name, ...(item.href ? { item: pageUrl(item.href) } : {}) })) };
 }

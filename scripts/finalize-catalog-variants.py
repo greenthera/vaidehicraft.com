@@ -37,7 +37,7 @@ for c in configs:
  image='/images/products/'+c['image']
  variant=by_slug.get(c['slug'])
  if variant is None:
-  variant=deepcopy(base);variant.update(slug=c['slug'],name=c['name'],path=f'/furniture/{base["category"]}/{c["slug"]}',quotePath=f'/request-quote/{c["slug"]}')
+  variant=deepcopy(base);variant.update(slug=c['slug'],name=c['name'],path=f'/furniture/{base["category"]}/{c["slug"]}',quotePath=f'/make-an-inquiry/{c["slug"]}')
   variant['images']=[image]
   if c.get('source'):
    gallery=next(p['images'] for p in source if p['path']==c['source'])

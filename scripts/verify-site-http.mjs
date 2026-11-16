@@ -16,7 +16,7 @@ function metaContent(html, attribute, name) {
 }
 const titles = new Set();
 const pages = [
-  { path: '/' }, { path: '/contact' }, { path: '/request-quote', quote: true },
+  { path: '/' }, { path: '/contact' }, { path: '/make-an-inquiry', quote: true },
   ...Object.keys(layouts).map(category => ({ path: `/furniture/${category}`, category })),
   ...products.flatMap(product => [{ path: product.path, product }, { path: product.quotePath, product, quote: true }]),
 ];
@@ -71,13 +71,13 @@ for (const redirect of redirects) {
   assert.equal(response.status, 308, redirect.source);
   assert.equal(new URL(response.headers.get('location'), base).pathname, redirect.destination);
 }
-for (const path of ['/furniture/unknown', '/furniture/chairs/not-a-design', '/request-quote/not-a-design', '/furniture/sofas/arches-cane-chair']) assert.equal((await fetch(base + path)).status, 404, path);
+for (const path of ['/furniture/unknown', '/furniture/chairs/not-a-design', '/make-an-inquiry/not-a-design', '/furniture/sofas/arches-cane-chair']) assert.equal((await fetch(base + path)).status, 404, path);
 if (canonicalOrigin) {
   const xml = await (await fetch(base + '/sitemap.xml')).text();
   const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => match[1]);
   const expected = pages.filter(page => !page.quote && (!page.product || page.product.includeInSitemap)).map(page => canonicalOrigin + page.path);
   assert.deepEqual(new Set(urls), new Set(expected), 'Sitemap must contain exactly the canonical public pages');
-  assert(!urls.some(url => url.includes('/request-quote')), 'Quote forms must not enter sitemap');
+  assert(!urls.some(url => url.includes('/make-an-inquiry')), 'Quote forms must not enter sitemap');
   const robots = await (await fetch(base + '/robots.txt')).text();
   assert(robots.includes(`Sitemap: ${canonicalOrigin}/sitemap.xml`));
   console.log(`Verified ${urls.length} sitemap URLs and robots sitemap declaration.`);

@@ -5,8 +5,8 @@
 - Home: `/`
 - Collections: `/furniture/chairs`, `/furniture/sofas`, `/furniture/swings`, `/furniture/tables`
 - Products: `/furniture/{category}/{model-and-descriptive-variant}-cane-{type}`
-- Product quote: `/request-quote/{product-slug}`
-- General quote: `/request-quote`
+- Product inquiry: `/make-an-inquiry/{product-slug}`
+- General inquiry: `/make-an-inquiry`
 - Contact: `/contact`
 
 Examples:
@@ -14,7 +14,7 @@ Examples:
 - `/furniture/chairs/arches-cane-chair`
 - `/furniture/swings/bora-bora-double-seater-cane-swing`
 - `/furniture/swings/bora-bora-single-seater-cane-swing`
-- `/request-quote/arches-cane-chair`
+- `/make-an-inquiry/arches-cane-chair`
 
 Slugs are generated once from the catalog and persisted in `src/data/products.json`. They do not depend on card position or a mutable per-page counter. Catalog verification rejects collisions. Existing published slugs should be preserved when display names change; add a permanent redirect before deliberately changing a published slug.
 
@@ -23,6 +23,8 @@ Slugs are generated once from the catalog and persisted in `src/data/products.js
 Three duplicate model entries are consolidated: Malaga chair color finishes, Filitheyo sofa entries with the same dimensions, and Claire table entries with the same dimensions. Their photographs share one model page. The 85 acquired source entries initially produced 82 product pages. A subsequent card-by-card source review recovered 16 distinct chair designs whose source links all incorrectly led to Malaga. There are now 98 canonical product pages; these additional designs use the correct local card images without copying Malaga specifications.
 
 Different seating sizes and stand configurations remain separate, descriptively named products. Models across different furniture types have both a category path and type in the slug. No page is differentiated using the source's arbitrary `chair-1`, `sofa-2`, etc.
+
+Previous `/request-quote` URLs redirect directly to the matching `/make-an-inquiry` page. The inquiry forms retain their existing noindex setting.
 
 Old paths only exist as local one-hop permanent redirects in `src/data/legacy-redirects.json`. Their destinations, all links, canonical URLs and sitemap entries use the new paths. No redirect sends visitors to the old website. Redirecting old paths preserves an upgrade path for bookmarks and search results without exposing them as primary URLs.
 

@@ -66,7 +66,7 @@ for page in pages:
     for alias,target in merge.items():
         if target==path:source_images+=next(p['images'] for p in pages if p['path']==alias)
     images=list(dict.fromkeys(source_images))
-    product={'name':display,'model':name,'category':cat,'slug':slug,'path':f'/furniture/{cat}/{slug}','quotePath':f'/request-quote/{slug}','images':[name_image(img,slug,i+1) for i,img in enumerate(images)],'details':sections(path)}
+    product={'name':display,'model':name,'category':cat,'slug':slug,'path':f'/furniture/{cat}/{slug}','quotePath':f'/make-an-inquiry/{slug}','images':[name_image(img,slug,i+1) for i,img in enumerate(images)],'details':sections(path)}
     first=' '.join(product['details'][0]['text']) if product['details'] else 'View the product gallery and request dimensions, finishes and a tailored quotation.'
     product['description']=f'{display} by Vaidehi Craft. {first}'[:300]
     products[path]=product
@@ -80,6 +80,9 @@ for page in pages:
         if cat not in category_map.values():continue
         redirects.append({'source':path,'destination':'/furniture/'+cat,'permanent':True})
         for i,image in enumerate(page['images']):name_image(image,'cane-'+cat+'-collection',i+1)
+redirects.append({'source':'/request-quote','destination':'/make-an-inquiry','permanent':True})
+for product in products.values():
+    redirects.append({'source':'/request-quote/'+product['slug'],'destination':product['quotePath'],'permanent':True})
 redirects.append({'source':'/contact-us','destination':'/contact','permanent':True})
 Path('src/data/products.json').write_text(json.dumps(list(products.values()),indent=2)+'\n')
 Path('src/data/product-index.json').write_text(json.dumps([{k:p[k] for k in ('name','slug','path','quotePath','category')} for p in products.values()],indent=2)+'\n')

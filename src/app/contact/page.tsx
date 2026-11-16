@@ -6,7 +6,7 @@ import Image from "@/components/site-image";
 import Link from "next/link";
 import { InnerPage, Breadcrumbs } from "@/components/inner-page";
 import { SocialLinks } from "@/components/social-links";
-import { pageMetadata, metadataOrigin, serializeJsonLd } from "@/lib/seo";
+import { pageMetadata, pageUrl, metadataOrigin, serializeJsonLd } from "@/lib/seo";
 import storefront from "../../../public/images/vaidehi-craft-storefront.webp";
 
 export const metadata = pageMetadata("Get in Touch", "Contact Vaidehi Craft for handcrafted cane furniture, design enquiries and tailored quotations. Connect with our team and ask about our Surat and Pune stores.", "/contact");
@@ -14,7 +14,7 @@ export const metadata = pageMetadata("Get in Touch", "Contact Vaidehi Craft for 
 const contactButton = "inline-flex min-h-12 w-full min-w-0 items-center justify-center rounded-none px-4 py-3 text-center text-sm";
 
 export default function ContactPage() {
-  const schema = metadataOrigin ? { "@context": "https://schema.org", "@type": "ContactPage", "@id": `${metadataOrigin}/contact#webpage`, url: `${metadataOrigin}/contact`, name: "Contact Vaidehi Craft", isPartOf: { "@id": `${metadataOrigin}/#website` }, mainEntity: { "@id": `${metadataOrigin}/#organization` } } : undefined;
+  const schema = metadataOrigin ? { "@context": "https://schema.org", "@type": "ContactPage", "@id": `${pageUrl("/contact")}#webpage`, url: pageUrl("/contact"), name: "Contact Vaidehi Craft", isPartOf: { "@id": `${metadataOrigin}/#website` }, mainEntity: { "@id": `${metadataOrigin}/#organization` } } : undefined;
   return <InnerPage>
     <div className="mx-auto max-w-[1600px] px-6 pb-10 pt-6 min-[1100px]:px-[7.32482vw] min-[1100px]:pb-16">
       <Breadcrumbs items={[{ name: "Get in touch" }]} />
@@ -27,7 +27,7 @@ export default function ContactPage() {
           </dl>
           <div className="grid w-full max-w-xl grid-cols-1 items-stretch gap-3 min-[640px]:grid-cols-2">
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp (opens in a new tab)" className={`${contactButton} button-primary`}>Chat on WhatsApp</a>
-            <Link href="/request-quote" className={`${contactButton} button-outline`}>Request a quote</Link>
+            <Link href="/make-an-inquiry" className={`${contactButton} button-outline`}>Make an inquiry</Link>
           </div>
           <SocialLinks className="mt-6" />
         </div>

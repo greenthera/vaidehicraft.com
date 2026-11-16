@@ -2,14 +2,14 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const products = JSON.parse(fs.readFileSync('src/data/products.json', 'utf8'));
 const redirects = JSON.parse(fs.readFileSync('src/data/legacy-redirects.json', 'utf8'));
-const valid = new Set(['/', '/contact', '/request-quote', ...['chairs', 'sofas', 'swings', 'tables'].map(category => `/furniture/${category}`)]);
+const valid = new Set(['/', '/contact', '/make-an-inquiry', ...['chairs', 'sofas', 'swings', 'tables'].map(category => `/furniture/${category}`)]);
 const slugs = new Set();
 for (const product of products) {
   assert.match(product.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
   assert(!slugs.has(product.slug), `Duplicate product slug: ${product.slug}`);
   slugs.add(product.slug);
   assert.equal(product.path, `/furniture/${product.category}/${product.slug}`);
-  assert.equal(product.quotePath, `/request-quote/${product.slug}`);
+  assert.equal(product.quotePath, `/make-an-inquiry/${product.slug}`);
   assert(products.some(item => item.path === product.canonicalPath), `Missing canonical target: ${product.slug}`);
   if (!product.includeInSitemap) assert.notEqual(product.canonicalPath, product.path);
   valid.add(product.path); valid.add(product.quotePath);

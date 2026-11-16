@@ -25,7 +25,7 @@ for category,data in source.items():
   if product is None:
    display=f'{name} Cane {kind.title()}';slug=slugify(display)
    if any(p['slug']==slug for p in products):raise RuntimeError('Slug collision: '+slug)
-   product={'name':display,'model':name,'category':category,'slug':slug,'path':f'/furniture/{category}/{slug}','quotePath':f'/request-quote/{slug}','images':[],'details':[],'description':f'{display} by Vaidehi Craft. View the design and request its dimensions, available finishes and a tailored quotation.'}
+   product={'name':display,'model':name,'category':category,'slug':slug,'path':f'/furniture/{category}/{slug}','quotePath':f'/make-an-inquiry/{slug}','images':[],'details':[],'description':f'{display} by Vaidehi Craft. View the design and request its dimensions, available finishes and a tailored quotation.'}
    products.append(product);added.append(slug)
   image=asset_map[card['image']]
   if image not in product['images']:product['images'].append(image)

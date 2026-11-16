@@ -5,7 +5,7 @@
     "category": "chairs",
     "slug": "arches-cane-chair",
     "path": "/furniture/chairs/arches-cane-chair",
-    "quotePath": "/request-quote/arches-cane-chair",
+    "quotePath": "/make-an-inquiry/arches-cane-chair",
     "images": [
       "/images/products/arches-cane-chair-01.webp",
       "/images/products/arches-cane-chair-02.webp",
@@ -45,7 +45,7 @@
     "category": "chairs",
     "slug": "aspire-cane-chair",
     "path": "/furniture/chairs/aspire-cane-chair",
-    "quotePath": "/request-quote/aspire-cane-chair",
+    "quotePath": "/make-an-inquiry/aspire-cane-chair",
     "images": [
       "/images/products/aspire-cane-chair-01.webp",
       "/images/products/aspire-cane-chair-02.webp",
@@ -86,7 +86,7 @@
     "category": "chairs",
     "slug": "barcelona-cane-chair",
     "path": "/furniture/chairs/barcelona-cane-chair",
-    "quotePath": "/request-quote/barcelona-cane-chair",
+    "quotePath": "/make-an-inquiry/barcelona-cane-chair",
     "images": [
       "/images/products/barcelona-cane-chair-01.webp",
       "/images/products/barcelona-cane-chair-02.webp",
@@ -132,7 +132,7 @@
     "category": "chairs",
     "slug": "byron-cane-chair",
     "path": "/furniture/chairs/byron-cane-chair",
-    "quotePath": "/request-quote/byron-cane-chair",
+    "quotePath": "/make-an-inquiry/byron-cane-chair",
     "images": [
       "/images/products/byron-cane-chair-01.webp",
       "/images/products/byron-cane-chair-02.webp",
@@ -172,7 +172,7 @@
     "category": "chairs",
     "slug": "canary-cane-chair",
     "path": "/furniture/chairs/canary-cane-chair",
-    "quotePath": "/request-quote/canary-cane-chair",
+    "quotePath": "/make-an-inquiry/canary-cane-chair",
     "images": [
       "/images/products/canary-cane-chair-01.webp",
       "/images/products/canary-cane-chair-02.webp",
@@ -223,7 +223,7 @@
     "category": "chairs",
     "slug": "caprio-cane-chair",
     "path": "/furniture/chairs/caprio-cane-chair",
-    "quotePath": "/request-quote/caprio-cane-chair",
+    "quotePath": "/make-an-inquiry/caprio-cane-chair",
     "images": [
       "/images/products/caprio-cane-chair-01.webp",
       "/images/products/caprio-cane-chair-02.webp",
@@ -263,7 +263,7 @@
     "category": "chairs",
     "slug": "emperor-rocking-cane-chair",
     "path": "/furniture/chairs/emperor-rocking-cane-chair",
-    "quotePath": "/request-quote/emperor-rocking-cane-chair",
+    "quotePath": "/make-an-inquiry/emperor-rocking-cane-chair",
     "images": [
       "/images/products/emperor-rocking-cane-chair-01.webp",
       "/images/products/emperor-rocking-cane-chair-02.webp",
@@ -308,7 +308,7 @@
     "category": "chairs",
     "slug": "malaga-cane-chair",
     "path": "/furniture/chairs/malaga-cane-chair",
-    "quotePath": "/request-quote/malaga-cane-chair",
+    "quotePath": "/make-an-inquiry/malaga-cane-chair",
     "images": [
       "/images/products/malaga-cane-chair-01.webp",
       "/images/products/malaga-cane-chair-02.webp",
@@ -353,7 +353,7 @@
     "category": "chairs",
     "slug": "sunflower-cane-chair",
     "path": "/furniture/chairs/sunflower-cane-chair",
-    "quotePath": "/request-quote/sunflower-cane-chair",
+    "quotePath": "/make-an-inquiry/sunflower-cane-chair",
     "images": [
       "/images/products/sunflower-cane-chair-01.webp",
       "/images/products/sunflower-cane-chair-02.webp",
@@ -406,7 +406,7 @@
     "category": "chairs",
     "slug": "hawaii-cane-chair",
     "path": "/furniture/chairs/hawaii-cane-chair",
-    "quotePath": "/request-quote/hawaii-cane-chair",
+    "quotePath": "/make-an-inquiry/hawaii-cane-chair",
     "images": [
       "/images/products/hawaii-cane-chair-01.webp"
     ],
@@ -422,7 +422,7 @@
     "category": "sofas",
     "slug": "alpha-cane-sofa",
     "path": "/furniture/sofas/alpha-cane-sofa",
-    "quotePath": "/request-quote/alpha-cane-sofa",
+    "quotePath": "/make-an-inquiry/alpha-cane-sofa",
     "images": [
       "/images/products/alpha-cane-sofa-01.webp",
       "/images/products/alpha-cane-sofa-02.webp",
@@ -487,7 +487,7 @@
     "category": "sofas",
     "slug": "arches-cane-sofa",
     "path": "/furniture/sofas/arches-cane-sofa",
-    "quotePath": "/request-quote/arches-cane-sofa",
+    "quotePath": "/make-an-inquiry/arches-cane-sofa",
     "images": [
       "/images/products/arches-cane-sofa-01.webp",
       "/images/products/arches-cane-sofa-02.webp",
@@ -550,7 +550,7 @@
     "category": "sofas",
     "slug": "caprio-cane-sofa",
     "path": "/furniture/sofas/caprio-cane-sofa",
-    "quotePath": "/request-quote/caprio-cane-sofa",
+    "quotePath": "/make-an-inquiry/caprio-cane-sofa",
     "images": [
       "/images/products/caprio-cane-sofa-01.webp",
       "/images/products/caprio-cane-sofa-02.webp",
@@ -613,7 +613,7 @@
     "category": "sofas",
     "slug": "claire-cane-sofa",
     "path": "/furniture/sofas/claire-cane-sofa",
-    "quotePath": "/request-quote/claire-cane-sofa",
+    "quotePath": "/make-an-inquiry/claire-cane-sofa",
     "images": [
       "/images/products/claire-cane-sofa-01.webp",
       "/images/products/claire-cane-sofa-02.webp",
@@ -676,7 +676,7 @@
     "category": "sofas",
     "slug": "kingston-cane-sofa",
     "path": "/furniture/sofas/kingston-cane-sofa",
-    "quotePath": "/request-quote/kingston-cane-sofa",
+    "quotePath": "/make-an-inquiry/kingston-cane-sofa",
     "images": [
       "/images/products/kingstorn-cane-sofa-01.webp",
       "/images/products/kingstorn-cane-sofa-02.webp",
@@ -731,7 +731,7 @@
     "category": "sofas",
     "slug": "andros-cane-sofa",
     "path": "/furniture/sofas/andros-cane-sofa",
-    "quotePath": "/request-quote/andros-cane-sofa",
+    "quotePath": "/make-an-inquiry/andros-cane-sofa",
     "images": [
       "/images/products/andros-cane-sofa-01.webp",
       "/images/products/andros-cane-sofa-02.webp",
@@ -794,7 +794,7 @@
     "category": "sofas",
     "slug": "aspire-cane-sofa",
     "path": "/furniture/sofas/aspire-cane-sofa",
-    "quotePath": "/request-quote/aspire-cane-sofa",
+    "quotePath": "/make-an-inquiry/aspire-cane-sofa",
     "images": [
       "/images/products/aspire-cane-sofa-01.webp",
       "/images/products/aspire-cane-sofa-02.webp",
@@ -849,7 +849,7 @@
     "category": "sofas",
     "slug": "canary-cane-sofa",
     "path": "/furniture/sofas/canary-cane-sofa",
-    "quotePath": "/request-quote/canary-cane-sofa",
+    "quotePath": "/make-an-inquiry/canary-cane-sofa",
     "images": [
       "/images/products/canary-cane-sofa-01.webp",
       "/images/products/canary-cane-sofa-02.webp",
@@ -912,7 +912,7 @@
     "category": "sofas",
     "slug": "filitheyo-cane-sofa",
     "path": "/furniture/sofas/filitheyo-cane-sofa",
-    "quotePath": "/request-quote/filitheyo-cane-sofa",
+    "quotePath": "/make-an-inquiry/filitheyo-cane-sofa",
     "images": [
       "/images/products/filitheyo-cane-sofa-01.webp",
       "/images/products/filitheyo-cane-sofa-02.webp",
@@ -968,7 +968,7 @@
     "category": "sofas",
     "slug": "hawaii-cane-sofa",
     "path": "/furniture/sofas/hawaii-cane-sofa",
-    "quotePath": "/request-quote/hawaii-cane-sofa",
+    "quotePath": "/make-an-inquiry/hawaii-cane-sofa",
     "images": [
       "/images/products/hawaii-cane-sofa-01.webp",
       "/images/products/hawaii-cane-sofa-02.webp",
@@ -1026,7 +1026,7 @@
     "category": "sofas",
     "slug": "ibiza-cane-sofa",
     "path": "/furniture/sofas/ibiza-cane-sofa",
-    "quotePath": "/request-quote/ibiza-cane-sofa",
+    "quotePath": "/make-an-inquiry/ibiza-cane-sofa",
     "images": [
       "/images/products/ibizza-cane-sofa-01.webp",
       "/images/products/ibizza-cane-sofa-02.webp",
@@ -1071,7 +1071,7 @@
     "category": "sofas",
     "slug": "leica-cane-sofa",
     "path": "/furniture/sofas/leica-cane-sofa",
-    "quotePath": "/request-quote/leica-cane-sofa",
+    "quotePath": "/make-an-inquiry/leica-cane-sofa",
     "images": [
       "/images/products/leica-cane-sofa-01.webp",
       "/images/products/leica-cane-sofa-02.webp",
@@ -1127,7 +1127,7 @@
     "category": "sofas",
     "slug": "malaga-cane-sofa",
     "path": "/furniture/sofas/malaga-cane-sofa",
-    "quotePath": "/request-quote/malaga-cane-sofa",
+    "quotePath": "/make-an-inquiry/malaga-cane-sofa",
     "images": [
       "/images/products/malaga-cane-sofa-01.webp",
       "/images/products/malaga-cane-sofa-02.webp",
@@ -1179,7 +1179,7 @@
     "category": "sofas",
     "slug": "mileos-cane-sofa",
     "path": "/furniture/sofas/mileos-cane-sofa",
-    "quotePath": "/request-quote/mileos-cane-sofa",
+    "quotePath": "/make-an-inquiry/mileos-cane-sofa",
     "images": [
       "/images/products/milose-cane-sofa-01.webp",
       "/images/products/milose-cane-sofa-02.webp",
@@ -1231,7 +1231,7 @@
     "category": "sofas",
     "slug": "pythos-cane-sofa",
     "path": "/furniture/sofas/pythos-cane-sofa",
-    "quotePath": "/request-quote/pythos-cane-sofa",
+    "quotePath": "/make-an-inquiry/pythos-cane-sofa",
     "images": [
       "/images/products/pythos-cane-sofa-01.webp",
       "/images/products/pythos-cane-sofa-02.webp",
@@ -1283,7 +1283,7 @@
     "category": "sofas",
     "slug": "tahiti-low-seating-cane-sofa",
     "path": "/furniture/sofas/tahiti-low-seating-cane-sofa",
-    "quotePath": "/request-quote/tahiti-low-seating-cane-sofa",
+    "quotePath": "/make-an-inquiry/tahiti-low-seating-cane-sofa",
     "images": [
       "/images/products/tahiti-low-seating-cane-sofa-01.webp",
       "/images/products/tahiti-low-seating-cane-sofa-02.webp",
@@ -1303,7 +1303,7 @@
     "category": "swings",
     "slug": "andros-cane-swing",
     "path": "/furniture/swings/andros-cane-swing",
-    "quotePath": "/request-quote/andros-cane-swing",
+    "quotePath": "/make-an-inquiry/andros-cane-swing",
     "images": [
       "/images/products/andros-cane-swing-01.webp",
       "/images/products/andros-cane-swing-02.webp",
@@ -1354,7 +1354,7 @@
     "category": "swings",
     "slug": "arches-cane-swing",
     "path": "/furniture/swings/arches-cane-swing",
-    "quotePath": "/request-quote/arches-cane-swing",
+    "quotePath": "/make-an-inquiry/arches-cane-swing",
     "images": [
       "/images/products/arches-cane-swing-01.webp",
       "/images/products/arches-cane-swing-02.webp",
@@ -1405,7 +1405,7 @@
     "category": "swings",
     "slug": "bora-bora-double-seater-cane-swing",
     "path": "/furniture/swings/bora-bora-double-seater-cane-swing",
-    "quotePath": "/request-quote/bora-bora-double-seater-cane-swing",
+    "quotePath": "/make-an-inquiry/bora-bora-double-seater-cane-swing",
     "images": [
       "/images/products/bora-bora-double-seater-cane-swing-01.webp",
       "/images/products/bora-bora-double-seater-cane-swing-02.webp",
@@ -1456,7 +1456,7 @@
     "category": "swings",
     "slug": "claire-cane-swing",
     "path": "/furniture/swings/claire-cane-swing",
-    "quotePath": "/request-quote/claire-cane-swing",
+    "quotePath": "/make-an-inquiry/claire-cane-swing",
     "images": [
       "/images/products/claire-cane-swing-01.webp",
       "/images/products/claire-cane-swing-02.webp",
@@ -1508,7 +1508,7 @@
     "category": "swings",
     "slug": "filitheyo-hanging-cane-swing",
     "path": "/furniture/swings/filitheyo-hanging-cane-swing",
-    "quotePath": "/request-quote/filitheyo-hanging-cane-swing",
+    "quotePath": "/make-an-inquiry/filitheyo-hanging-cane-swing",
     "images": [
       "/images/products/filitheyo-hanging-cane-swing-01.webp",
       "/images/products/filitheyo-hanging-cane-swing-02.webp",
@@ -1560,7 +1560,7 @@
     "category": "swings",
     "slug": "fiscus-cane-swing",
     "path": "/furniture/swings/fiscus-cane-swing",
-    "quotePath": "/request-quote/fiscus-cane-swing",
+    "quotePath": "/make-an-inquiry/fiscus-cane-swing",
     "images": [
       "/images/products/fiscus-cane-swing-01.webp",
       "/images/products/fiscus-cane-swing-02.webp",
@@ -1579,7 +1579,7 @@
     "category": "swings",
     "slug": "hawaii-cane-swing",
     "path": "/furniture/swings/hawaii-cane-swing",
-    "quotePath": "/request-quote/hawaii-cane-swing",
+    "quotePath": "/make-an-inquiry/hawaii-cane-swing",
     "images": [
       "/images/products/hawaii-cane-swing-01.webp",
       "/images/products/hawaii-cane-swing-02.webp",
@@ -1632,7 +1632,7 @@
     "category": "swings",
     "slug": "leica-cane-swing",
     "path": "/furniture/swings/leica-cane-swing",
-    "quotePath": "/request-quote/leica-cane-swing",
+    "quotePath": "/make-an-inquiry/leica-cane-swing",
     "images": [
       "/images/products/leica-cane-swing-01.webp",
       "/images/products/leica-cane-swing-02.webp",
@@ -1685,7 +1685,7 @@
     "category": "swings",
     "slug": "marcos-cane-swing",
     "path": "/furniture/swings/marcos-cane-swing",
-    "quotePath": "/request-quote/marcos-cane-swing",
+    "quotePath": "/make-an-inquiry/marcos-cane-swing",
     "images": [
       "/images/products/marcos-cane-swing-01.webp",
       "/images/products/marcos-cane-swing-02.webp",
@@ -1735,7 +1735,7 @@
     "category": "swings",
     "slug": "petra-double-seater-cane-swing",
     "path": "/furniture/swings/petra-double-seater-cane-swing",
-    "quotePath": "/request-quote/petra-double-seater-cane-swing",
+    "quotePath": "/make-an-inquiry/petra-double-seater-cane-swing",
     "images": [
       "/images/products/petra-double-seater-cane-swing-01.webp",
       "/images/products/petra-double-seater-cane-swing-02.webp",
@@ -1786,7 +1786,7 @@
     "category": "swings",
     "slug": "streak-double-seater-cane-swing",
     "path": "/furniture/swings/streak-double-seater-cane-swing",
-    "quotePath": "/request-quote/streak-double-seater-cane-swing",
+    "quotePath": "/make-an-inquiry/streak-double-seater-cane-swing",
     "images": [
       "/images/products/streak-double-seater-cane-swing-01.webp",
       "/images/products/hawaii-cane-swing-02.webp",
@@ -1838,7 +1838,7 @@
     "category": "swings",
     "slug": "tahiti-cane-swing",
     "path": "/furniture/swings/tahiti-cane-swing",
-    "quotePath": "/request-quote/tahiti-cane-swing",
+    "quotePath": "/make-an-inquiry/tahiti-cane-swing",
     "images": [
       "/images/products/tahiti-cane-swing-01.webp",
       "/images/products/tahiti-cane-swing-02.webp",
@@ -1888,7 +1888,7 @@
     "category": "swings",
     "slug": "bora-bora-single-seater-cane-swing",
     "path": "/furniture/swings/bora-bora-single-seater-cane-swing",
-    "quotePath": "/request-quote/bora-bora-single-seater-cane-swing",
+    "quotePath": "/make-an-inquiry/bora-bora-single-seater-cane-swing",
     "images": [
       "/images/products/bora-bora-single-seater-cane-swing-01.webp",
       "/images/products/bora-bora-single-seater-cane-swing-02.webp",
@@ -1939,7 +1939,7 @@
     "category": "swings",
     "slug": "caprio-cane-swing",
     "path": "/furniture/swings/caprio-cane-swing",
-    "quotePath": "/request-quote/caprio-cane-swing",
+    "quotePath": "/make-an-inquiry/caprio-cane-swing",
     "images": [
       "/images/products/caprio-cane-swing-01.webp",
       "/images/products/caprio-cane-swing-02.webp",
@@ -1979,7 +1979,7 @@
     "category": "swings",
     "slug": "malta-cane-swing",
     "path": "/furniture/swings/malta-cane-swing",
-    "quotePath": "/request-quote/malta-cane-swing",
+    "quotePath": "/make-an-inquiry/malta-cane-swing",
     "images": [
       "/images/products/malta-cane-swing-01.webp",
       "/images/products/malta-cane-swing-02.webp",
@@ -2023,7 +2023,7 @@
     "category": "swings",
     "slug": "malta-grand-cane-swing",
     "path": "/furniture/swings/malta-grand-cane-swing",
-    "quotePath": "/request-quote/malta-grand-cane-swing",
+    "quotePath": "/make-an-inquiry/malta-grand-cane-swing",
     "images": [
       "/images/products/malta-grand-cane-swing-01.webp",
       "/images/products/malta-grand-cane-swing-02.webp",
@@ -2080,7 +2080,7 @@
     "category": "swings",
     "slug": "malta-outdoor-cane-swing",
     "path": "/furniture/swings/malta-outdoor-cane-swing",
-    "quotePath": "/request-quote/malta-outdoor-cane-swing",
+    "quotePath": "/make-an-inquiry/malta-outdoor-cane-swing",
     "images": [
       "/images/products/malta-outdoor-cane-swing-01.webp",
       "/images/products/malta-outdoor-cane-swing-02.webp",
@@ -2131,7 +2131,7 @@
     "category": "swings",
     "slug": "nebula-cane-swing",
     "path": "/furniture/swings/nebula-cane-swing",
-    "quotePath": "/request-quote/nebula-cane-swing",
+    "quotePath": "/make-an-inquiry/nebula-cane-swing",
     "images": [
       "/images/products/nebula-cane-swing-01.webp",
       "/images/products/nebula-cane-swing-02.webp",
@@ -2183,7 +2183,7 @@
     "category": "swings",
     "slug": "oland-cane-swing",
     "path": "/furniture/swings/oland-cane-swing",
-    "quotePath": "/request-quote/oland-cane-swing",
+    "quotePath": "/make-an-inquiry/oland-cane-swing",
     "images": [
       "/images/products/oland-cane-swing-01.webp",
       "/images/products/oland-cane-swing-02.webp",
@@ -2239,7 +2239,7 @@
     "category": "swings",
     "slug": "petra-compact-cane-swing",
     "path": "/furniture/swings/petra-compact-cane-swing",
-    "quotePath": "/request-quote/petra-compact-cane-swing",
+    "quotePath": "/make-an-inquiry/petra-compact-cane-swing",
     "images": [
       "/images/products/petra-compact-cane-swing-01.webp",
       "/images/products/petra-compact-cane-swing-02.webp",
@@ -2295,7 +2295,7 @@
     "category": "swings",
     "slug": "streak-compact-cane-swing",
     "path": "/furniture/swings/streak-compact-cane-swing",
-    "quotePath": "/request-quote/streak-compact-cane-swing",
+    "quotePath": "/make-an-inquiry/streak-compact-cane-swing",
     "images": [
       "/images/products/streak-compact-cane-swing-01.webp",
       "/images/products/streak-compact-cane-swing-02.webp",
@@ -2340,7 +2340,7 @@
     "category": "swings",
     "slug": "adron-g-cane-swing",
     "path": "/furniture/swings/adron-g-cane-swing",
-    "quotePath": "/request-quote/adron-g-cane-swing",
+    "quotePath": "/make-an-inquiry/adron-g-cane-swing",
     "images": [
       "/images/products/adron-g-cane-swing-01.webp",
       "/images/products/adron-g-cane-swing-02.webp",
@@ -2360,7 +2360,7 @@
     "category": "swings",
     "slug": "andros-f-cane-swing",
     "path": "/furniture/swings/andros-f-cane-swing",
-    "quotePath": "/request-quote/andros-f-cane-swing",
+    "quotePath": "/make-an-inquiry/andros-f-cane-swing",
     "images": [
       "/images/products/andros-f-cane-swing-01.webp",
       "/images/products/andros-f-cane-swing-02.webp",
@@ -2423,7 +2423,7 @@
     "category": "swings",
     "slug": "andros-w-cane-swing",
     "path": "/furniture/swings/andros-w-cane-swing",
-    "quotePath": "/request-quote/andros-w-cane-swing",
+    "quotePath": "/make-an-inquiry/andros-w-cane-swing",
     "images": [
       "/images/products/andros-w-cane-swing-01.webp",
       "/images/products/andros-w-cane-swing-02.webp",
@@ -2470,7 +2470,7 @@
     "category": "swings",
     "slug": "athens-stand-cane-swing",
     "path": "/furniture/swings/athens-stand-cane-swing",
-    "quotePath": "/request-quote/athens-stand-cane-swing",
+    "quotePath": "/make-an-inquiry/athens-stand-cane-swing",
     "images": [
       "/images/products/athens-stand-cane-swing-01.webp",
       "/images/products/athens-stand-cane-swing-02.webp",
@@ -2528,7 +2528,7 @@
     "category": "swings",
     "slug": "axor-with-roof-cane-swing",
     "path": "/furniture/swings/axor-with-roof-cane-swing",
-    "quotePath": "/request-quote/axor-with-roof-cane-swing",
+    "quotePath": "/make-an-inquiry/axor-with-roof-cane-swing",
     "images": [
       "/images/products/axor-with-roof-cane-swing-01.webp",
       "/images/products/axor-with-roof-cane-swing-02.webp",
@@ -2570,7 +2570,7 @@
     "category": "swings",
     "slug": "filitheyo-with-stand-cane-swing",
     "path": "/furniture/swings/filitheyo-with-stand-cane-swing",
-    "quotePath": "/request-quote/filitheyo-with-stand-cane-swing",
+    "quotePath": "/make-an-inquiry/filitheyo-with-stand-cane-swing",
     "images": [
       "/images/products/filitheyo-with-stand-cane-swing-01.webp",
       "/images/products/filitheyo-with-stand-cane-swing-02.webp",
@@ -2624,7 +2624,7 @@
     "category": "swings",
     "slug": "filitheyo-with-roof-cane-swing",
     "path": "/furniture/swings/filitheyo-with-roof-cane-swing",
-    "quotePath": "/request-quote/filitheyo-with-roof-cane-swing",
+    "quotePath": "/make-an-inquiry/filitheyo-with-roof-cane-swing",
     "images": [
       "/images/products/filitheyo-with-roof-cane-swing-01.webp",
       "/images/products/filitheyo-with-roof-cane-swing-02.webp",
@@ -2675,7 +2675,7 @@
     "category": "swings",
     "slug": "malaga-with-roof-cane-swing",
     "path": "/furniture/swings/malaga-with-roof-cane-swing",
-    "quotePath": "/request-quote/malaga-with-roof-cane-swing",
+    "quotePath": "/make-an-inquiry/malaga-with-roof-cane-swing",
     "images": [
       "/images/products/malaga-with-roof-cane-swing-01.webp",
       "/images/products/malaga-with-roof-cane-swing-02.webp",
@@ -2727,7 +2727,7 @@
     "category": "swings",
     "slug": "tahiti-stand-cane-swing",
     "path": "/furniture/swings/tahiti-stand-cane-swing",
-    "quotePath": "/request-quote/tahiti-stand-cane-swing",
+    "quotePath": "/make-an-inquiry/tahiti-stand-cane-swing",
     "images": [
       "/images/products/tahiti-stand-cane-swing-01.webp",
       "/images/products/tahiti-stand-cane-swing-02.webp",
@@ -2783,7 +2783,7 @@
     "category": "swings",
     "slug": "oldan-cane-swing",
     "path": "/furniture/swings/oldan-cane-swing",
-    "quotePath": "/request-quote/oldan-cane-swing",
+    "quotePath": "/make-an-inquiry/oldan-cane-swing",
     "images": [
       "/images/products/oland-cane-swing-02.webp",
       "/images/products/oland-cane-swing-03.webp",
@@ -2840,7 +2840,7 @@
     "category": "tables",
     "slug": "alpha-cane-table",
     "path": "/furniture/tables/alpha-cane-table",
-    "quotePath": "/request-quote/alpha-cane-table",
+    "quotePath": "/make-an-inquiry/alpha-cane-table",
     "images": [
       "/images/products/alpha-cane-table-01.webp",
       "/images/products/alpha-cane-table-02.webp",
@@ -2891,7 +2891,7 @@
     "category": "tables",
     "slug": "andros-cane-table",
     "path": "/furniture/tables/andros-cane-table",
-    "quotePath": "/request-quote/andros-cane-table",
+    "quotePath": "/make-an-inquiry/andros-cane-table",
     "images": [
       "/images/products/andros-cane-table-01.webp",
       "/images/products/andros-cane-table-02.webp",
@@ -2941,7 +2941,7 @@
     "category": "tables",
     "slug": "arches-cane-table",
     "path": "/furniture/tables/arches-cane-table",
-    "quotePath": "/request-quote/arches-cane-table",
+    "quotePath": "/make-an-inquiry/arches-cane-table",
     "images": [
       "/images/products/arches-cane-table-01.webp",
       "/images/products/arches-cane-table-02.webp",
@@ -2991,7 +2991,7 @@
     "category": "tables",
     "slug": "claire-cane-table",
     "path": "/furniture/tables/claire-cane-table",
-    "quotePath": "/request-quote/claire-cane-table",
+    "quotePath": "/make-an-inquiry/claire-cane-table",
     "images": [
       "/images/products/claire-cane-table-01.webp",
       "/images/products/claire-cane-table-02.webp",
@@ -3042,7 +3042,7 @@
     "category": "tables",
     "slug": "filitheyo-cane-table",
     "path": "/furniture/tables/filitheyo-cane-table",
-    "quotePath": "/request-quote/filitheyo-cane-table",
+    "quotePath": "/make-an-inquiry/filitheyo-cane-table",
     "images": [
       "/images/products/filitheyo-cane-table-01.webp"
     ],
@@ -3090,7 +3090,7 @@
     "category": "tables",
     "slug": "mileos-cane-table",
     "path": "/furniture/tables/mileos-cane-table",
-    "quotePath": "/request-quote/mileos-cane-table",
+    "quotePath": "/make-an-inquiry/mileos-cane-table",
     "images": [
       "/images/products/mileos-cane-table-01.webp",
       "/images/products/mileos-cane-table-02.webp",
@@ -3140,7 +3140,7 @@
     "category": "tables",
     "slug": "sunflower-olive-cane-table",
     "path": "/furniture/tables/sunflower-olive-cane-table",
-    "quotePath": "/request-quote/sunflower-olive-cane-table",
+    "quotePath": "/make-an-inquiry/sunflower-olive-cane-table",
     "images": [
       "/images/products/sunflower-olive-cane-table-01.webp",
       "/images/products/sunflower-olive-cane-table-02.webp",
@@ -3159,7 +3159,7 @@
     "category": "tables",
     "slug": "sunflower-yellow-cane-table",
     "path": "/furniture/tables/sunflower-yellow-cane-table",
-    "quotePath": "/request-quote/sunflower-yellow-cane-table",
+    "quotePath": "/make-an-inquiry/sunflower-yellow-cane-table",
     "images": [
       "/images/products/sunflower-yellow-cane-table-01.webp",
       "/images/products/sunflower-yellow-cane-table-02.webp",
@@ -3177,7 +3177,7 @@
     "category": "tables",
     "slug": "tahiti-cane-table",
     "path": "/furniture/tables/tahiti-cane-table",
-    "quotePath": "/request-quote/tahiti-cane-table",
+    "quotePath": "/make-an-inquiry/tahiti-cane-table",
     "images": [
       "/images/products/tahiti-cane-table-01.webp",
       "/images/products/tahiti-cane-table-02.webp",
@@ -3227,7 +3227,7 @@
     "category": "tables",
     "slug": "aspire-cane-table",
     "path": "/furniture/tables/aspire-cane-table",
-    "quotePath": "/request-quote/aspire-cane-table",
+    "quotePath": "/make-an-inquiry/aspire-cane-table",
     "images": [
       "/images/products/aspire-cane-table-01.webp",
       "/images/products/aspire-cane-table-02.webp",
@@ -3278,7 +3278,7 @@
     "category": "tables",
     "slug": "byron-cane-table",
     "path": "/furniture/tables/byron-cane-table",
-    "quotePath": "/request-quote/byron-cane-table",
+    "quotePath": "/make-an-inquiry/byron-cane-table",
     "images": [
       "/images/products/byrons-cane-table-01.webp",
       "/images/products/byrons-cane-table-02.webp",
@@ -3329,7 +3329,7 @@
     "category": "tables",
     "slug": "canary-cane-table",
     "path": "/furniture/tables/canary-cane-table",
-    "quotePath": "/request-quote/canary-cane-table",
+    "quotePath": "/make-an-inquiry/canary-cane-table",
     "images": [
       "/images/products/canary-cane-table-01.webp",
       "/images/products/canary-cane-table-02.webp",
@@ -3380,7 +3380,7 @@
     "category": "tables",
     "slug": "caprio-cane-table",
     "path": "/furniture/tables/caprio-cane-table",
-    "quotePath": "/request-quote/caprio-cane-table",
+    "quotePath": "/make-an-inquiry/caprio-cane-table",
     "images": [
       "/images/products/caprio-cane-table-01.webp",
       "/images/products/caprio-cane-table-02.webp",
@@ -3431,7 +3431,7 @@
     "category": "tables",
     "slug": "hawaii-cane-table",
     "path": "/furniture/tables/hawaii-cane-table",
-    "quotePath": "/request-quote/hawaii-cane-table",
+    "quotePath": "/make-an-inquiry/hawaii-cane-table",
     "images": [
       "/images/products/hawaii-cane-table-01.webp",
       "/images/products/hawaii-cane-table-02.webp",
@@ -3481,7 +3481,7 @@
     "category": "tables",
     "slug": "ibiza-cane-table",
     "path": "/furniture/tables/ibiza-cane-table",
-    "quotePath": "/request-quote/ibiza-cane-table",
+    "quotePath": "/make-an-inquiry/ibiza-cane-table",
     "images": [
       "/images/products/ibizaa-cane-table-01.webp",
       "/images/products/ibizaa-cane-table-02.webp",
@@ -3531,7 +3531,7 @@
     "category": "tables",
     "slug": "luxor-cane-table",
     "path": "/furniture/tables/luxor-cane-table",
-    "quotePath": "/request-quote/luxor-cane-table",
+    "quotePath": "/make-an-inquiry/luxor-cane-table",
     "images": [
       "/images/products/luxor-cane-table-01.webp",
       "/images/products/luxor-cane-table-02.webp",
@@ -3550,7 +3550,7 @@
     "category": "tables",
     "slug": "malaga-cane-table",
     "path": "/furniture/tables/malaga-cane-table",
-    "quotePath": "/request-quote/malaga-cane-table",
+    "quotePath": "/make-an-inquiry/malaga-cane-table",
     "images": [
       "/images/products/malaga-cane-table-01.webp",
       "/images/products/malaga-cane-table-02.webp",
@@ -3569,7 +3569,7 @@
     "category": "tables",
     "slug": "malaga-rectangle-cane-table",
     "path": "/furniture/tables/malaga-rectangle-cane-table",
-    "quotePath": "/request-quote/malaga-rectangle-cane-table",
+    "quotePath": "/make-an-inquiry/malaga-rectangle-cane-table",
     "images": [
       "/images/products/malaga-reactngle-cane-table-01.webp",
       "/images/products/malaga-reactngle-cane-table-02.webp",
@@ -3620,7 +3620,7 @@
     "category": "tables",
     "slug": "malaga-round-cane-table",
     "path": "/furniture/tables/malaga-round-cane-table",
-    "quotePath": "/request-quote/malaga-round-cane-table",
+    "quotePath": "/make-an-inquiry/malaga-round-cane-table",
     "images": [
       "/images/products/malaga-round-cane-table-01.webp",
       "/images/products/malaga-round-cane-table-02.webp",
@@ -3671,7 +3671,7 @@
     "category": "tables",
     "slug": "minorca-cane-table",
     "path": "/furniture/tables/minorca-cane-table",
-    "quotePath": "/request-quote/minorca-cane-table",
+    "quotePath": "/make-an-inquiry/minorca-cane-table",
     "images": [
       "/images/products/minorca-cane-table-01.webp",
       "/images/products/minorca-cane-table-02.webp",
@@ -3721,7 +3721,7 @@
     "category": "tables",
     "slug": "nebula-cane-table",
     "path": "/furniture/tables/nebula-cane-table",
-    "quotePath": "/request-quote/nebula-cane-table",
+    "quotePath": "/make-an-inquiry/nebula-cane-table",
     "images": [
       "/images/products/nebula-cane-table-01.webp",
       "/images/products/nebula-cane-table-02.webp",
@@ -3771,7 +3771,7 @@
     "category": "tables",
     "slug": "pythos-cane-table",
     "path": "/furniture/tables/pythos-cane-table",
-    "quotePath": "/request-quote/pythos-cane-table",
+    "quotePath": "/make-an-inquiry/pythos-cane-table",
     "images": [
       "/images/products/pythos-cane-table-01.webp",
       "/images/products/pythos-cane-table-02.webp",
@@ -3822,7 +3822,7 @@
     "category": "tables",
     "slug": "santorini-cane-table",
     "path": "/furniture/tables/santorini-cane-table",
-    "quotePath": "/request-quote/santorini-cane-table",
+    "quotePath": "/make-an-inquiry/santorini-cane-table",
     "images": [
       "/images/products/santorini-cane-table-01.webp",
       "/images/products/santorini-cane-table-02.webp",
@@ -3873,7 +3873,7 @@
     "category": "tables",
     "slug": "streak-cane-table",
     "path": "/furniture/tables/streak-cane-table",
-    "quotePath": "/request-quote/streak-cane-table",
+    "quotePath": "/make-an-inquiry/streak-cane-table",
     "images": [
       "/images/products/streak-cane-table-01.webp",
       "/images/products/streak-cane-table-02.webp",
@@ -3923,7 +3923,7 @@
     "category": "tables",
     "slug": "zero-cane-table",
     "path": "/furniture/tables/zero-cane-table",
-    "quotePath": "/request-quote/zero-cane-table",
+    "quotePath": "/make-an-inquiry/zero-cane-table",
     "images": [
       "/images/products/zero-cane-table-01.webp",
       "/images/products/zero-cane-table-02.webp",
@@ -3974,7 +3974,7 @@
     "category": "chairs",
     "slug": "pythos-cane-chair",
     "path": "/furniture/chairs/pythos-cane-chair",
-    "quotePath": "/request-quote/pythos-cane-chair",
+    "quotePath": "/make-an-inquiry/pythos-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-15.webp"
     ],
@@ -3990,7 +3990,7 @@
     "category": "chairs",
     "slug": "santorini-cane-chair",
     "path": "/furniture/chairs/santorini-cane-chair",
-    "quotePath": "/request-quote/santorini-cane-chair",
+    "quotePath": "/make-an-inquiry/santorini-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-16.webp"
     ],
@@ -4006,7 +4006,7 @@
     "category": "chairs",
     "slug": "zero-cane-chair",
     "path": "/furniture/chairs/zero-cane-chair",
-    "quotePath": "/request-quote/zero-cane-chair",
+    "quotePath": "/make-an-inquiry/zero-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-17.webp"
     ],
@@ -4022,7 +4022,7 @@
     "category": "chairs",
     "slug": "andros-cane-chair",
     "path": "/furniture/chairs/andros-cane-chair",
-    "quotePath": "/request-quote/andros-cane-chair",
+    "quotePath": "/make-an-inquiry/andros-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-18.webp"
     ],
@@ -4038,7 +4038,7 @@
     "category": "chairs",
     "slug": "ibiza-cane-chair",
     "path": "/furniture/chairs/ibiza-cane-chair",
-    "quotePath": "/request-quote/ibiza-cane-chair",
+    "quotePath": "/make-an-inquiry/ibiza-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-19.webp"
     ],
@@ -4054,7 +4054,7 @@
     "category": "chairs",
     "slug": "claire-cane-chair",
     "path": "/furniture/chairs/claire-cane-chair",
-    "quotePath": "/request-quote/claire-cane-chair",
+    "quotePath": "/make-an-inquiry/claire-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-20.webp"
     ],
@@ -4070,7 +4070,7 @@
     "category": "chairs",
     "slug": "alpha-rocking-cane-chair",
     "path": "/furniture/chairs/alpha-rocking-cane-chair",
-    "quotePath": "/request-quote/alpha-rocking-cane-chair",
+    "quotePath": "/make-an-inquiry/alpha-rocking-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-21.webp"
     ],
@@ -4086,7 +4086,7 @@
     "category": "chairs",
     "slug": "alpha-cane-chair",
     "path": "/furniture/chairs/alpha-cane-chair",
-    "quotePath": "/request-quote/alpha-cane-chair",
+    "quotePath": "/make-an-inquiry/alpha-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-22.webp"
     ],
@@ -4102,7 +4102,7 @@
     "category": "chairs",
     "slug": "streak-cane-chair",
     "path": "/furniture/chairs/streak-cane-chair",
-    "quotePath": "/request-quote/streak-cane-chair",
+    "quotePath": "/make-an-inquiry/streak-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-23.webp"
     ],
@@ -4118,7 +4118,7 @@
     "category": "chairs",
     "slug": "tahiti-cane-chair",
     "path": "/furniture/chairs/tahiti-cane-chair",
-    "quotePath": "/request-quote/tahiti-cane-chair",
+    "quotePath": "/make-an-inquiry/tahiti-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-24.webp"
     ],
@@ -4134,7 +4134,7 @@
     "category": "chairs",
     "slug": "condo-cane-chair",
     "path": "/furniture/chairs/condo-cane-chair",
-    "quotePath": "/request-quote/condo-cane-chair",
+    "quotePath": "/make-an-inquiry/condo-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-25.webp"
     ],
@@ -4150,7 +4150,7 @@
     "category": "chairs",
     "slug": "luyor-with-footrest-cane-chair",
     "path": "/furniture/chairs/luyor-with-footrest-cane-chair",
-    "quotePath": "/request-quote/luyor-with-footrest-cane-chair",
+    "quotePath": "/make-an-inquiry/luyor-with-footrest-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-26.webp"
     ],
@@ -4166,7 +4166,7 @@
     "category": "chairs",
     "slug": "filitheyo-cane-chair",
     "path": "/furniture/chairs/filitheyo-cane-chair",
-    "quotePath": "/request-quote/filitheyo-cane-chair",
+    "quotePath": "/make-an-inquiry/filitheyo-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-27.webp"
     ],
@@ -4182,7 +4182,7 @@
     "category": "chairs",
     "slug": "nebula-revolving-cane-chair",
     "path": "/furniture/chairs/nebula-revolving-cane-chair",
-    "quotePath": "/request-quote/nebula-revolving-cane-chair",
+    "quotePath": "/make-an-inquiry/nebula-revolving-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-28.webp"
     ],
@@ -4198,7 +4198,7 @@
     "category": "chairs",
     "slug": "minorca-cane-chair",
     "path": "/furniture/chairs/minorca-cane-chair",
-    "quotePath": "/request-quote/minorca-cane-chair",
+    "quotePath": "/make-an-inquiry/minorca-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-29.webp"
     ],
@@ -4214,7 +4214,7 @@
     "category": "chairs",
     "slug": "mileos-cane-chair",
     "path": "/furniture/chairs/mileos-cane-chair",
-    "quotePath": "/request-quote/mileos-cane-chair",
+    "quotePath": "/make-an-inquiry/mileos-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-30.webp"
     ],
@@ -4230,7 +4230,7 @@
     "category": "chairs",
     "slug": "barcelona-armless-cane-chair",
     "path": "/furniture/chairs/barcelona-armless-cane-chair",
-    "quotePath": "/request-quote/barcelona-armless-cane-chair",
+    "quotePath": "/make-an-inquiry/barcelona-armless-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-05.webp"
     ],
@@ -4246,7 +4246,7 @@
     "category": "chairs",
     "slug": "malaga-blue-cushion-cane-chair",
     "path": "/furniture/chairs/malaga-blue-cushion-cane-chair",
-    "quotePath": "/request-quote/malaga-blue-cushion-cane-chair",
+    "quotePath": "/make-an-inquiry/malaga-blue-cushion-cane-chair",
     "images": [
       "/images/products/malaga-cane-chair-06.webp",
       "/images/products/malaga-cane-chair-07.webp",
@@ -4291,7 +4291,7 @@
     "category": "chairs",
     "slug": "mileos-natural-finish-cane-chair",
     "path": "/furniture/chairs/mileos-natural-finish-cane-chair",
-    "quotePath": "/request-quote/mileos-natural-finish-cane-chair",
+    "quotePath": "/make-an-inquiry/mileos-natural-finish-cane-chair",
     "images": [
       "/images/products/cane-chairs-collection-31.webp"
     ],
@@ -4307,7 +4307,7 @@
     "category": "swings",
     "slug": "petra-open-frame-cane-swing",
     "path": "/furniture/swings/petra-open-frame-cane-swing",
-    "quotePath": "/request-quote/petra-open-frame-cane-swing",
+    "quotePath": "/make-an-inquiry/petra-open-frame-cane-swing",
     "images": [
       "/images/products/cane-swings-collection-23.webp"
     ],
@@ -4323,7 +4323,7 @@
     "category": "tables",
     "slug": "mileos-green-finish-cane-table",
     "path": "/furniture/tables/mileos-green-finish-cane-table",
-    "quotePath": "/request-quote/mileos-green-finish-cane-table",
+    "quotePath": "/make-an-inquiry/mileos-green-finish-cane-table",
     "images": [
       "/images/products/cane-tables-collection-06.webp"
     ],
@@ -4371,7 +4371,7 @@
     "category": "chairs",
     "slug": "hawaii-collection-cane-chair",
     "path": "/furniture/chairs/hawaii-collection-cane-chair",
-    "quotePath": "/request-quote/hawaii-collection-cane-chair",
+    "quotePath": "/make-an-inquiry/hawaii-collection-cane-chair",
     "images": [
       "/images/products/hawaii-cane-chair-01.webp"
     ],
@@ -4387,7 +4387,7 @@
     "category": "sofas",
     "slug": "filitheyo-collection-cane-sofa",
     "path": "/furniture/sofas/filitheyo-collection-cane-sofa",
-    "quotePath": "/request-quote/filitheyo-collection-cane-sofa",
+    "quotePath": "/make-an-inquiry/filitheyo-collection-cane-sofa",
     "images": [
       "/images/products/cane-sofas-collection-09.webp"
     ],
@@ -4438,7 +4438,7 @@
     "category": "tables",
     "slug": "claire-collection-cane-table",
     "path": "/furniture/tables/claire-collection-cane-table",
-    "quotePath": "/request-quote/claire-collection-cane-table",
+    "quotePath": "/make-an-inquiry/claire-collection-cane-table",
     "images": [
       "/images/products/claire-cane-table-02.webp"
     ],

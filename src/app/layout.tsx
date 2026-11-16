@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/site-header";
 import { ImageReadiness } from "@/components/image-readiness";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { FloatingWhatsApp } from "@/components/floating-whatsapp";
-import { siteOrigin, metadataOrigin, pageMetadata, serializeJsonLd } from "@/lib/seo";
+import { siteOrigin, metadataOrigin, pageMetadata, pageUrl, serializeJsonLd } from "@/lib/seo";
 
 const siteUrl = siteOrigin;
 const description = "Discover handcrafted cane chairs, sofas, swings and tables by Vaidehi Craft. Traditional craftsmanship meets modern design in furniture and thoughtfully curated spaces.";
@@ -31,8 +31,8 @@ export const viewport: Viewport = { width: "device-width", initialScale: 1, them
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const schema = { "@context": "https://schema.org", "@graph": [
-    { "@type": "Organization", name: "Vaidehi Craft", foundingDate: "1998", email: "connect@vaidehicraft.com", telephone: "+919824177913", sameAs: ["https://www.instagram.com/vaidehi_craft_surat/", "https://www.facebook.com/siddharthshahvaidehicrafts/"], ...(metadataOrigin ? { "@id": `${metadataOrigin}/#organization`, url: metadataOrigin, logo: `${metadataOrigin}/images/vaidehi-craft-green-logo.avif` } : {}) },
-    ...(metadataOrigin ? [{ "@type": "WebSite", "@id": `${metadataOrigin}/#website`, name: "Vaidehi Craft", url: metadataOrigin, inLanguage: "en-IN", publisher: { "@id": `${metadataOrigin}/#organization` } }] : []),
+    { "@type": "Organization", name: "Vaidehi Craft", foundingDate: "1998", email: "connect@vaidehicraft.com", telephone: "+919824177913", sameAs: ["https://www.instagram.com/vaidehi_craft_surat/", "https://www.facebook.com/siddharthshahvaidehicrafts/"], ...(metadataOrigin ? { "@id": `${metadataOrigin}/#organization`, url: pageUrl("/"), logo: `${metadataOrigin}/images/vaidehi-craft-green-logo.avif` } : {}) },
+    ...(metadataOrigin ? [{ "@type": "WebSite", "@id": `${metadataOrigin}/#website`, name: "Vaidehi Craft", url: pageUrl("/"), inLanguage: "en-IN", publisher: { "@id": `${metadataOrigin}/#organization` } }] : []),
   ] };
 
   return (
