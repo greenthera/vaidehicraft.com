@@ -47,7 +47,7 @@ export function StoreVideo({ src = "/media/canearth15-store-tour.mp4", poster = 
     // Recover a decoder stuck on a frame, without restarting a slow download.
     const watchdog = deferOnMobile ? undefined : window.setInterval(() => {
       const now = Date.now();
-      if (document.visibilityState === "hidden" || element.paused || element.seeking || element.readyState < 2 || element.currentTime !== lastTime) {
+      if (document.visibilityState === "hidden" || element.paused || element.seeking || element.readyState <= HTMLMediaElement.HAVE_CURRENT_DATA || element.currentTime !== lastTime) {
         lastTime = element.currentTime;
         lastProgress = now;
       } else if (now - lastProgress >= 9000) recover();
