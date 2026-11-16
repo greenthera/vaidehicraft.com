@@ -391,3 +391,71 @@ button.normal-case {
 .product-image-viewer .button-primary:focus-visible {
   background-color: var(--brand-green-dark);
 }
+
+/* Mobile-only font subsets retain original glyphs, metrics and weights. */
+@media (max-width: 750px) {
+  @font-face {
+    font-family: "Century Gothic";
+    src: url("/fonts/century-gothic-mobile-bcb8bbedfa.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+  }
+  @font-face {
+    font-family: "Century Gothic";
+    src: url("/fonts/century-gothic-bold-mobile-6a6b86a387.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+  }
+  @font-face {
+    font-family: "Reference Heading";
+    src: url("/fonts/century-gothic-bold-mobile-6a6b86a387.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+  }
+  @font-face {
+    font-family: "Reference Statement";
+    src: url("/fonts/century-gothic-statement-mobile-b89ad8cf84.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+  }
+  @font-face {
+    font-family: "Reference Store";
+    src: url("/fonts/century-gothic-store-mobile-39887b2773.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+  }
+  @font-face {
+    font-family: "Reference Catalog";
+    src: url("/fonts/catalog-century-gothic-bold-mobile-f76fd6d532.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+  }
+  @font-face {
+    font-family: "Madefor Text";
+    src: url("/fonts/madefor-text-mobile-b1b08dd488.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+  }
+  @font-face {
+    font-family: "Madefor Display";
+    src: url("/fonts/madefor-display-mobile-4703e388c0.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+  }
+}
