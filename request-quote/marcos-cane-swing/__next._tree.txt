@@ -1,8 +1,8 @@
-:HL["/vaidehicraft.com/_next/static/css/e5b57734e5c8fe34.css","style"]
+:HL["/vaidehicraft.com/_next/static/css/93bc8571c2619b70.css","style"]
 :HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
-:HL["/vaidehicraft.com/fonts/century-gothic-mobile-82fa7dd7b5.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","media":"(max-width: 750px)"}]
-:HL["/vaidehicraft.com/fonts/century-gothic-bold-mobile-fd967193c9.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","media":"(max-width: 750px)"}]
+:HL["/vaidehicraft.com/fonts/century-gothic-mobile-82fa7dd7b5.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
+:HL["/vaidehicraft.com/fonts/century-gothic-bold-mobile-fd967193c9.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"marcos-cane-swing","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"request-quote","h":131136,"c":"$Q2"}]]
-0:{"b":"6N5pceka9WHEcVITDPL09","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"7vK3NH0j8JwSVAYFXSKKP","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
