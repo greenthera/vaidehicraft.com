@@ -4,4 +4,4 @@
 :HL["/vaidehicraft.com/fonts/century-gothic-bold-mobile-6a6b86a387.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","media":"(max-width: 750px)"}]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"privacy-policy","h":64,"c":"$Q2"}]]
-0:{"b":"Yi_8cYfXJAizv828smD6J","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
+0:{"b":"VB_XYSNQidjtCrhOhrvyb","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
