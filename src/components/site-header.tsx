@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "@/components/site-image";
-import Link from "next/link";
+import { MobileIntentLink as Link } from "@/components/mobile-intent-link";
 import { usePathname, useRouter } from "next/navigation";
 import { startTransition, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import logo from "../../public/images/vaidehi-craft-green-logo.avif";

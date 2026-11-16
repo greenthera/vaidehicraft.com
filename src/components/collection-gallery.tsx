@@ -1,7 +1,7 @@
 import { MobilePicture } from "@/components/mobile-picture";
 import { categoryLabel } from "@/lib/product-categories";
 import Image from "@/components/site-image";
-import Link from "next/link";
+import { MobileIntentLink as Link } from "@/components/mobile-intent-link";
 import chair from "../../public/images/cane-rocking-chair-living-room.avif";
 import sofa from "../../public/images/blue-cushion-cane-sofa-set.avif";
 import swing from "../../public/images/freestanding-cane-swing.avif";
