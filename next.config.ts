@@ -3,6 +3,7 @@ import legacyRedirects from "./src/data/legacy-redirects.json";
 
 const staticExport = process.env.STATIC_EXPORT === "true";
 const nextConfig: NextConfig = {
+  env: { NEXT_PUBLIC_STATIC_EXPORT: String(staticExport) },
   ...(staticExport ? { output: "export", basePath: process.env.NEXT_PUBLIC_BASE_PATH || "", images: { unoptimized: true }, outputFileTracingRoot: process.cwd() } : {}),
   trailingSlash: staticExport,
   poweredByHeader: false,

@@ -10,13 +10,21 @@ export function StoreVideo({ src = "/media/canearth15-store-tour.mp4", poster = 
     if (!element) return;
     let disposed = false;
     let loaded = !deferOnMobile;
+    let playPending = false;
+    let retryFrame: number | undefined;
     // Set DOM properties as well as attributes before requesting playback.
     element.muted = true;
     element.defaultMuted = true;
     element.playsInline = true;
     const play = () => {
-      if (disposed || !loaded || document.visibilityState === "hidden" || !element.paused) return;
-      void element.play().catch(() => { /* Retry when ready, visible, or after user interaction. */ });
+      if (disposed || !loaded || playPending || document.visibilityState === "hidden" || !element.paused) return;
+      playPending = true;
+      void element.play().catch(() => { /* Readiness and interaction events retry blocked autoplay. */ }).finally(() => { playPending = false; });
+    };
+    const retry = () => {
+      if (disposed || !loaded || document.visibilityState === "hidden") return;
+      if (retryFrame !== undefined) window.cancelAnimationFrame(retryFrame);
+      retryFrame = window.requestAnimationFrame(() => { retryFrame = undefined; play(); });
     };
     const load = () => {
       if (!loaded) {
@@ -26,8 +34,11 @@ export function StoreVideo({ src = "/media/canearth15-store-tour.mp4", poster = 
       }
       play();
     };
+    element.addEventListener("loadedmetadata", retry);
     element.addEventListener("loadeddata", play);
     element.addEventListener("canplay", play);
+    element.addEventListener("canplaythrough", retry);
+    element.addEventListener("pause", retry);
     window.addEventListener("pageshow", play);
     document.addEventListener("visibilitychange", play);
     document.addEventListener("pointerdown", play, { passive: true });
@@ -41,16 +52,22 @@ export function StoreVideo({ src = "/media/canearth15-store-tour.mp4", poster = 
       }, { rootMargin: "300px 0px" });
       observer.observe(element);
     } else {
+      // A reused route can mount before the browser selects the new video source.
+      if (!deferOnMobile && element.networkState === HTMLMediaElement.NETWORK_EMPTY) element.load();
       load();
     }
     const onResize = () => { if (!mobile.matches) { load(); observer?.disconnect(); } };
     mobile.addEventListener("change", onResize);
     return () => {
       disposed = true;
+      if (retryFrame !== undefined) window.cancelAnimationFrame(retryFrame);
       observer?.disconnect();
       mobile.removeEventListener("change", onResize);
+      element.removeEventListener("loadedmetadata", retry);
       element.removeEventListener("loadeddata", play);
       element.removeEventListener("canplay", play);
+      element.removeEventListener("canplaythrough", retry);
+      element.removeEventListener("pause", retry);
       window.removeEventListener("pageshow", play);
       document.removeEventListener("visibilitychange", play);
       document.removeEventListener("pointerdown", play);

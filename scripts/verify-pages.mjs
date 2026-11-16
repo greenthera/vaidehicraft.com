@@ -12,6 +12,11 @@ for (const route of routes) {
   assert(fs.existsSync(file), `Missing static page: ${route}`);
   const html = fs.readFileSync(file, 'utf8');
   assert.match(html, /<h1[\s>]/, `Missing visible page content: ${route}`);
+  for (const match of html.matchAll(/<a\b[^>]*aria-label="View [^"]+ details"[^>]*>/g)) {
+    const href = match[0].match(/\bhref="([^"]+)"/)?.[1];
+    assert(href?.startsWith(`${base}/furniture/`) && href.endsWith('/'), `Invalid product destination in ${route}: ${href}`);
+    assert(fs.existsSync(path.join('out', href.slice(base.length), 'index.html')), `Missing product destination: ${href}`);
+  }
   for (const match of html.matchAll(/(?:srcset|imagesrcset)="([^"]+)"/gi)) {
     for (const candidate of match[1].split(',')) {
       const asset = candidate.trim().split(/\s+/)[0];
