@@ -4,6 +4,7 @@ import Link from "next/link";
 import { productDisplayName } from "@/lib/product-display-name";
 import { enquiryWhatsAppStorageKey, whatsappEnquiryLink } from "@/lib/whatsapp";
 import { assetPath } from "@/lib/site-path";
+import { renderSendingEnquiryTab } from "@/lib/sending-enquiry-tab";
 import { useState } from "react";
 import products from "@/data/product-index.json";
 import { buildEnquiry, formResponseUrl, enquiryConsentText } from "@/lib/enquiry";
@@ -45,8 +46,7 @@ export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug
           whatsappTab = window.open("about:blank", "_blank");
           if (whatsappTab) {
             whatsappTab.opener = null;
-            whatsappTab.document.title = "Sending your enquiry | Vaidehi Craft";
-            whatsappTab.document.body.textContent = "Sending your enquiry. WhatsApp will open here when it finishes.";
+            renderSendingEnquiryTab(whatsappTab);
           }
         } catch { /* The confirmation page also provides a WhatsApp link. */ }
       }
