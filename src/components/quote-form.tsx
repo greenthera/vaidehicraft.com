@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { productDisplayName } from "@/lib/product-display-name";
-import { useRouter } from "next/navigation";
+import { whatsappUrl } from "@/lib/whatsapp";
 import { useState } from "react";
 import products from "@/data/product-index.json";
 import { buildEnquiry, formResponseUrl, enquiryConsentText } from "@/lib/enquiry";
@@ -10,7 +10,6 @@ import { productCategories as categories } from "@/lib/product-categories";
 
 export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug?: string; appearance?: "classic" | "inquiry" }) {
   const inquiry = appearance === "inquiry";
-  const router = useRouter();
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
   const initial = products.find((product) => product.slug === productSlug);
@@ -39,7 +38,7 @@ export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug
           return;
         }
         if (!payload.website) await fetch(formResponseUrl, { method: "POST", mode: "no-cors", credentials: "omit", body: enquiry.fields, signal: AbortSignal.timeout(15_000) });
-        router.push("/thank-you");
+        window.location.assign(whatsappUrl);
         return;
       }
       const response = await fetch("/api/enquiries", {
@@ -48,7 +47,7 @@ export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug
         body: JSON.stringify(payload),
       });
       if (response.ok) {
-        router.push("/thank-you");
+        window.location.assign(whatsappUrl);
         return;
       }
       const result = await response.json().catch(() => null);
