@@ -4,7 +4,7 @@ import Image from "@/components/site-image";
 import { InnerPage } from "@/components/inner-page";
 import { pageMetadata } from "@/lib/seo";
 import { EnquiryWhatsAppLink } from "@/components/enquiry-whatsapp-link";
-import interior from "../../../public/images/curated-cane-living-space.avif";
+import logo from "../../../public/images/vaidehi-craft-green-logo.avif";
 
 export const metadata = pageMetadata("Thank You", "Your enquiry has reached Vaidehi Craft.", "/thank-you", undefined, false);
 
@@ -33,10 +33,11 @@ export default function ThankYouPage() {
               <Link href="/" className="inline-flex min-h-12 items-center justify-center rounded-none button-outline px-6 py-3 text-sm">Back to home</Link>
             </div>
           </div>
-          <figure className="relative min-h-72 overflow-hidden min-[1000px]:min-h-full">
-            <Image src={interior} alt="Handcrafted cane furniture in a warm, naturally styled living space" fill sizes="(max-width: 999px) calc(100vw - 48px), (max-width: 1600px) 40vw, 570px" className="object-cover" />
-            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-[#142a20]/85 via-transparent to-transparent" />
-            <figcaption className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-10"><p className="mb-3 text-[10px] uppercase tracking-[0.22em]">Vaidehi Craft · Since 1998</p><p className="max-w-xs text-2xl leading-snug [font-family:var(--font-reference-heading)]">Natural materials.<br />A personal touch.<br />A piece of your story.</p></figcaption>
+          <figure className="relative flex min-h-72 flex-col overflow-hidden bg-[#244536] min-[1000px]:min-h-full">
+            <div className="flex min-h-40 flex-1 items-center justify-center px-6 py-8 sm:px-10">
+              <Image src={logo} alt="Vaidehi Craft" width={320} sizes="(max-width: 450px) calc(100vw - 100px), 320px" className="h-auto w-full max-w-xs brightness-0 invert" />
+            </div>
+            <figcaption className="p-6 text-white sm:p-10"><p className="mb-3 text-[10px] uppercase tracking-[0.22em]">Vaidehi Craft · Since 1998</p><p className="max-w-xs text-2xl leading-snug [font-family:var(--font-reference-heading)]">Natural materials.<br />A personal touch.<br />A piece of your story.</p></figcaption>
           </figure>
         </div>
         <div className="flex flex-col gap-3 border-t border-[#ded5c8] bg-[#ede7df] px-6 py-5 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:px-10 min-[1100px]:px-12">
