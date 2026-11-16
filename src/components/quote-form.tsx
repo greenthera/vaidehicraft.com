@@ -5,7 +5,7 @@ import { productDisplayName } from "@/lib/product-display-name";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import products from "@/data/product-index.json";
-import { buildEnquiry, formResponseUrl } from "@/lib/enquiry";
+import { buildEnquiry, formResponseUrl, enquiryConsentText } from "@/lib/enquiry";
 import { productCategories as categories } from "@/lib/product-categories";
 
 export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug?: string; appearance?: "classic" | "inquiry" }) {
@@ -28,7 +28,7 @@ export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug
     setSending(true);
     setError("");
     try {
-      const payload = { name: data.get("name"), email: data.get("email"), phone: data.get("phone"), message: data.get("message"), website: data.get("website"), contactConsent: !productSlug && data.get("confirm") === "on", detailsConfirmed: Boolean(productSlug) && data.get("confirm") === "on", products: selected, categories: selectedCategories, path: window.location.pathname };
+      const payload = { name: data.get("name"), email: data.get("email"), phone: data.get("phone"), message: data.get("message"), website: data.get("website"), contactConsent: data.get("confirm") === "on", products: selected, categories: selectedCategories, path: window.location.pathname };
       if (process.env.NEXT_PUBLIC_ENQUIRY_DIRECT === "true") {
         // GitHub Pages has no server, so the browser posts to Google. Google hides its reply from
         // cross-site pages: this catches validation and network failures, not a closed form.
@@ -88,9 +88,11 @@ export function QuoteForm({ productSlug, appearance = "classic" }: { productSlug
       }} className="mt-1 size-4 shrink-0 accent-[#244536]" /><span>{productDisplayName(item.name)}</span></label>)}</div></fieldset>)}</div>}
     </fieldset>}
     {inquiry && <label className="block">Tell us about your space <span className="text-[#526356]">(optional)</span><textarea name="message" maxLength={1000} rows={4} placeholder="Preferred size, finish, quantity, or anything you would like us to know." className={`${field} resize-y leading-6`} /></label>}
-    <label className="flex min-h-11 cursor-pointer items-center gap-3"><input required type="checkbox" name="confirm" className="size-4 shrink-0 accent-black" /><span>{productSlug ? "I confirm my details are correct." : "I agree to Vaidehi Craft using my contact details for marketing and calls."} <span aria-hidden="true">*</span></span></label>
+    <div>
+      <label className="flex min-h-11 cursor-pointer items-start gap-3 py-2"><input required type="checkbox" name="confirm" aria-describedby="quote-privacy-notice" className="mt-1 size-4 shrink-0 accent-[#244536]" /><span>{enquiryConsentText} <span aria-hidden="true">*</span></span></label>
+      <p id="quote-privacy-notice" className="mt-1 text-xs leading-5 text-neutral-600">Read our <Link href="/privacy-policy" className="underline underline-offset-4">Privacy Policy</Link>.</p>
+    </div>
     {error && <p role="alert" className="text-sm leading-6 text-[#9a2c14]">{error} Please try again, or <a href="tel:+919824177913" className="underline">call us directly</a>.</p>}
     <button type="submit" disabled={sending} className={`min-h-12 w-full cursor-pointer border px-7 py-3 type-form-value text-white transition-colors disabled:cursor-wait disabled:opacity-70 button-primary`}>{sending ? "Sending…" : inquiry ? "Submit enquiry" : "Submit request"}</button>
-    <p className="text-xs leading-5 text-neutral-600">Read our <Link href="/privacy-policy" className="underline underline-offset-4">Privacy Policy</Link>.</p>
   </form>;
 }

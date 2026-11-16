@@ -5,6 +5,7 @@ import { basePath } from "@/lib/site-path";
 // Shared by the Vercel route and the GitHub Pages form, so both validate alike and write identical rows.
 // These IDs come from the Google Form's public page and are not secrets.
 export const formResponseUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdbfNmV9uF-_Z6ATwDzFutH7uBRuX6BnEmTP2OMPstXvplz2A/formResponse";
+export const enquiryConsentText = "I agree to Vaidehi Craft using my contact details for marketing and calls.";
 const entries = {
   source: "entry.245284422",
   pageUrl: "entry.2120949635",
@@ -36,8 +37,7 @@ export function buildEnquiry(body: Record<string, unknown>, origin: string): { f
   if (path !== "/request-quote" && (chosen.length !== 1 || path !== chosen[0].quotePath)) return { error: "This request could not be accepted." };
 
   const generalQuote = path === "/request-quote";
-  if (generalQuote && body.contactConsent !== true) return { error: "Please confirm your consent to marketing contact and calls." };
-  if (!generalQuote && body.detailsConfirmed !== true) return { error: "Please confirm your details are correct." };
+  if (body.contactConsent !== true) return { error: "Please confirm your consent to marketing contact and calls." };
 
   const name = text(body.name, 120);
   const email = text(body.email, 200);
@@ -56,6 +56,6 @@ export function buildEnquiry(body: Record<string, unknown>, origin: string): { f
     [entries.category]: chosenCategories.map((category) => category.label).join(", "),
     [entries.product]: chosen.map((product) => product.name).join("; "),
     // Record only the confirmation actually shown on this form.
-    [entries.message]: [text(body.message, 1000), `${generalQuote ? "Contact consent: I agree to Vaidehi Craft using my contact details for marketing and calls." : "Details confirmed as correct."} Recorded at ${new Date().toISOString()}.`].filter(Boolean).join("\n\n"),
+    [entries.message]: [text(body.message, 1000), `Contact consent: ${enquiryConsentText} Recorded at ${new Date().toISOString()}.`].filter(Boolean).join("\n\n"),
   }) };
 }
