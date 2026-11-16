@@ -30,8 +30,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="antialiased">
       <head>
-        <link rel="preload" as="font" href={assetPath("/fonts/century-gothic-mobile-bcb8bbedfa.woff2")} type="font/woff2" crossOrigin="anonymous" media="(max-width: 750px)" />
-        <link rel="preload" as="font" href={assetPath("/fonts/century-gothic-bold-mobile-6a6b86a387.woff2")} type="font/woff2" crossOrigin="anonymous" media="(max-width: 750px)" />
+        <link rel="preload" as="font" href={assetPath("/fonts/century-gothic-mobile-82fa7dd7b5.woff2")} type="font/woff2" crossOrigin="anonymous" media="(max-width: 750px)" />
+        <link rel="preload" as="font" href={assetPath("/fonts/century-gothic-bold-mobile-fd967193c9.woff2")} type="font/woff2" crossOrigin="anonymous" media="(max-width: 750px)" />
         <Script id="consent-defaults" strategy="beforeInteractive">{`
           window.dataLayer = window.dataLayer || [];
           window.gtag = function(){window.dataLayer.push(arguments);};

@@ -396,66 +396,66 @@ button.normal-case {
 @media (max-width: 750px) {
   @font-face {
     font-family: "Century Gothic";
-    src: url("/fonts/century-gothic-mobile-bcb8bbedfa.woff2") format("woff2");
+    src: url("/fonts/century-gothic-mobile-82fa7dd7b5.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+    unicode-range: U+0020-007E, U+00A0, U+00A9, U+00B7, U+00D7, U+00E9, U+2013-2014, U+2018-2019, U+201C-201D, U+2026, U+20B9, U+2190, U+2192, U+2197;
   }
   @font-face {
     font-family: "Century Gothic";
-    src: url("/fonts/century-gothic-bold-mobile-6a6b86a387.woff2") format("woff2");
+    src: url("/fonts/century-gothic-bold-mobile-fd967193c9.woff2") format("woff2");
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+    unicode-range: U+0020-007E, U+00A0, U+00A9, U+00B7, U+00D7, U+00E9, U+2013-2014, U+2018-2019, U+201C-201D, U+2026, U+20B9, U+2190, U+2192, U+2197;
   }
   @font-face {
     font-family: "Reference Heading";
-    src: url("/fonts/century-gothic-bold-mobile-6a6b86a387.woff2") format("woff2");
+    src: url("/fonts/century-gothic-bold-mobile-fd967193c9.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+    unicode-range: U+0020-007E, U+00A0, U+00A9, U+00B7, U+00D7, U+00E9, U+2013-2014, U+2018-2019, U+201C-201D, U+2026, U+20B9, U+2190, U+2192, U+2197;
   }
   @font-face {
     font-family: "Reference Statement";
-    src: url("/fonts/century-gothic-statement-mobile-b89ad8cf84.woff2") format("woff2");
+    src: url("/fonts/century-gothic-statement-mobile-a48e8560a0.woff2") format("woff2");
     font-style: normal;
     font-weight: 400 700;
     font-display: swap;
-    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+    unicode-range: U+0020-007E, U+00A0, U+00A9, U+00B7, U+00D7, U+00E9, U+2013-2014, U+2018-2019, U+201C-201D, U+2026, U+20B9, U+2190, U+2192, U+2197;
   }
   @font-face {
     font-family: "Reference Store";
-    src: url("/fonts/century-gothic-store-mobile-39887b2773.woff2") format("woff2");
+    src: url("/fonts/century-gothic-store-mobile-f6027d2d85.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+    unicode-range: U+0020-007E, U+00A0, U+00A9, U+00B7, U+00D7, U+00E9, U+2013-2014, U+2018-2019, U+201C-201D, U+2026, U+20B9, U+2190, U+2192, U+2197;
   }
   @font-face {
     font-family: "Reference Catalog";
-    src: url("/fonts/catalog-century-gothic-bold-mobile-f76fd6d532.woff2") format("woff2");
+    src: url("/fonts/catalog-century-gothic-bold-mobile-b1d1898c87.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+    unicode-range: U+0020-007E, U+00A0, U+00A9, U+00B7, U+00D7, U+00E9, U+2013-2014, U+2018-2019, U+201C-201D, U+2026, U+20B9, U+2190, U+2192, U+2197;
   }
   @font-face {
     font-family: "Madefor Text";
-    src: url("/fonts/madefor-text-mobile-b1b08dd488.woff2") format("woff2");
+    src: url("/fonts/madefor-text-mobile-fbbdf104ed.woff2") format("woff2");
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+    unicode-range: U+0020-007E, U+00A0, U+00A9, U+00B7, U+00D7, U+00E9, U+2013-2014, U+2018-2019, U+201C-201D, U+2026, U+20B9, U+2190, U+2192, U+2197;
   }
   @font-face {
     font-family: "Madefor Display";
-    src: url("/fonts/madefor-display-mobile-4703e388c0.woff2") format("woff2");
+    src: url("/fonts/madefor-display-mobile-cb624d9499.woff2") format("woff2");
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    unicode-range: U+0000-024F, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2190-21FF;
+    unicode-range: U+0020-007E, U+00A0, U+00A9, U+00B7, U+00D7, U+00E9, U+2013-2014, U+2018-2019, U+201C-201D, U+2026, U+20B9, U+2190, U+2192, U+2197;
   }
 }
