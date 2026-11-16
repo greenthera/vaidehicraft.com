@@ -34,6 +34,25 @@ export function StoreVideo({ src = "/media/canearth15-store-tour.mp4", poster = 
       }
       play();
     };
+    let recovered = false;
+    let lastTime = element.currentTime;
+    let lastProgress = Date.now();
+    const recover = () => {
+      if (disposed || !loaded || recovered || document.visibilityState === "hidden") return;
+      recovered = true;
+      playPending = false;
+      element.load();
+      play();
+    };
+    // Recover a decoder stuck on a frame, without restarting a slow download.
+    const watchdog = deferOnMobile ? undefined : window.setInterval(() => {
+      const now = Date.now();
+      if (document.visibilityState === "hidden" || element.paused || element.seeking || element.readyState < 2 || element.currentTime !== lastTime) {
+        lastTime = element.currentTime;
+        lastProgress = now;
+      } else if (now - lastProgress >= 9000) recover();
+    }, 3000);
+    element.addEventListener("error", recover);
     element.addEventListener("loadedmetadata", retry);
     element.addEventListener("loadeddata", play);
     element.addEventListener("canplay", play);
@@ -60,6 +79,7 @@ export function StoreVideo({ src = "/media/canearth15-store-tour.mp4", poster = 
     mobile.addEventListener("change", onResize);
     return () => {
       disposed = true;
+      if (watchdog !== undefined) window.clearInterval(watchdog);
       if (retryFrame !== undefined) window.cancelAnimationFrame(retryFrame);
       observer?.disconnect();
       mobile.removeEventListener("change", onResize);
@@ -68,6 +88,7 @@ export function StoreVideo({ src = "/media/canearth15-store-tour.mp4", poster = 
       element.removeEventListener("canplay", play);
       element.removeEventListener("canplaythrough", retry);
       element.removeEventListener("pause", retry);
+      element.removeEventListener("error", recover);
       window.removeEventListener("pageshow", play);
       document.removeEventListener("visibilitychange", play);
       document.removeEventListener("pointerdown", play);
