@@ -1,6 +1,6 @@
 type Environment = Record<string, string | undefined>;
 
-const previewFallback = "https://vaidehicraft.vercel.app";
+export const productionSiteOrigin = "https://vaidehicraft.com";
 
 export function resolveSiteOrigin(value?: string) {
   const configured = value?.trim();
@@ -13,37 +13,20 @@ export function resolveSiteOrigin(value?: string) {
   return url.origin;
 }
 
-function hostnameOrigin(value?: string) {
-  if (!value?.trim()) return undefined;
-  return resolveSiteOrigin(value.includes("://") ? value : `https://${value}`);
-}
-
-/** Resolve once at build time so pages, social tags, schema and sitemap agree. */
+/** Keep the official domain canonical across hosting providers; previews stay noindex. */
 export function resolveSiteConfiguration(env: Environment) {
-  const configured = resolveSiteOrigin(env.NEXT_PUBLIC_SITE_URL?.trim() || env.SITE_URL);
-  let productionOrigin: string | undefined;
-  let deploymentOrigin: string | undefined;
+  const origin = resolveSiteOrigin(env.NEXT_PUBLIC_SITE_URL?.trim() || env.SITE_URL) || productionSiteOrigin;
   let preview = env.NODE_ENV === "development";
-
   const vercelEnvironment = env.VERCEL_ENV || env.NEXT_PUBLIC_VERCEL_ENV;
-  if (env.VERCEL === "1" || vercelEnvironment || env.VERCEL_PROJECT_PRODUCTION_URL || env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL || env.VERCEL_URL || env.NEXT_PUBLIC_VERCEL_URL) {
-    deploymentOrigin = hostnameOrigin(env.VERCEL_URL || env.NEXT_PUBLIC_VERCEL_URL);
-    const mainOrigin = hostnameOrigin(env.VERCEL_PROJECT_PRODUCTION_URL || env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL);
-    preview ||= Boolean(vercelEnvironment && vercelEnvironment !== "production");
-    if (vercelEnvironment === "production") productionOrigin = mainOrigin || previewFallback;
-    deploymentOrigin ||= mainOrigin;
+
+  if (env.VERCEL === "1" || vercelEnvironment || env.VERCEL_URL || env.NEXT_PUBLIC_VERCEL_URL || env.VERCEL_PROJECT_PRODUCTION_URL || env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL) {
+    // Without production context, treat a Vercel deployment as a preview.
+    preview ||= vercelEnvironment !== "production";
   } else if (env.NETLIFY === "true") {
-    deploymentOrigin = resolveSiteOrigin(env.DEPLOY_PRIME_URL || env.DEPLOY_URL || env.URL);
     preview ||= env.CONTEXT !== "production" || env.NETLIFY_PREVIEW_SERVER === "true";
-    if (!preview) productionOrigin = resolveSiteOrigin(env.URL);
   } else if (env.RENDER === "true") {
-    deploymentOrigin = resolveSiteOrigin(env.RENDER_EXTERNAL_URL) || hostnameOrigin(env.RENDER_EXTERNAL_HOSTNAME);
     preview ||= env.IS_PULL_REQUEST === "true";
-    if (!preview) productionOrigin = deploymentOrigin;
   }
 
-  return {
-    siteOrigin: preview ? undefined : configured || productionOrigin,
-    metadataOrigin: configured || productionOrigin || deploymentOrigin || previewFallback,
-  };
+  return { siteOrigin: preview ? undefined : origin, metadataOrigin: origin };
 }

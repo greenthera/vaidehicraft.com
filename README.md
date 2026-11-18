@@ -47,7 +47,7 @@ The former `src/assest/` directory has been removed. Its 14 original files were 
 
 Fresh reference coverage is recorded in `docs/reference-coverage-audit.json`: 30 chairs, 17 sofas, 32 swings and 27 tables, with no missing/extra card-image occurrences. `scripts/audit-reference-coverage.py` compares newly downloaded public collection HTML with the local inventory. It is an offline audit tool, not a runtime dependency.
 
-Missing reference specifications are not fabricated. Quote forms save each enquiry through the Google Form and its linked Google Sheet, then show `/thank-you`. The form and field IDs are in `src/lib/enquiry.ts`.
+Missing reference specifications are not fabricated. Inquiry forms save through the Google Form and its linked Sheet, open a personalized WhatsApp message in a new tab, and show `/thank-you` in the website tab. The form and field IDs are in `src/lib/enquiry.ts`.
 
 ## Navigation and scrolling
 
@@ -59,7 +59,7 @@ These are code-level optimizations, not measured FPS/Core Web Vitals results. Br
 
 ## Deployment and migration
 
-Production builds automatically use the hosting platform's public domain on Vercel, Netlify and Render. Local development and recognised deployment previews discourage indexing. For an unrecognised host or a custom domain that the platform does not expose, set `NEXT_PUBLIC_SITE_URL` (or server-only `SITE_URL`) before building. Nothing has been published by the assistant.
+Production defaults to `https://vaidehicraft.com` on every host. Local development and recognised deployment previews remain noindex. Override `NEXT_PUBLIC_SITE_URL` (or server-only `SITE_URL`) only for a deliberate future domain change. The default Pages build uses the domain root, without the old `/vaidehicraft.com` prefix. Code changes do not publish the site or update DNS.
 
 See [URL rules](docs/urls-and-migration.md), [responsive review](docs/responsive-and-seo-review.md) and [design QA](design-qa.md). The optional offline catalog regeneration sequence is:
 
@@ -87,13 +87,13 @@ Development and production build scripts also generate responsive product photos
 
 `src/data/page-metadata.json` preserves the original website's home, collection and contact titles/descriptions and OG/Twitter wording, checked on 2026-11-04. The longer home description is deliberately retained verbatim. Product and quote titles stay distinct for SEO; useful descriptions remain where the original site had none. Images are local and all canonical/sitemap paths use our clean routes.
 
-Organization/WebSite identities are linked, with breadcrumbs, collection ItemList, Product and ContactPage JSON-LD where applicable. No prices, ratings or store addresses are fabricated. One shared origin resolver supplies canonicals, OG/Twitter, schema, robots and sitemap. Vercel production uses its primary domain; Netlify production uses `URL`; Render uses its service URL. Production becomes indexable automatically and generates the canonical sitemap. Recognised preview/development builds stay noindex, omit canonicals and serve a blocking robots file with an empty sitemap, even if a production URL override is inherited. Quote forms stay noindex in production.
+Organization/WebSite identities are linked, with breadcrumbs, collection ItemList, Product and ContactPage JSON-LD where applicable. No prices, ratings or store addresses are fabricated. One shared origin resolver supplies canonicals, OG/Twitter, schema, robots and sitemap using `https://vaidehicraft.com`, regardless of the hosting platform's generated domain. Production becomes indexable automatically and generates the canonical sitemap. Recognised preview/development builds stay noindex, omit canonicals and serve a blocking robots file with an empty sitemap, even if a production URL override is inherited. Quote forms stay noindex in production.
 
-A domain change supplied by the platform is picked up on the next build. Explicit `NEXT_PUBLIC_SITE_URL` or `SITE_URL` overrides take precedence and must be updated if previously set. Render's service URL does not identify an attached custom domain; set the override for that case. A static build cannot discover an arbitrary future domain on a host that exposes no public URL. GitHub Pages still requires the previously discussed static-export deployment setup; URL detection does not add that hosting support. No localhost image URLs are emitted; an unknown private/local build uses the current Vercel site for sharing only. Robots and sitemap are generated at `/robots.txt` and `/sitemap.xml` when built.
+The official domain is intentionally stable across hosting changes. An explicit `NEXT_PUBLIC_SITE_URL` or `SITE_URL` override takes precedence and must be removed or updated if it still points at staging. Pages builds use `PAGES_ORIGIN` and `PAGES_BASE_PATH`, defaulting to `https://vaidehicraft.com` and an empty base path. Rebuild after changing these values. Robots and sitemap are generated at `/robots.txt` and `/sitemap.xml`; inquiry and thank-you pages stay outside the sitemap.
 
 
 ## GitHub Pages
 
-Run `npm run deploy` to build and verify a static HTML export, then publish it to the `gh-pages` branch of `greenthera/vaidehicraft.com`. Run `npm run build:pages` to export without publishing. Existing `npm run build` and Vercel hosting are preserved.
+Run `npm run deploy` to build and verify a static HTML export, then publish it to the `gh-pages` branch of `greenthera/vaidehicraft.com`. Run `npm run build:pages` to export without publishing. The export includes `CNAME` containing `vaidehicraft.com`, so deployments preserve the custom domain. Existing `npm run build` and server hosting remain supported.
 
 GitHub Pages cannot run server endpoints, so its forms post directly from the browser to the Google Form. See [GitHub Pages deployment](docs/github-pages.md) for paths, forms, custom-domain settings and hosting limitations.

@@ -8,11 +8,11 @@ const images = spawnSync(process.execPath, [path.join(root, "scripts/build-respo
 if (images.status !== 0) throw new Error("Responsive image generation failed. Nothing was published.");
 const stage = path.join(root, '.pages-build');
 const output = path.join(root, 'out');
-const basePath = process.env.PAGES_BASE_PATH ?? '/vaidehicraft.com';
+const basePath = process.env.PAGES_BASE_PATH ?? '';
 if (basePath && !/^\/[a-zA-Z0-9._-]+$/.test(basePath)) throw new Error('PAGES_BASE_PATH must be empty or one repository path.');
-const origin = process.env.PAGES_ORIGIN || 'https://greenthera.shivantra.com';
+const origin = process.env.PAGES_ORIGIN || 'https://vaidehicraft.com';
 const url = new URL(origin);
-if (url.protocol !== 'https:' || url.pathname !== '/' || url.search || url.hash) throw new Error('PAGES_ORIGIN must be an HTTPS origin.');
+if (url.protocol !== 'https:' || url.pathname !== '/' || url.search || url.hash || url.username || url.password || url.port) throw new Error('PAGES_ORIGIN must be an HTTPS origin.');
 await fs.rm(stage, { recursive: true, force: true });
 await fs.mkdir(stage, { recursive: true });
 try {
@@ -27,12 +27,18 @@ try {
   const env = { ...process.env, STATIC_EXPORT: 'true', NEXT_PUBLIC_BASE_PATH: basePath,
     NEXT_PUBLIC_SITE_URL: origin, NEXT_PUBLIC_ENQUIRY_DIRECT: 'true',
     NODE_ENV: 'production', VERCEL: '', VERCEL_ENV: '', NEXT_PUBLIC_VERCEL_ENV: '',
-    VERCEL_URL: '', NEXT_PUBLIC_VERCEL_URL: '', NETLIFY: '', RENDER: '' };
+    VERCEL_URL: '', NEXT_PUBLIC_VERCEL_URL: '', VERCEL_PROJECT_PRODUCTION_URL: '', NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL: '', NETLIFY: '', RENDER: '' };
   const result = spawnSync(process.execPath, [path.join(root, 'node_modules/next/dist/bin/next'), 'build', '--webpack'], { cwd: stage, env, stdio: 'inherit' });
   if (result.status !== 0) throw new Error('Static export failed. Nothing was published.');
   await fs.rm(output, { recursive: true, force: true });
   await fs.cp(path.join(stage, 'out'), output, { recursive: true });
   await fs.writeFile(path.join(output, '.nojekyll'), '');
+  // Preserve the custom domain when gh-pages replaces the published branch.
+  if (!basePath && !url.hostname.endsWith('.github.io')) {
+    await fs.writeFile(path.join(output, 'CNAME'), `${url.hostname}\n`);
+  } else {
+    await fs.rm(path.join(output, 'CNAME'), { force: true });
+  }
   // GitHub Pages cannot apply Next.js redirects: emit navigable HTML fallback pages.
   const redirects = JSON.parse(await fs.readFile(path.join(root, 'src/data/legacy-redirects.json'), 'utf8'));
   for (const { source, destination } of redirects) {

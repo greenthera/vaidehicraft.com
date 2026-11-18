@@ -30,7 +30,7 @@ Old paths only exist as local one-hop permanent redirects in `src/data/legacy-re
 
 ## Indexing and metadata
 
-Set `NEXT_PUBLIC_SITE_URL` to the replacement site's actual origin before the production build. Preview builds without it discourage indexing. Product/collection/contact pages have their own title, description, social metadata and canonical URL when the production origin is configured. Only primary public pages appear in the sitemap. Quote forms use stable URLs but remain `noindex, follow`; they are a transaction flow, not competing product landing pages. Product structured data uses actual catalog information without fabricated prices, reviews or stock claims.
+Production defaults to `https://vaidehicraft.com` at the domain root. Remove previous staging overrides before building; use `NEXT_PUBLIC_SITE_URL` only when deliberately changing the domain. Local development and recognised deployment previews discourage indexing. Product/collection/contact pages have their own title, description, social metadata and canonical URL when the production origin is configured. Only primary public pages appear in the sitemap. Quote forms use stable URLs but remain `noindex, follow`; they are a transaction flow, not competing product landing pages. Product structured data uses actual catalog information without fabricated prices, reviews or stock claims.
 
 SEO implementation follows Google's [descriptive URL guidance](https://developers.google.com/search/docs/crawling-indexing/url-structure) and [canonical URL guidance](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls). This does not guarantee rankings or eliminate all possible indexing differences.
 

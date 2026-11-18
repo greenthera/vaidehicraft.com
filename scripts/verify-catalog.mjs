@@ -32,8 +32,8 @@ for (const filename of fs.readdirSync('public/images/products')) assert(!/^[a-f0
 const runtimeFiles = [];
 function walk(directory) { for (const entry of fs.readdirSync(directory, { withFileTypes: true })) { const file = `${directory}/${entry.name}`; if (entry.isDirectory()) walk(file); else if (/\.(tsx?|json)$/.test(file) && !file.endsWith('legacy-redirects.json')) runtimeFiles.push(file); } }
 walk('src');
-for (const file of runtimeFiles) assert(!/https?:\/\/(?:www\.)?vaidehicraft\.com|static\.wixstatic\.com|referenceOrigin/.test(fs.readFileSync(file, 'utf8')), `Old-site runtime dependency: ${file}`);
-console.log(`Verified ${products.length} unique product URLs, ${products.length} quote URLs, ${redirects.length} one-hop redirects, descriptive local images and no old-site runtime dependencies.`);
+for (const file of runtimeFiles) assert(!/https?:\/\/(?:greenthera\.shivantra\.com|vaidehicraft\.vercel\.app)|static\.wixstatic\.com|referenceOrigin/.test(fs.readFileSync(file, 'utf8')), `Staging/reference runtime dependency: ${file}`);
+console.log(`Verified ${products.length} unique product URLs, ${products.length} quote URLs, ${redirects.length} one-hop redirects, descriptive local images and no staging/reference runtime dependencies.`);
 
 const layouts = JSON.parse(fs.readFileSync('src/data/collection-layouts.json', 'utf8'));
 let cards = 0;
