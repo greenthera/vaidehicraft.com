@@ -1,5 +1,5 @@
 User-Agent: *
 Allow: /
-Disallow: /vaidehicraft.com/api/
+Disallow: /api/
 
-Sitemap: https://greenthera.shivantra.com/vaidehicraft.com/sitemap.xml
+Sitemap: https://vaidehicraft.com/sitemap.xml

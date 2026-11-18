@@ -1,9 +1,9 @@
-:HL["/vaidehicraft.com/_next/static/css/f03ab259cbf16496.css","style"]
-:HL["/vaidehicraft.com/_next/static/css/8ae18525bfc1d713.css","style"]
-:HL["/vaidehicraft.com/fonts/century-gothic-mobile-82fa7dd7b5.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
-:HL["/vaidehicraft.com/fonts/century-gothic-bold-mobile-fd967193c9.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
+:HL["/_next/static/css/16c8986c81ee930f.css","style"]
+:HL["/_next/static/css/8ae18525bfc1d713.css","style"]
+:HL["/fonts/century-gothic-mobile-82fa7dd7b5.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
+:HL["/fonts/century-gothic-bold-mobile-fd967193c9.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":{"n":"slug","t":"d","k":"bora-bora-double-seater-cane-swing","s":[]},"h":65632,"c":"$Q4"}]]
 2:[["children",{"s":{"n":"category","t":"d","k":"swings","s":[]},"h":196704,"c":"$Q3"}]]
 1:[["children",{"s":"furniture","h":131136,"c":"$Q2"}]]
-0:{"b":"88dV_Ym4ZXC8MmG4yPHl1","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"yjK_ZTEQ5yFHhxv--GArx","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
