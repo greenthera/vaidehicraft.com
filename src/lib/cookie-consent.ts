@@ -63,7 +63,7 @@ export function initCookieConsent() {
       consentModal: {
         title: "Your privacy, your choice",
         description: `We remember your cookie choices and display embedded maps on our contact page. With your permission, we use analytics to understand website usage. Read our <a href="${basePath}/privacy-policy/" class="cc__link">Privacy Policy</a> and <a href="${basePath}/cookie-policy/" class="cc__link">Cookie Policy</a>.`,
-        acceptAllBtn: "Accept all", acceptNecessaryBtn: "Reject all", showPreferencesBtn: "Manage preferences",
+        acceptAllBtn: "Accept", acceptNecessaryBtn: "Decline", showPreferencesBtn: "Manage preferences",
       },
       preferencesModal: {
         title: "Cookie preferences", acceptAllBtn: "Accept all", acceptNecessaryBtn: "Reject all", savePreferencesBtn: "Save preferences", closeIconLabel: "Close preferences",
