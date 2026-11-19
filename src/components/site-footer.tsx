@@ -17,8 +17,14 @@ export function SiteFooter() {
           <div className="col-span-2 flex flex-col items-start gap-3.5 border-b border-[#ede7df]/20 pb-9 min-[1000px]:col-span-1 min-[1000px]:border-0 min-[1000px]:pb-0">
             <p className="max-w-[300px] text-[15px] leading-[26px] text-[#c9d2c9]">Handcrafted cane furniture for homes that love natural materials. Since 1998.</p>
             <div className="flex flex-col">
-              <a href="tel:+919824177913" className={`${link} font-bold`}>098241 77913</a>
-              <a href="mailto:connect@vaidehicraft.com" className={link}>connect@vaidehicraft.com</a>
+              <a href="tel:+919824177913" className={`${link} gap-2.5 font-bold`}>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="size-[18px] shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                098241 77913
+              </a>
+              <a href="mailto:connect@vaidehicraft.com" className={`${link} gap-2.5`}>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="size-[18px] shrink-0"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+                connect@vaidehicraft.com
+              </a>
             </div>
             <Link href="/contact" className="mt-1 inline-flex min-h-12 w-full items-center justify-center bg-[#ede7df] px-6 text-sm font-bold tracking-[0.04em] text-[#244536] transition-colors hover:bg-white min-[1000px]:w-auto">Get in touch</Link>
           </div>
