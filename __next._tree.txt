@@ -1,8 +1,8 @@
-:HL["/_next/static/css/fde3cced1f265188.css","style"]
+:HL["/_next/static/css/3150af40fa166ad9.css","style"]
 :HL["/_next/static/css/8ae18525bfc1d713.css","style"]
 :HL["/fonts/century-gothic-mobile-82fa7dd7b5.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
 :HL["/fonts/century-gothic-bold-mobile-fd967193c9.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
 :HL["/images/home-hero-mobile-480-c21b14ccac.avif","image",{"fetchPriority":"high","imageSrcSet":"/images/home-hero-mobile-480-c21b14ccac.avif 480w, /images/home-hero-mobile-768-420e2a5e60.avif 768w","imageSizes":"100vw","media":"(max-width: 750px)"}]
 :HL["/_next/static/media/cane-hanging-chair-curtain-interior.18d94aa8.avif","image",{"fetchPriority":"high","imageSizes":"100vw","media":"(min-width: 751px)"}]
 1:[["children",{"s":"__PAGE__","h":128}]]
-0:{"b":"i6e_cyHVxqugWUqBEFT9q","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
+0:{"b":"AipqEYv93550uCND3c-fn","t":{"t":{"s":"","h":20,"c":"$Q1"}}}

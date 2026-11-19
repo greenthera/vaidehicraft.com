@@ -1,4 +1,4 @@
-:HL["/_next/static/css/fde3cced1f265188.css","style"]
+:HL["/_next/static/css/3150af40fa166ad9.css","style"]
 :HL["/_next/static/css/8ae18525bfc1d713.css","style"]
 :HL["/fonts/century-gothic-mobile-82fa7dd7b5.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
 :HL["/fonts/century-gothic-bold-mobile-fd967193c9.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
@@ -6,4 +6,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"aspire-cane-chair","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"make-an-inquiry","h":131136,"c":"$Q2"}]]
-0:{"b":"i6e_cyHVxqugWUqBEFT9q","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"AipqEYv93550uCND3c-fn","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
