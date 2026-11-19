@@ -10,7 +10,7 @@ const locations = [{ label: "Surat", href: "/contact#surat" }, { label: "Pune", 
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#244536] text-[#ede7df]">
+    <footer data-site-footer className="bg-[#244536] text-[#ede7df]">
       <div className="px-5 pt-12 min-[640px]:px-[7.5%] min-[1000px]:pt-[72px]">
         <Link href="/" aria-label="Vaidehi Craft home" className="mb-4 block w-44 min-[1000px]:mb-5 min-[1000px]:w-[208px]"><Image src={logo} unoptimized alt="Vaidehi Craft" width={208} className="h-auto w-full brightness-0 invert" /></Link>
         <div className="grid grid-cols-2 gap-x-5 gap-y-9 min-[1000px]:grid-cols-[1.6fr_1fr_1fr_1fr] min-[1000px]:gap-14">
