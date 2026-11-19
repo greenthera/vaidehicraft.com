@@ -8,6 +8,6 @@ export function CookieConsentBanner() {
   return <div id="cookie-consent-root" />;
 }
 
-export function CookieSettings() {
-  return <button type="button" onClick={() => { void showCookiePreferences(); }} className="inline-flex min-h-11 cursor-pointer items-center text-xs normal-case sm:text-sm hover:text-[#244536]">Cookie settings</button>;
+export function CookieSettings({ className = "inline-flex min-h-11 cursor-pointer items-center text-xs normal-case sm:text-sm hover:text-[#244536]" }: { className?: string }) {
+  return <button type="button" onClick={() => { void showCookiePreferences(); }} className={className}>Cookie settings</button>;
 }
