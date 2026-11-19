@@ -54,9 +54,9 @@ export default function Home() {
       <section aria-labelledby="cane-title" className="mobile-scene-cane relative flex min-h-[700px] flex-col justify-between gap-12 px-[var(--home-gutter)] py-10 text-white min-[1100px]:min-h-[52.58654vw] min-[1100px]:flex-row min-[1100px]:items-end">
         <div className="absolute inset-0"><MobilePicture image="handwoven-cane-joinery-detail"><Image src={cane} alt="Close-up of hand-wrapped cane joinery and the natural woven material" fill sizes="100vw" className="object-cover object-[0%_26%]" /></MobilePicture></div>
         <div className="relative w-full space-y-5 max-[1099px]:space-y-[var(--home-paragraph-gap)] type-cane-copy [text-shadow:0_1px_4px_#0009] min-[1100px]:order-2 min-[1100px]:ml-auto min-[1100px]:max-w-sm min-[1100px]:w-[30%] min-[1100px]:self-start">
-          <p>Cane is the poetry of luxury, a material that bends gracefully into forms bamboo could only dream of. At Vaidehi Craft, we take this exceptional natural wonder and sculpt it into art—functional, elegant, and timeless.</p>
+          <p>Cane is the poetry of luxury, a material that bends gracefully into forms bamboo could only dream of. At Vaidehi Craft, we take this exceptional natural wonder and sculpt it into art: functional, elegant, and timeless.</p>
           <p>This isn’t just furniture; it’s an ode to artistry, an experience of exclusivity. Step beyond the ordinary and into the extraordinary.</p>
-          <p>Because Cane is Not Bamboo—it’s the essence of bespoke living.</p>
+          <p>Because Cane is Not Bamboo, it’s the essence of bespoke living.</p>
         </div>
         <h2 id="cane-title" className="relative type-cane-title [text-shadow:0_1px_4px_#0006]">CANE<br />IS NOT BAMBOO</h2>
       </section>

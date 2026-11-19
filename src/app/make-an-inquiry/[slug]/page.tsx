@@ -12,7 +12,7 @@ export function generateStaticParams() { return products.map((product) => ({ slu
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const product = findProduct((await params).slug);
   if (!product) notFound();
-  return pageMetadata(`Make an inquiry — ${product.name}`, `Make an inquiry about ${product.name}. Share your contact details with Vaidehi Craft.`, product.quotePath, product.images[0], false);
+  return pageMetadata(`Make an inquiry: ${product.name}`, `Make an inquiry about ${product.name}. Share your contact details with Vaidehi Craft.`, product.quotePath, product.images[0], false);
 }
 export default async function ProductQuotePage({ params }: { params: Promise<{ slug: string }> }) {
   const product = findProduct((await params).slug);
