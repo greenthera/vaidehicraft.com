@@ -43,13 +43,16 @@ export function SiteFooter() {
             </nav>
           </div>
         </div>
-        <div className="mt-12 grid justify-items-center border-t border-[#ede7df]/20 pb-12 pt-6 text-center min-[640px]:pb-7 text-[13px] text-[#c9d2c9] min-[1000px]:mt-16 min-[1000px]:flex min-[1000px]:items-center min-[1000px]:justify-between min-[1000px]:gap-6 min-[1000px]:py-7">
+        <div className="mt-12 grid justify-items-center border-t border-[#ede7df]/20 pb-12 pt-6 text-center min-[640px]:pb-7 text-[13px] text-[#c9d2c9] min-[1000px]:mt-16 min-[1000px]:flex min-[1000px]:items-end min-[1000px]:justify-between min-[1000px]:gap-6 min-[1000px]:py-5">
+          {/* Desktop: policy links sit above the copyright on the left; smaller screens keep the copyright first. */}
+          <div className="flex flex-col items-center min-[1000px]:flex-col-reverse min-[1000px]:items-start">
           <p className="flex min-h-11 items-center">© 1998 – {new Date().getUTCFullYear()} Vaidehi Craft. All rights reserved.</p>
-          <nav aria-label="Privacy and cookies" className="flex flex-wrap items-center justify-center gap-x-6 min-[1000px]:gap-x-7">
+          <nav aria-label="Privacy and cookies" className="flex flex-wrap items-center justify-center gap-x-6 min-[1000px]:justify-start min-[1000px]:gap-x-7">
             <Link href="/privacy-policy" className="inline-flex min-h-11 items-center text-[#ede7df] hover:text-white hover:underline">Privacy policy</Link>
             <Link href="/cookie-policy" className="inline-flex min-h-11 items-center text-[#ede7df] hover:text-white hover:underline">Cookie policy</Link>
             <CookieSettings className="inline-flex min-h-11 cursor-pointer items-center normal-case text-[#ede7df] hover:text-white hover:underline" />
           </nav>
+          </div>
           <p className="flex min-h-11 items-center gap-1">Developed by <a href="https://www.shivantra.com/?utm_source=vaidehi_craft&utm_medium=referral&utm_campaign=footer_credit" target="_blank" rel="noopener noreferrer" aria-label="Shivantra (opens in a new tab)" className="font-bold text-[#ede7df] hover:text-white hover:underline">Shivantra</a></p>
         </div>
       </div>
