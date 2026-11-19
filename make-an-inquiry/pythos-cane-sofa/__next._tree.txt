@@ -1,4 +1,4 @@
-:HL["/_next/static/css/853671b5523cdcfb.css","style"]
+:HL["/_next/static/css/70921aa9f39ec413.css","style"]
 :HL["/_next/static/css/8ae18525bfc1d713.css","style"]
 :HL["/fonts/century-gothic-mobile-82fa7dd7b5.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
 :HL["/fonts/century-gothic-bold-mobile-fd967193c9.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
@@ -6,4 +6,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"pythos-cane-sofa","s":[]},"h":65632,"c":"$Q3"}]]
 1:[["children",{"s":"make-an-inquiry","h":131136,"c":"$Q2"}]]
-0:{"b":"qSJx_RDKeMalPbgv1cd02","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"B0wB7I6r_CHEcHSynh3Xu","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
