@@ -3,9 +3,9 @@ import { SiteFooter } from "@/components/site-footer";
 import { pageMetadata } from "@/lib/seo";
 import divider from "../../../../../public/images/events/infinity-4/patterned-room-divider.webp";
 import partnership from "../../../../../public/images/events/infinity-4/vaidehi-craft-infinity-4-partnership.webp";
-import hangingChair from "../../../../../public/images/events/infinity-4/sculptural-hanging-cane-chair.webp";
-import table from "../../../../../public/images/events/infinity-4/woven-cane-checkerboard-table.webp";
-import lounge from "../../../../../public/images/events/infinity-4/cane-lounge-chair-and-ottoman.webp";
+import hangingChair from "../../../../../public/images/events/infinity-4/sculptural-hanging-cane-chair-shadow.webp";
+import table from "../../../../../public/images/events/infinity-4/woven-cane-checkerboard-table-shadow.webp";
+import lounge from "../../../../../public/images/events/infinity-4/cane-lounge-chair-and-ottoman-shadow.webp";
 import showcase from "../../../../../public/images/events/infinity-4/infinity-4-2026-showcase.webp";
 
 export const metadata = pageMetadata(
