@@ -5,7 +5,7 @@ import { IoCalendarOutline, IoLocationOutline, IoShareSocialOutline } from "reac
 import { assetPath } from "@/lib/site-path";
 
 const venue = "146/B, Althan - Sarsana Rd, near Khajod Chowkdi, Sarsana, Surat, Gujarat 395007";
-const buttonClass = "button-outline inline-flex min-h-12 items-center justify-center gap-2 px-5 py-3 text-sm uppercase transition-colors";
+const buttonClass = "inline-flex min-h-12 items-center justify-center gap-2 px-5 py-3 text-sm uppercase transition-colors";
 
 export function EventInviteActions() {
   const sharing = useRef(false);
@@ -48,13 +48,13 @@ export function EventInviteActions() {
 
   return <div className="mb-9 sm:mb-12">
     <div className="flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
-      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venue)}`} target="_blank" rel="noopener noreferrer" aria-label="View event venue on Maps (opens in a new tab)" className={buttonClass}>
+      <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venue)}`} target="_blank" rel="noopener noreferrer" aria-label="View event venue on Maps (opens in a new tab)" className={`button-primary ${buttonClass}`}>
         <IoLocationOutline aria-hidden="true" size={20} className="shrink-0" />View on Maps
       </a>
-      <a href={assetPath("/events/infinity-4/vaidehi-craft-infinity-4.ics")} download="vaidehi-craft-infinity-4.ics" className={buttonClass}>
+      <a href={assetPath("/events/infinity-4/vaidehi-craft-infinity-4.ics")} download="vaidehi-craft-infinity-4.ics" className={`button-primary ${buttonClass}`}>
         <IoCalendarOutline aria-hidden="true" size={20} className="shrink-0" />Add to Calendar
       </a>
-      <button type="button" onClick={() => { void shareEvent(); }} disabled={busy} aria-busy={busy} className={`${buttonClass} cursor-pointer disabled:cursor-wait`}>
+      <button type="button" onClick={() => { void shareEvent(); }} disabled={busy} aria-busy={busy} className={`button-outline ${buttonClass} cursor-pointer disabled:cursor-wait`}>
         <IoShareSocialOutline aria-hidden="true" size={20} className="shrink-0" />Share Event
       </button>
     </div>

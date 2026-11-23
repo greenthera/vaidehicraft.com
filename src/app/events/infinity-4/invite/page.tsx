@@ -29,7 +29,7 @@ export default function InfinityInvitePage() {
 
         <section aria-label="A new collection inspired by Antoni Gaudí" className="mt-5 grid grid-cols-[54%_46%] items-start sm:mt-8">
           <p className="z-10 px-4 pt-10 text-center text-[13px] leading-relaxed sm:px-8 sm:pt-20 sm:text-xl lg:px-14 lg:pt-28 lg:text-2xl">
-            After a successful showcase at Infinity 3.0, we’re back with something even better. Inspired by Antoni Gaudí, we set out to make pieces we had never made before.
+            After a successful showcase at Infinity 3.0, we’re back with something even better. Inspired by <strong className="font-bold">Antoni Gaudí</strong>, we set out to make pieces we had never made before.
           </p>
           <Image src={hangingChair} alt="Handwoven teardrop-shaped cane hanging chair with a sculptural frame and cream cushions" sizes="(max-width: 639px) calc(46vw - 18px), 39vw" className="h-auto w-full" />
         </section>
