@@ -3,6 +3,7 @@ import * as CookieConsent from "vanilla-cookieconsent";
 
 let initialization: Promise<void> | undefined;
 let trackingLoaded = false;
+let bannerSuppressed = false;
 
 declare global {
   interface Window {
@@ -43,6 +44,8 @@ export function initCookieConsent() {
     root: document.getElementById("cookie-consent-root"),
     // Tracking is managed explicitly below, not by scanning React-owned scripts.
     manageScriptTags: false,
+    // Route handling decides when to display the consent prompt.
+    autoShow: false,
     revision: 3,
     cookie: { name: "cc_cookie", expiresAfterDays: 182, path: basePath || "/" },
     guiOptions: {
@@ -82,4 +85,12 @@ export function initCookieConsent() {
 export async function showCookiePreferences() {
   await initCookieConsent();
   CookieConsent.showPreferences();
+}
+
+/** Suppress only the automatic prompt; never manufacture or overwrite consent. */
+export async function setCookieConsentBannerSuppressed(suppressed: boolean) {
+  bannerSuppressed = suppressed;
+  await initCookieConsent();
+  if (bannerSuppressed) CookieConsent.hide();
+  else if (!CookieConsent.validConsent()) CookieConsent.show();
 }

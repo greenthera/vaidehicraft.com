@@ -1,10 +1,13 @@
 "use client";
 
 import { useEffect } from "react";
-import { initCookieConsent, showCookiePreferences } from "@/lib/cookie-consent";
+import { usePathname } from "next/navigation";
+import { setCookieConsentBannerSuppressed, showCookiePreferences } from "@/lib/cookie-consent";
 
 export function CookieConsentBanner() {
-  useEffect(() => { void initCookieConsent(); }, []);
+  const pathname = usePathname();
+  const invitePage = pathname.replace(/\/+$/, "") === "/events/infinity-4/invite";
+  useEffect(() => { void setCookieConsentBannerSuppressed(invitePage); }, [invitePage]);
   return <div id="cookie-consent-root" />;
 }
 
