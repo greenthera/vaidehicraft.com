@@ -1,5 +1,6 @@
 User-Agent: *
 Allow: /
 Disallow: /api/
+Disallow: /events/infinity-4/invite
 
 Sitemap: https://vaidehicraft.com/sitemap.xml

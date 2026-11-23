@@ -1,7 +1,7 @@
-:HL["/_next/static/css/70921aa9f39ec413.css","style"]
+:HL["/_next/static/css/b446823a5a50c5fd.css","style"]
 :HL["/_next/static/css/8ae18525bfc1d713.css","style"]
 :HL["/fonts/century-gothic-mobile-82fa7dd7b5.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
 :HL["/fonts/century-gothic-bold-mobile-fd967193c9.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"privacy-policy","h":64,"c":"$Q2"}]]
-0:{"b":"B0wB7I6r_CHEcHSynh3Xu","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
+0:{"b":"kMfKFNIo1vsWs1HLNUp8h","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
