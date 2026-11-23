@@ -1,4 +1,4 @@
-:HL["/_next/static/css/1a80ebd90a0267f7.css","style"]
+:HL["/_next/static/css/a4463cca6a5ae182.css","style"]
 :HL["/_next/static/css/8ae18525bfc1d713.css","style"]
 :HL["/fonts/century-gothic-mobile-82fa7dd7b5.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
 :HL["/fonts/century-gothic-bold-mobile-fd967193c9.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
@@ -6,4 +6,4 @@
 3:[["children",{"s":{"n":"slug","t":"d","k":"alpha-cane-sofa","s":[]},"h":65632,"c":"$Q4"}]]
 2:[["children",{"s":{"n":"category","t":"d","k":"sofas","s":[]},"h":196704,"c":"$Q3"}]]
 1:[["children",{"s":"furniture","h":131136,"c":"$Q2"}]]
-0:{"b":"cdZMxx_jWVc_ahA9dvxcq","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
+0:{"b":"vxbM0WWhFGuaa-vV74QWb","t":{"t":{"s":"","h":131092,"c":"$Q1"}}}
