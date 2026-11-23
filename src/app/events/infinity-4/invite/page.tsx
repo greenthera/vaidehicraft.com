@@ -31,11 +31,11 @@ export default function InfinityInvitePage() {
           <p className="z-10 px-4 pt-10 text-center text-[13px] leading-relaxed sm:px-8 sm:pt-20 sm:text-xl lg:px-14 lg:pt-28 lg:text-2xl">
             After a successful showcase at Infinity 3.0, we’re back with something even better. Inspired by <strong className="font-bold">Antoni Gaudí</strong>, we set out to make pieces we had never made before.
           </p>
-          <Image src={hangingChair} alt="Handwoven teardrop-shaped cane hanging chair with a sculptural frame and cream cushions" sizes="(max-width: 639px) calc(46vw - 18px), 39vw" className="drop-shadow-[0_12px_10px_rgba(65,46,30,0.18)] h-auto w-full" />
+          <Image src={hangingChair} alt="Handwoven teardrop-shaped cane hanging chair with a sculptural frame and cream cushions" sizes="(max-width: 639px) calc(46vw - 18px), 39vw" className="h-auto w-full" />
         </section>
 
         <section aria-label="Made with patience and love" className="mt-8 grid grid-cols-[49%_51%] items-center sm:mt-12">
-          <Image src={table} alt="Handcrafted cane table with a checkerboard wooden top and flowing woven base" sizes="(max-width: 639px) calc(49vw - 20px), 42vw" className="drop-shadow-[0_12px_10px_rgba(65,46,30,0.18)] h-auto w-full" />
+          <Image src={table} alt="Handcrafted cane table with a checkerboard wooden top and flowing woven base" sizes="(max-width: 639px) calc(49vw - 20px), 42vw" className="h-auto w-full" />
           <p className="px-3 text-center text-[13px] leading-relaxed sm:px-7 sm:text-xl lg:px-12 lg:text-2xl">
             Every bend took patience.<br />Every piece was made with love.<br />Our artisans can’t wait for you to see what they’ve made. Neither can we.
           </p>
@@ -45,7 +45,7 @@ export default function InfinityInvitePage() {
           <p className="relative z-10 ml-[6%] w-[70%] text-center text-[13px] leading-relaxed sm:text-xl lg:absolute lg:left-[6%] lg:top-[7%] lg:ml-0 lg:w-[51%] lg:text-2xl">
             We’d like you to be among the first people to experience the uniqueness.
           </p>
-          <Image src={lounge} alt="Curved green woven cane lounge chair and matching ottoman with soft neutral upholstery" sizes="(max-width: 639px) calc(84vw - 34px), 72vw" className="drop-shadow-[0_12px_10px_rgba(65,46,30,0.18)] mx-auto mt-6 h-auto w-[84%] sm:mt-8 lg:mt-0" />
+          <Image src={lounge} alt="Curved green woven cane lounge chair and matching ottoman with soft neutral upholstery" sizes="(max-width: 639px) calc(84vw - 34px), 72vw" className="mx-auto mt-6 h-auto w-[84%] sm:mt-8 lg:mt-0" />
         </section>
 
         <section aria-labelledby="event-details" className="mx-auto mt-16 max-w-3xl px-6 text-center sm:mt-24 lg:mt-32">
