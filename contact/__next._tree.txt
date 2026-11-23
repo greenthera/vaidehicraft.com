@@ -4,4 +4,4 @@
 :HL["/fonts/century-gothic-bold-mobile-fd967193c9.woff2","font",{"crossOrigin":"anonymous","type":"font/woff2","fetchPriority":"low","media":"(max-width: 750px)"}]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"contact","h":64,"c":"$Q2"}]]
-0:{"b":"YNKrh9HrTstUyPQO4JQOz","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
+0:{"b":"cdZMxx_jWVc_ahA9dvxcq","t":{"t":{"s":"","h":20,"c":"$Q1"}}}
