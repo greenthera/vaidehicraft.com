@@ -42,10 +42,10 @@ export default function InfinityInvitePage() {
         </section>
 
         <section aria-label="Be among the first" className="relative mt-10 sm:mt-16">
-          <p className="absolute left-[6%] top-[7%] z-10 w-[51%] text-center text-[13px] leading-relaxed sm:text-xl lg:text-2xl">
+          <p className="relative z-10 ml-[6%] w-[70%] text-center text-[13px] leading-relaxed sm:text-xl lg:absolute lg:left-[6%] lg:top-[7%] lg:ml-0 lg:w-[51%] lg:text-2xl">
             We’d like you to be among the first people to experience the uniqueness.
           </p>
-          <Image src={lounge} alt="Curved green woven cane lounge chair and matching ottoman with soft neutral upholstery" sizes="(max-width: 639px) calc(84vw - 34px), 72vw" className="drop-shadow-[0_12px_10px_rgba(65,46,30,0.18)] mx-auto h-auto w-[84%]" />
+          <Image src={lounge} alt="Curved green woven cane lounge chair and matching ottoman with soft neutral upholstery" sizes="(max-width: 639px) calc(84vw - 34px), 72vw" className="drop-shadow-[0_12px_10px_rgba(65,46,30,0.18)] mx-auto mt-6 h-auto w-[84%] sm:mt-8 lg:mt-0" />
         </section>
 
         <section aria-labelledby="event-details" className="mx-auto mt-16 max-w-3xl px-6 text-center sm:mt-24 lg:mt-32">
