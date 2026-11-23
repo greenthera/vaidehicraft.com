@@ -1,4 +1,5 @@
 import Image from "@/components/site-image";
+import { EventInviteActions } from "@/components/event-invite-actions";
 import { SiteFooter } from "@/components/site-footer";
 import { pageMetadata } from "@/lib/seo";
 import divider from "../../../../../public/images/events/infinity-4/patterned-room-divider.webp";
@@ -48,6 +49,7 @@ export default function InfinityInvitePage() {
         </section>
 
         <section aria-labelledby="event-details" className="mx-auto mt-16 max-w-3xl px-6 text-center sm:mt-24 lg:mt-32">
+          <EventInviteActions />
           <h2 id="event-details" className="text-lg uppercase tracking-[0.08em] sm:text-2xl">Come find us at</h2>
           <p className="mt-5 text-xl font-bold uppercase tracking-wide sm:text-3xl">Stall No. F-06</p>
           <Image src={showcase} alt="Infinity 4, 2026, IIA-IIID Showcase, 26–27–28 December" sizes="(max-width: 768px) 88vw, 720px" className="mx-auto mt-7 h-auto w-full" />

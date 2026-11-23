@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vaidehi Craft//Infinity 4 Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:infinity-4-2026@vaidehicraft.com
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261229
+SUMMARY:Vaidehi Craft at Infinity 4
+LOCATION:Stall F-06\, 146/B\, Althan - Sarsana Rd\, near Khajod Chowkdi\,
+  Sarsana\, Surat\, Gujarat 395007
+DESCRIPTION:Discover Vaidehi Craft at Infinity 4\, IIA-IIID Showcase.\n26
+ –28 December 2026. Stall F-06.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
