@@ -6,7 +6,7 @@ const base = process.env.PAGES_BASE_PATH ?? '';
 const origin = process.env.PAGES_ORIGIN || 'https://vaidehicraft.com';
 const products = JSON.parse(fs.readFileSync('src/data/products.json', 'utf8'));
 const articles = JSON.parse(fs.readFileSync('src/data/journal.json', 'utf8'));
-const routes = ['/', '/contact', '/blog', '/privacy-policy', '/cookie-policy', '/thank-you', '/make-an-inquiry', ...['chairs','sofas','tables','swings'].map(c=>`/furniture/${c}`), ...products.flatMap(p=>[p.path,p.quotePath]), ...articles.map(a=>`/blog/${a.slug}`)];
+const routes = ['/events/infinity-4/invite', '/', '/contact', '/blog', '/privacy-policy', '/cookie-policy', '/thank-you', '/make-an-inquiry', ...['chairs','sofas','tables','swings'].map(c=>`/furniture/${c}`), ...products.flatMap(p=>[p.path,p.quotePath]), ...articles.map(a=>`/blog/${a.slug}`)];
 function checkSchemaPageUrls(value) {
   if (!value || typeof value !== 'object') return;
   for (const [key, child] of Object.entries(value)) {
@@ -83,6 +83,9 @@ for (const url of sitemapUrls) {
 for (const product of products.filter((item) => item.includeInSitemap)) assert(sitemap.includes(`${origin}${base}${product.path}`));
 assert(fs.readFileSync('out/robots.txt', 'utf8').includes(`${origin}${base}/sitemap.xml`));
 const robots = fs.readFileSync('out/robots.txt', 'utf8');
+assert(robots.includes(`Disallow: ${base}/events/infinity-4/invite`), 'Private invitation must be blocked');
+assert(!sitemap.includes('/events/infinity-4/invite'), 'Private invitation must not appear in sitemap');
+assert.match(fs.readFileSync('out/events/infinity-4/invite/index.html', 'utf8'), /name="robots" content="[^"]*noindex/, 'Private invitation must remain noindex');
 assert(robots.includes(`Disallow: ${base}/api/`), 'API must be excluded from crawling');
 assert(!/Disallow:.*(?:make-an-inquiry|request-quote|_next|images|media|fonts)/.test(robots), 'Noindex forms and public resources must stay crawlable');
 assert(!fs.existsSync('out/api/enquiries/index.html'));

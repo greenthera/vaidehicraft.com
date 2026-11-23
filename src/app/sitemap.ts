@@ -7,7 +7,7 @@ import { siteOrigin, pageUrl } from "@/lib/seo";
 export default function sitemap(): MetadataRoute.Sitemap {
   if (!siteOrigin) return [];
   // Include indexable public pages only. /make-an-inquiry (including product
-  // forms), /thank-you and legacy /request-quote redirects are intentionally omitted.
+  // forms), /thank-you, private event invitations and legacy redirects are omitted.
   return [
     { url: pageUrl("/", siteOrigin), changeFrequency: "monthly", priority: 1 },
     { url: pageUrl("/privacy-policy", siteOrigin), changeFrequency: "yearly", priority: 0.3 },
