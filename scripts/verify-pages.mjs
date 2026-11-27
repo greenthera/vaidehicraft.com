@@ -35,7 +35,7 @@ for (const route of routes) {
     assert.match(html, /<title>Make an inquiry/, `Incorrect inquiry title: ${route}`);
     assert.match(html, /<h1\b[^>]*>Make an inquiry<\/h1>/, `Incorrect inquiry heading: ${route}`);
     assert(html.includes('aria-current="page">Make an inquiry'), `Incorrect inquiry breadcrumb: ${route}`);
-    assert.match(html, /name="robots" content="[^"]*noindex/, `Inquiry must remain noindex: ${route}`);
+    assert.match(html, /name="robots" content="index, follow"/, `Inquiry page must be indexable: ${route}`);
   }
   for (const match of html.matchAll(/<a\b[^>]*aria-label="View [^"]+ details"[^>]*>/g)) {
     const href = match[0].match(/\bhref="([^"]+)"/)?.[1];
@@ -72,9 +72,11 @@ assert(fs.existsSync('out/404.html'));
 const sitemap = fs.readFileSync('out/sitemap.xml', 'utf8');
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 assert.equal(new Set(sitemapUrls).size, sitemapUrls.length, 'Duplicate sitemap URLs');
+assert(sitemapUrls.includes(`${origin}${base}/make-an-inquiry/`), 'Main inquiry page must appear in sitemap');
+for (const product of products) assert(sitemapUrls.includes(`${origin}${base}${product.quotePath}/`), `Missing product inquiry in sitemap: ${product.quotePath}`);
 for (const url of sitemapUrls) {
   assert(url.startsWith(`${origin}${base}/`), `Wrong sitemap origin or base path: ${url}`);
-  assert(!/\/(?:make-an-inquiry|request-quote|thank-you)(?:\/|$)/.test(new URL(url).pathname), `Non-indexable sitemap URL: ${url}`);
+  assert(!/\/(?:request-quote|thank-you)(?:\/|$)/.test(new URL(url).pathname), `Non-indexable sitemap URL: ${url}`);
   assert(fs.existsSync(path.join('out', new URL(url).pathname.slice(base.length), 'index.html')), `Missing sitemap page: ${url}`);
   const html = fs.readFileSync(path.join('out', new URL(url).pathname.slice(base.length), 'index.html'), 'utf8');
   assert(html.includes(`rel="canonical" href="${url}"`), `Sitemap URL differs from canonical: ${url}`);

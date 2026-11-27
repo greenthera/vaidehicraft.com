@@ -44,7 +44,6 @@ async function checkPage(page) {
 
   if (page.product && !page.quote) assert(html.includes(`href="${page.product.quotePath}"`), `Missing detail → quote link: ${page.path}`);
   if (page.quote) {
-    assert(/name="robots" content="[^"]*noindex/.test(html), `Quote must be noindex: ${page.path}`);
     for (const name of ['name', 'email', 'phone', 'category', 'product', 'confirm']) assert(html.includes(`name="${name}"`), `Missing quote field ${name}: ${page.path}`);
     if (page.product) {
       assert(html.includes(`value="${page.product.name}"`), `Missing product prefill: ${page.path}`);
@@ -60,7 +59,7 @@ async function checkPage(page) {
     const canonical = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1];
     assert(canonical, `Missing canonical: ${page.path}`);
     assert.equal(new URL(canonical).href, new URL(canonicalOrigin + (page.product && !page.quote ? page.product.canonicalPath : page.path)).href, `Wrong canonical: ${page.path}`);
-    if (!page.quote) assert(/name="robots" content="index,/.test(html), `Public page must be indexable: ${page.path}`);
+    assert(/name="robots" content="index,/.test(html), `Public page must be indexable: ${page.path}`);
     if (page.product && !page.quote) assert(html.includes('BreadcrumbList') && html.includes('"@type":"Product"'), `Missing structured data: ${page.path}`);
   }
 }
@@ -75,9 +74,9 @@ for (const path of ['/furniture/unknown', '/furniture/chairs/not-a-design', '/ma
 if (canonicalOrigin) {
   const xml = await (await fetch(base + '/sitemap.xml')).text();
   const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => match[1]);
-  const expected = pages.filter(page => !page.quote && (!page.product || page.product.includeInSitemap)).map(page => canonicalOrigin + page.path);
+  const expected = pages.filter(page => page.quote || !page.product || page.product.includeInSitemap).map(page => canonicalOrigin + page.path);
   assert.deepEqual(new Set(urls), new Set(expected), 'Sitemap must contain exactly the canonical public pages');
-  assert(!urls.some(url => url.includes('/make-an-inquiry')), 'Quote forms must not enter sitemap');
+  for (const page of pages.filter(page => page.quote)) assert(urls.includes(canonicalOrigin + page.path), `Inquiry must appear in sitemap: ${page.path}`);
   const robots = await (await fetch(base + '/robots.txt')).text();
   assert(robots.includes(`Sitemap: ${canonicalOrigin}/sitemap.xml`));
   console.log(`Verified ${urls.length} sitemap URLs and robots sitemap declaration.`);

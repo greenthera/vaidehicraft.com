@@ -6,7 +6,7 @@ import { QuoteForm } from "@/components/quote-form";
 import { pageMetadata } from "@/lib/seo";
 import sofa from "../../../public/images/blue-cushion-cane-sofa-set.avif";
 
-export const metadata = pageMetadata("Make an inquiry", "Explore handcrafted cane furniture by Vaidehi Craft and make an inquiry. Share your preferred design, finish and requirements with our team.", "/make-an-inquiry", undefined, false);
+export const metadata = pageMetadata("Make an inquiry", "Explore handcrafted cane furniture by Vaidehi Craft and make an inquiry. Share your preferred design, finish and requirements with our team.", "/make-an-inquiry");
 
 const steps = [
   { title: "Choose your design", text: "Select one or more collections and the furniture you have in mind." },

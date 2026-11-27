@@ -24,7 +24,7 @@ Three duplicate model entries are consolidated: Malaga chair color finishes, Fil
 
 Different seating sizes and stand configurations remain separate, descriptively named products. Models across different furniture types have both a category path and type in the slug. No page is differentiated using the source's arbitrary `chair-1`, `sofa-2`, etc.
 
-Previous `/request-quote` URLs redirect directly to the matching `/make-an-inquiry` page. The inquiry forms retain their existing noindex setting.
+Previous `/request-quote` URLs redirect directly to the matching `/make-an-inquiry` page. The main `/make-an-inquiry/` page and all product-specific inquiry forms are indexable and included in the sitemap.
 
 Old paths only exist as local one-hop permanent redirects in `src/data/legacy-redirects.json`. Their destinations, all links, canonical URLs and sitemap entries use the new paths. No redirect sends visitors to the old website. Redirecting old paths preserves an upgrade path for bookmarks and search results without exposing them as primary URLs.
 
