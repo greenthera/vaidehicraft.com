@@ -1543,5 +1543,165 @@
     "source": "/blank-5",
     "destination": "/contact",
     "permanent": true
+  },
+  {
+    "source": "/chair-2/alpha-roking",
+    "destination": "/furniture/chairs/alpha-rocking-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2/condo",
+    "destination": "/furniture/chairs/condo-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2/andros",
+    "destination": "/furniture/chairs/andros-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/swing-3-1/andros-w",
+    "destination": "/furniture/swings/andros-w-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2-1/ibizza",
+    "destination": "/furniture/chairs/ibiza-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2-1/minorca",
+    "destination": "/furniture/chairs/minorca-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/sofa",
+    "destination": "/furniture/sofas",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2-1/pythos",
+    "destination": "/furniture/chairs/pythos-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2/nbula-revolving",
+    "destination": "/furniture/chairs/nebula-revolving-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/sofa-2-1/filitheyo",
+    "destination": "/furniture/sofas/filitheyo-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2/claire",
+    "destination": "/furniture/chairs/claire-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/sofa-1-1/kingstorn",
+    "destination": "/furniture/sofas/kingston-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2-1/santorini",
+    "destination": "/furniture/chairs/santorini-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/swing-1-1/andros",
+    "destination": "/furniture/swings/andros-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/table-1-1/filitheyo",
+    "destination": "/furniture/tables/filitheyo-cane-table",
+    "permanent": true
+  },
+  {
+    "source": "/sofa-2-1/canary",
+    "destination": "/furniture/sofas/canary-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2-1/condo",
+    "destination": "/furniture/chairs/condo-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2-1/steack",
+    "destination": "/furniture/chairs/streak-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2/ibizza",
+    "destination": "/furniture/chairs/ibiza-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2/zero",
+    "destination": "/furniture/chairs/zero-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2/filitheyo",
+    "destination": "/furniture/chairs/filitheyo-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2/santorini",
+    "destination": "/furniture/chairs/santorini-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2-1/filitheyo",
+    "destination": "/furniture/chairs/filitheyo-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2/minorca",
+    "destination": "/furniture/chairs/minorca-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2/tahiti",
+    "destination": "/furniture/chairs/tahiti-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2-1/tahiti",
+    "destination": "/furniture/chairs/tahiti-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/swing-1-1/streak",
+    "destination": "/furniture/swings/streak-double-seater-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/chair-1",
+    "destination": "/furniture/chairs",
+    "permanent": true
+  },
+  {
+    "source": "/sofa-2-1/ibizza",
+    "destination": "/furniture/sofas/ibiza-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/sofa-2-1/andros",
+    "destination": "/furniture/sofas/andros-cane-sofa",
+    "permanent": true
+  },
+  {
+    "source": "/swing-2-1/oland",
+    "destination": "/furniture/swings/oland-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/swing",
+    "destination": "/furniture/swings",
+    "permanent": true
   }
 ]
