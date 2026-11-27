@@ -1528,5 +1528,20 @@
     "source": "/chair-2-1/luyor-with-footrest",
     "destination": "/furniture/chairs/luyor-with-footrest-cane-chair",
     "permanent": true
+  },
+  {
+    "source": "/blank-14",
+    "destination": "/furniture/tables",
+    "permanent": true
+  },
+  {
+    "source": "/blank-7",
+    "destination": "/furniture/sofas",
+    "permanent": true
+  },
+  {
+    "source": "/blank-5",
+    "destination": "/contact",
+    "permanent": true
   }
 ]
