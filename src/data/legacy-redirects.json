@@ -1703,5 +1703,25 @@
     "source": "/swing",
     "destination": "/furniture/swings",
     "permanent": true
+  },
+  {
+    "source": "/swing-2-1/petra",
+    "destination": "/furniture/swings/petra-compact-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/swing-2-1/nebula",
+    "destination": "/furniture/swings/nebula-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/swing-1-1/arches",
+    "destination": "/furniture/swings/arches-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/sofa-1-1/alpha",
+    "destination": "/furniture/sofas/alpha-cane-sofa",
+    "permanent": true
   }
 ]
