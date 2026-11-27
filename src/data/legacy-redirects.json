@@ -1488,5 +1488,45 @@
     "source": "/request-quote/claire-collection-cane-table",
     "destination": "/make-an-inquiry/claire-collection-cane-table",
     "permanent": true
+  },
+  {
+    "source": "/swing-3-1/filitheyo",
+    "destination": "/furniture/swings/filitheyo-with-stand-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/swing-2-1/malta-outdoor",
+    "destination": "/furniture/swings/malta-outdoor-cane-swing",
+    "permanent": true
+  },
+  {
+    "source": "/chair-1-1/caprio",
+    "destination": "/furniture/chairs/caprio-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-1-1/emperor-roking",
+    "destination": "/furniture/chairs/emperor-rocking-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-1-1/malaga",
+    "destination": "/furniture/chairs/malaga-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair3-1/hawaii",
+    "destination": "/furniture/chairs/hawaii-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2-1/malaga",
+    "destination": "/furniture/chairs/malaga-cane-chair",
+    "permanent": true
+  },
+  {
+    "source": "/chair-2-1/luyor-with-footrest",
+    "destination": "/furniture/chairs/luyor-with-footrest-cane-chair",
+    "permanent": true
   }
 ]
